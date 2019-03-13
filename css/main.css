@@ -11,4 +11,120 @@
 
 * {
   font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
 }
+
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #f6f5f3;
+}
+
+.splash-page {
+  position: relative;
+  top: -69;
+  width: 100%;
+  height: 1186;
+  background-image: url(../img/Landscape_Rwanda_Huye_Mountain.jpg);
+  background-size:cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.splash-container {
+  position: absolute;
+  width: 550;
+  top: 200;
+}
+
+.splash-logo-container {
+  width: 100%;
+}
+
+.splash-logo-container img{
+  width: 100%;
+}
+
+.splash-container a {
+  text-decoration: none;
+  position: relative;
+}
+
+.splash-text {
+  position: relative;
+  width: 330;
+  margin: 70 auto 0;
+  text-align: center;
+  background-image: url(../img/default-off-988f677664da4c280e0b3badb9d69cd0.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  color: #f6f5f3;
+  padding: 20;
+}
+
+.splash-text:hover {
+  background-image: url(../img/default-bg-on-0dd8a3202340001ae06223060ecfdaec.png);
+  color: #bf955a;
+}
+
+/* creating banner manually
+.splash-text {
+  position: relative;
+  width: 55%;
+  margin: 80 auto 0;
+  height: 60px;
+  text-align: center;
+  background-color: #bf955a;
+  color: #f6f5f3;
+  padding: 20;
+}
+
+
+.splash-text:before {
+      content: "";
+      position: absolute;
+      right: -30px;
+      bottom: 0;
+      width: 0;
+      height: 0;
+      border-left: 30px solid transparent;
+      border-top: 30px solid #bf955a;
+      border-bottom: 30px solid  #bf955a;
+      border-right: 30px solid transparent;
+    }
+
+.splash-text:after {
+      content: "";
+      position: absolute;
+      left: -30;
+      bottom: 0;
+      width: 0;
+      height: 0;
+      border-left: 30px solid transparent;
+      border-top: 30px solid #bf955a;
+      border-bottom: 30px solid  #bf955a;
+      border-right: 30px solid transparent;
+    }
+
+
+.splash-text:hover {
+  background-color: #f6f5f3;
+  color: #bf955a;
+}
+
+.splash-text:hover::before {
+  border-top: 30px solid #f6f5f3;
+  border-bottom: 30px solid  #f6f5f3;
+}
+
+.splash-text:hover::after {
+  border-top: 30px solid #f6f5f3;
+  border-bottom: 30px solid  #f6f5f3;
+}
+
+*/
