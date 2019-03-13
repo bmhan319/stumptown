@@ -276,7 +276,7 @@ header {
 }
 
 .miir-water-bottle {
-  width: 80%;
+  width: 76%;
 }
 
 .products-box01 a,
@@ -300,6 +300,15 @@ header {
 
 .products-cart {
   color:#bf955a;
+  transition: opacity .5s ease;
 }
 
+.text-hover-brown:hover > a > .products-name,
+.text-hover-brown:hover > a > .products-price{
+  color: #bf955a;
+}
+
+.products-cart:hover {
+  opacity: .4;
+}
 
