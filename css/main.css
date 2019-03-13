@@ -206,8 +206,9 @@ header {
 .section-products {
   position: relative;
   width: 100%;
-  top:-69;
-  margin-top:60;
+  top:-9;
+  margin-top:0;
+  bordeR: 1px solid green;
 }
 
 .section-products-row01,
@@ -309,6 +310,58 @@ header {
 }
 
 .products-cart:hover {
+  opacity: .4;
+}
+
+/*----- Links Section -----*/
+.section-links {
+  width: 100%;
+  position: relative;
+}
+
+.links-container {
+  border: 1px solid red;
+  width: 40%;
+  margin: 0 auto 100;
+  text-align: center;
+}
+
+.links-row1 {
+  width: 100%;
+}
+
+.links-row1 h2 {
+  margin: 14;
+  font-family: Merriweather, serif;
+  font-weight: 700;
+  font-size: 1.75em;
+  letter-spacing: 1
+}
+
+.links-row1 img {
+  width: 9%;
+}
+
+.links-row2 {
+  width: 100%;
+  margin: 58 0 0 0;
+  display: inline-block;
+}
+
+.links-row2 a {
+  color: #bf955a;
+  text-decoration: none;
+  font-size: 4.5em;
+  font-weight: 700;
+}
+
+.link-boxes {
+  margin-bottom: 40;
+  cursor: pointer;
+  transition: opacity .2s ease;
+}
+
+.link-boxes:hover {
   opacity: .4;
 }
 
