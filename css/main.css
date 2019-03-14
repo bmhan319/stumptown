@@ -372,3 +372,50 @@ header {
   width: 100%;
   color: white;
 }
+
+.footer-container {
+  width: 100%;
+  padding: 90 24 ;
+  border: 2px solid red;
+}
+
+.footer-row1 {
+  width: 100%;
+  display: flex;
+}
+
+.footer-row1-col1,
+.footer-row1-col3 {
+  width: 25%;
+  border: 2px solid green;
+  text-align: center;
+  
+}
+
+.footer-row1-col2 {
+  width: 50%;
+  border: 2px solid blue;
+  text-align: center;
+  
+}
+
+.footer-row1-col2-rowa a {
+  text-decoration: none;
+  color: #bf955a;
+  font-weight: 700;
+  font-size: 1.75em;
+}
+
+.link-box1,
+.link-box2 {
+  padding-bottom: 20;
+}
+
+.footer-row1-col2-rowb {
+  margin-top: 85
+}
+
+.footer-row1-col2-rowb img {
+  opacity: .2;
+  width: 100%;
+}
