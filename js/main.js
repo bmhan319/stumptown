@@ -19,12 +19,13 @@ function fixedNav() {
 
 // Cart Confirmation
 let cartCounter = 0;
-function cartConfirm() {
+function cartConfirm(index) {
   let numItems = document.querySelector("#counterNum")
   let confirm = document.querySelector("#cart-confirm")
   let cloneConfirm = confirm.cloneNode(true)
     
     confirm.classList.add("confirm-animate")
+    confirm.style.backgroundColor = products[index].bgColor
     setTimeout(function(){
       confirm.parentNode.replaceChild(cloneConfirm, confirm)
       cartCounter = cartCounter + 1
@@ -38,7 +39,7 @@ function cartConfirm() {
 // Objects of Products
 
 let products = [
-  {id: 0001,
+  {id: 0000,
    name: "Papa New Guinea Besser",
    price: "$18",
    image: "coffee-besser.png",
@@ -60,7 +61,7 @@ let products = [
    recommendedItem2Price: "$18",
    recommendedItem3Price: "$28"},
   
-  {id: 0002,
+  {id: 1,
    name: "12oz Skate Team",
    price: "$15",
    image: "skate-team.nl",
@@ -82,7 +83,7 @@ let products = [
    recommendedItem2Price: "$15",
    recommendedItem3Price: ""},
   
-  {id: 0003,
+  {id: 2,
    name: "12oz Skate Team Box Set",
    price: "$29",
    image: "skate-team-box.nl",
@@ -104,7 +105,7 @@ let products = [
    recommendedItem2Price: "",
    recommendedItem3Price: ""},
   
-  {id: 0004,
+  {id: 3,
    name: "12oz Hair Bender",
    price: "$15",
    image: "coffee-hair-bender.nl",
@@ -127,7 +128,7 @@ let products = [
    recommendedItem2Price: "",
    recommendedItem3Price: ""},
   
-  {id: 0005,
+  {id: 4,
    name: "12oz Guatemala El Injerto Bourbon",
    price: "$19",
    image: "coffee-guatemala-bourbon.nl",
@@ -149,7 +150,7 @@ let products = [
    recommendedItem2Price: "$40",
    recommendedItem3Price: ""},
   
-  {id: 0006,
+  {id: 5,
    name: "12oz Rwanda Huye Mountain",
    price: "$17",
    image: "coffee-rwanda-huye.nl",
@@ -171,7 +172,7 @@ let products = [
    recommendedItem2Price: "",
    recommendedItem3Price: ""},
   
-  {id: 0007,
+  {id: 6,
    name: "East Fork Mug",
    price: "$40",
    image: "east-fork-mug.nl",
@@ -196,7 +197,7 @@ let products = [
    recommendedItem2Price: "$9",
    recommendedItem3Price: ""},
   
-  {id: 0008,
+  {id: 7,
    name: "Stumptown Coffee Jar",
    price: "$15",
    image: "st-coffee-jar.nl",
@@ -223,7 +224,7 @@ let products = [
    recommendedItem2Price: "$19",
    recommendedItem3Price: "$180"},
   
-  {id: 0009,
+  {id: 8,
    name: "African Trio",
    price: "$38",
    image: "african-trio.nl",
@@ -247,7 +248,7 @@ let products = [
    recommendedItem2Price: "$19",
    recommendedItem3Price: "17"},
   
-  {id: 0010,
+  {id: 9,
    name: "Miir Camp Cup",
    price: "$26",
    image: "miiR-camp-cup.nl",
@@ -273,7 +274,7 @@ let products = [
    recommendedItem2Price: "$16",
    recommendedItem3Price: "$15"},
   
-  {id: 0011,
+  {id: 10,
    name: "Miir Wide Moth Water Bottle",
    price: "$30",
    image: "miiR-wide-mouth.nl",
@@ -299,7 +300,7 @@ let products = [
    recommendedItem2Price: "$19",
    recommendedItem3Price: ""},
   
-  {id: 0012,
+  {id: 11,
    name: "Miir Travel Tumbler",
    price: "$28",
    image: "miiR-travel-tumbler.nl",
@@ -325,7 +326,7 @@ let products = [
    recommendedItem2Price: "$9",
    recommendedItem3Price: "$16"},
   
-  {id: 0013,
+  {id: 12,
    name: "Miir 8oz Tumbler",
    price: "$18",
    image: "miiR-8oz-tumbler.nl",
