@@ -144,7 +144,6 @@ header {
   width: 100%;
   top: -69;
   z-index: 10;
-  margin-top: 0;
 }
 
 .header-container {
@@ -508,4 +507,52 @@ header {
 
 .footer-row2 a:hover {
   color:#bf955a;
+}
+
+/*----- Cart Confirmation -----*/
+.section-cart-confirmation {
+  position: relative;
+  width: 100%;
+  height: 90px;
+  background-color: blue;
+  z-index: 20;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.cart-confirmation {
+  display: flex;
+  width: 100%;
+}
+
+.confirmation-image-box {
+  position: relative;
+  width: 95%;
+  height: 100%;
+  overflow:hidden;
+}
+
+.confirmation-image {
+  position: relative;
+  width: 300;
+  top: -340;
+  left:50%;
+  transform: translateX(-30%);
+}
+
+.confirmation-close-box {
+  position: relative;
+  width: 30; 
+  height: 30;
+  margin-top: 30;
+  margin-right: 10;
+  overflow: hidden
+}
+
+.confirmation-close-image {
+  position: relative;
+  width: 260;
+  top: -1081;
+  left:2
 }
