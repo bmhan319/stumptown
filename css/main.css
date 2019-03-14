@@ -306,11 +306,12 @@ header {
 
 .products-cart {
   color:#bf955a;
+  cursor: pointer;
   transition: opacity .5s ease;
 }
 
-.text-hover-brown:hover > a > .products-name,
-.text-hover-brown:hover > a > .products-price{
+.text-hover-brown:hover > .products-name,
+.text-hover-brown:hover > .products-price{
   color: #bf955a;
 }
 
@@ -517,7 +518,7 @@ header {
   background-color: blue;
   z-index: 20;
   position: fixed;
-  top: 0;
+  top: -90;
   left: 0;
 }
 

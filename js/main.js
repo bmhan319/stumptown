@@ -17,6 +17,14 @@ function fixedNav() {
   }
 }
 
+// Cart Confirmation
+let cartCounter = 0;
+function cartConfirm() {
+  let numItems = document.querySelector("#counterNum")
+  
+  cartCounter = cartCounter + 1;
+  numItems.innerHTML = cartCounter
+}
 
 
 // Objects of Products
