@@ -1,9 +1,8 @@
 /* Colors */
-/* Tan = #d0c3ae;
+/* Tan = #d0c3ae; rgba(208,195,174,0.2);
    Brown = #bf955a;
    Black = #1f1815;
    Background = #f6f5f3;
-   Footer Text = rgba(208,195,174,0.2);
    
 
 /* Fonts */
@@ -371,13 +370,11 @@ header {
   background-color: #1f1815;
   width: 100%;
   color: white;
-  bordeR: 3px solid yellow;
 }
 
 .footer-container {
   width: 100%;
-  padding: 90 24 ;
-  border: 2px solid red;
+  padding: 90 24 75;
 }
 
 .footer-row1 {
@@ -395,7 +392,6 @@ header {
 
 .footer-row1-col2 {
   width: 50%;
-  border: 2px solid blue;
   text-align: center;
   
 }
@@ -422,6 +418,29 @@ header {
 }
 
 .footer-row2 {
+  margin-top: 10;
+  margin-bottom: 20;
   width: 100%;
   text-align: center;
+}
+
+.footer-row2 p {
+  margin: 0 0 10 0;
+  color: rgba(208,195,174,0.2);
+  font-family: Merriweather, serif;
+  font-size: .9em;
+  letter-spacing: .05em;
+}
+
+.footer-row2 a {
+  color: rgba(208,195,174,0.2);
+  font-family: Merriweather, serif;
+  font-size: .9em;
+  text-decoration: none;
+  letter-spacing: .1em;
+}
+
+.footer-row2 a:hover {
+  color:#bf955a;
+  
 }
