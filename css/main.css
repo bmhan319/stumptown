@@ -522,6 +522,23 @@ header {
   left: 0;
 }
 
+.confirm-animate {
+  animation-name: confirmation;
+  animation-duration: 3.5s;
+  animation-iteration-count: 1;
+  
+  -webkit-animation-name: confirmation;
+  -webkit-animation-duration: 3.5s;
+  -webkit-animation-iteration-count: 1;
+}
+
+@keyframes confirmation {
+  0% {top: -90;}
+ 25% {top: 0;}
+ 90% {top: 0;}
+100% {top: -90;}
+}
+
 .cart-confirmation {
   display: flex;
   width: 100%;

@@ -21,10 +21,18 @@ function fixedNav() {
 let cartCounter = 0;
 function cartConfirm() {
   let numItems = document.querySelector("#counterNum")
-  
-  cartCounter = cartCounter + 1;
-  numItems.innerHTML = cartCounter
+  let confirm = document.querySelector("#cart-confirm")
+  let cloneConfirm = confirm.cloneNode(true)
+    
+    confirm.classList.add("confirm-animate")
+    setTimeout(function(){
+      confirm.parentNode.replaceChild(cloneConfirm, confirm)
+      cartCounter = cartCounter + 1
+      numItems.innerHTML = cartCounter
+    }, 3000);
+    
 }
+
 
 
 // Objects of Products
