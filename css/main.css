@@ -524,17 +524,17 @@ header {
 
 .confirm-animate {
   animation-name: confirmation;
-  animation-duration: 3.5s;
+  animation-duration: 3s;
   animation-iteration-count: 1;
   
   -webkit-animation-name: confirmation;
-  -webkit-animation-duration: 3.5s;
+  -webkit-animation-duration: 3s;
   -webkit-animation-iteration-count: 1;
 }
 
 @keyframes confirmation {
   0% {top: -90;}
- 25% {top: 0;}
+ 10% {top: 0;}
  90% {top: 0;}
 100% {top: -90;}
 }
@@ -565,7 +565,8 @@ header {
   height: 30;
   margin-top: 30;
   margin-right: 10;
-  overflow: hidden
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .confirmation-close-image {
