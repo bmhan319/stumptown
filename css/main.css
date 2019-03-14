@@ -208,7 +208,6 @@ header {
   width: 100%;
   top:-9;
   margin-top:0;
-  bordeR: 1px solid green;
 }
 
 .section-products-row01,
@@ -320,7 +319,7 @@ header {
 }
 
 .links-container {
-  border: 1px solid red;
+
   width: 40%;
   margin: 0 auto 100;
   text-align: center;
@@ -365,3 +364,9 @@ header {
   opacity: .4;
 }
 
+
+/*----- Footer -----*/
+.section-footer {
+  background-color: #1f1815;
+  width: 100%;
+}
