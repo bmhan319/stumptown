@@ -371,6 +371,7 @@ header {
   background-color: #1f1815;
   width: 100%;
   color: white;
+  bordeR: 3px solid yellow;
 }
 
 .footer-container {
@@ -408,7 +409,7 @@ header {
 
 .link-box1,
 .link-box2 {
-  padding-bottom: 20;
+  padding-bottom: 18;
 }
 
 .footer-row1-col2-rowb {
@@ -418,4 +419,9 @@ header {
 .footer-row1-col2-rowb img {
   opacity: .2;
   width: 100%;
+}
+
+.footer-row2 {
+  width: 100%;
+  text-align: center;
 }
