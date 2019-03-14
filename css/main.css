@@ -24,6 +24,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: #f6f5f3;
+  overflow-y: hidden;
 }
 
 
@@ -574,4 +575,16 @@ header {
   width: 260;
   top: -1081;
   left:2
+}
+
+/*----- Nav Page -----*/
+
+.section-nav {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  background-color: #1f1815;
 }
