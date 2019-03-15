@@ -163,7 +163,6 @@ header {
 
 /*-----Main Middle Col-----*/
 .product-title {
-  color: #d14414;
   text-align: center;
   font-size: 4.1em;
   margin: 12 0 229;
@@ -186,7 +185,6 @@ header {
   text-align: center;
   font-family: Merriweather, serif;
   font-size: 9.7em;
-  color: #d14414
 }
 
 .product-price::before { 
@@ -220,4 +218,24 @@ header {
   font-family: Merriweather, serif;
   font-weight: 700;
   font-size: .85em;
+}
+
+.product-button {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 42;
+  text-align: center;
+  width: 250;
+  height: 70;
+  background-color: transparent;
+  border: 0;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: #f6f5f3;
+  font-weight: 400;
+  font-size: 1.25em;
+  cursor: pointer;
+  outline: none;
 }

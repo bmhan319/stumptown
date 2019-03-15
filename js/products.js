@@ -119,7 +119,7 @@ let products = [
    bgColor: "rgb(209, 68, 20)",
    description: "One of our favorite single origin offerings has returned just in time for the holidays. This year's lot of Huye Mountain is exceptional with sweetness, clarity, and balance evident in every cup.",
    category: "Whole Bean Coffee",
-   size: "12oz",
+   size: "12 oz",
    producer: "David Rubanzangabo & Tim Schilling, Huye Mountain",
    producerDescription:"The Huye Mountain washing station is comprised of approximately 500 smallholder farmers. David Rubanzangabo, Huye’s founder, rewards each of the producer groups who deliver to the washing station with different perks from our social premium.",
    region: "South Butare, Huye District, Rwanda",
@@ -127,6 +127,9 @@ let products = [
    sideImage1: "melon_honeysuckle.png",
    sideImage2: "huye.png",
    sideImage3: "",
+   bannerOn: "africa-on.png",
+   bannerOff: "africa-off.png",
+   textColor: "#d14414",
    recommendedItem1: "Ethiopia Duromina",
    recommendedItem2: "",
    recommendedItem3: "",
@@ -315,23 +318,35 @@ let products = [
    recommendedItem3Price: "$5"}
 ]
 
-console.log(products[2].name)
-console.log(products[2].id)
-console.log(products[2].sideImage1)
-console.log(products[2].price)
-
 
 window.onload = function(){
+  let product = products[5]
   document.querySelector("#counterNum").innerHTML = localStorage.getItem("cartCounter")
-  document.querySelector(".product-title").innerHTML = products[5].name
-  document.querySelector(".product-image").setAttribute("src", "img/" + products[5].image)
-  document.querySelector(".product-image").setAttribute("alt", products[5].size + " " + products[5].name)
-  document.querySelector(".product-price").innerHTML = products[5].price
-  document.querySelector(".product-description").innerHTML = products[5].description
-  document.querySelector(".product-type").innerHTML = products[5].category
-  document.querySelector(".product-size").innerHTML = products[5].size
-  document.querySelector(".producer").innerHTML = products[5].producer
-  document.querySelector(".prod-descrip").innerHTML = products[5].producerDescription
-  document.querySelector(".region").innerHTML = products[5].region
-  document.querySelector(".region-descrip").innerHTML = products[5].regionDescription
+  document.querySelector(".product-title").innerHTML = product.name
+  document.querySelector(".product-title").style.color = product.textColor
+  document.querySelector(".product-image").setAttribute("src", "img/" + product.image)
+  document.querySelector(".product-image").setAttribute("alt", product.size + " " + product.name)
+  document.querySelector(".product-price").innerHTML = product.price
+  document.querySelector(".product-price").style.color = product.textColor
+  document.querySelector(".product-description").innerHTML = product.description
+  document.querySelector(".product-type").innerHTML = product.category
+  document.querySelector(".product-size").innerHTML = product.size
+  document.querySelector(".producer").innerHTML = product.producer
+  document.querySelector(".prod-descrip").innerHTML = product.producerDescription
+  document.querySelector(".region").innerHTML = product.region
+  document.querySelector(".region-descrip").innerHTML = product.regionDescription
+  document.querySelector(".product-button").style.backgroundImage = "url(img/" + product.bannerOff + ")"
 }
+
+//Hover State of "Add to Cart" Button
+document.querySelector(".product-button").onmouseover = function() {
+  let product = products[5]
+  this.style.backgroundImage = "url(img/" + product.bannerOn + ")"
+  this.style.color = product.textColor
+  }
+
+document.querySelector(".product-button").onmouseout = function() {
+  let product = products[5]
+  this.style.backgroundImage = "url(img/" + product.bannerOff + ")"
+  this.style.color = "#f6f5f3"
+  }
