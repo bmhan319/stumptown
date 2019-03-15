@@ -13,7 +13,7 @@
     <link href="img/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
   </head>
   
-  <body>
+  <body id="bodyScroll">
     <div class="splash-page">
       <div class="splash-container">
         <div class="splash-logo-container">
@@ -30,10 +30,10 @@
       <div class="header-container">
         <div class="header-left">
           <div class="header-left-box">
-            <div class="header-image-box">
+            <div class="header-image-box" onclick="openNav()">
               <img src="img/icons-2x.png">
             </div>
-            <p class="header-text">Menu</p>
+            <p class="header-text" onclick="openNav()">Menu</p>
           </div>
         </div>
         
@@ -305,10 +305,10 @@
       </div>
     </footer>
     
-    <nav class="section-nav">
+    <nav id="nav" class="section-nav">
       <div class="nav-row1">
         <div class="nav-row1-a">
-          <div class="nav-close-box">
+          <div class="nav-close-box" onclick="openNav()">
             <div class="nav-close">
               <img class="nav-X-icon" src="img/icons-2x.png" alt="X icon"/>
             </div>
@@ -325,13 +325,13 @@
         </div>
         <div class="nav-row1-c"></div>
       </div>
-      <div class="nav-row2">
-        <a class="nav-link-a" href="#"><div class="nav-link">Shop</div></a>
-        <a class="nav-link-a" href="#"><div class="nav-link">Subscriptions</div></a>
-        <a class="nav-link-a" href="#"><div class="nav-link">Flower of Flowers</div></a>
-        <a class="nav-link-a" href="#"><div class="nav-link">Blog</div></a>
-        <a class="nav-link-a" href="#"><div class="nav-link">The Brew Guide</div></a>
-        <a class="nav-link-a" href="#"><div class="nav-link">Locations</div></a>
+      <div id="expand" class="nav-row2">
+        <a class="nav-link-a" href="#"><div class="nav-link nav-link1">Shop</div></a>
+        <a class="nav-link-a" href="#"><div class="nav-link nav-link2">Subscriptions</div></a>
+        <a class="nav-link-a" href="#"><div class="nav-link nav-link3">Flower of Flowers</div></a>
+        <a class="nav-link-a" href="#"><div class="nav-link nav-link4">Blog</div></a>
+        <a class="nav-link-a" href="#"><div class="nav-link nav-link5">The Brew Guide</div></a>
+        <a class="nav-link-a" href="#"><div class="nav-link nav-link6">Locations</div></a>
       </div>
       <div class="nav-row3">
         <div class="nav-row3-col"></div>
