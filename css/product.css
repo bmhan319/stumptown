@@ -3,6 +3,8 @@
    Brown = #bf955a;
    Black = #1f1815;
    Background = #f6f5f3;
+   Blue = #003f87;
+   Dark Brown = #512c1d;
 
    Cart Confirmation Colors
    Blue = rgb(0, 63, 135)
@@ -158,14 +160,13 @@ header {
   position: fixed;
   top: 100;
   right:0;
-  bordeR: 2px solid purple;
 }
 
 /*-----Main Middle Col-----*/
 .product-title {
   text-align: center;
   font-size: 4.1em;
-  margin: 12 0 229;
+  margin: 12 30 229;
 }
 
 .product-image-box {
@@ -204,6 +205,12 @@ header {
   line-height: 1.6;
 }
 
+.product-description a {
+  text-decoration: none;
+  font-family: Merriweather, serif;
+  color:#bf955a;
+}
+
 .product-type {
   text-align: center;
   margin: 30 0 0 ;
@@ -218,6 +225,15 @@ header {
   font-family: Merriweather, serif;
   font-weight: 700;
   font-size: .85em;
+}
+
+.product-subscription {
+  text-align: center;
+  margin: 8 0 0 ;
+  font-family: Merriweather, serif;
+  font-weight: 700;
+  font-size: .85em;
+  color: #bf955a;
 }
 
 .product-button {

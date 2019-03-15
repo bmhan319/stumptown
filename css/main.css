@@ -68,7 +68,7 @@ body {
   width: 330;
   margin: 75 auto 0;
   text-align: center;
-  background-image: url(../img/default-off-988f677664da4c280e0b3badb9d69cd0.png);
+  background-image: url(../img/default-off.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
@@ -77,7 +77,7 @@ body {
 }
 
 .splash-text:hover {
-  background-image: url(../img/default-bg-on-0dd8a3202340001ae06223060ecfdaec.png);
+  background-image: url(../img/default-on.png);
   color: #bf955a;
 }
 

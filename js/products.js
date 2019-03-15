@@ -1,11 +1,12 @@
 // Objects of Products
 
 let products = [
-  {id: 0000,
+  {id: 0,
    name: "Papa New Guinea Besser",
-   price: "$18",
+   price: "18",
    image: "coffee-besser.png",
    bgColor: "rgb(31, 24, 21)",
+   textColor: "#bf955a",
    description: "Papua New Guinea Besser is beautifully layered, with a perfect balance of sweetness and acidity. It’s a coffee that is complex, yet versatile and can be brewed any which way you prefer. Cheers.",
    category: "Whole Bean Coffee",
    size: "12oz",
@@ -16,6 +17,9 @@ let products = [
    sideImage1: "",
    sideImage2: "",
    sideImage3: "",
+   bannerOn: "default-on.png",
+   bannerOff: "default-off.png",
+   subscription: false,
    recommendedItem1: "Milton Filter #4",
    recommendedItem2: "Bee House Pour Over",
    recommendedItem3: "Miir Travel Tumbler",
@@ -24,10 +28,11 @@ let products = [
    recommendedItem3Price: "$28"},
   
   {id: 1,
-   name: "12oz Skate Team",
+   name: "Skate Team",
    price: "15",
    image: "skate-team.nl",
    bgColor: "rgb(0, 63, 135)",
+   textColor: "#003f87",
    description: "This Colombian coffee highlights a collaboration between Stumptown and a few choice skateboarders we admire. It’s as sweet and clean as a perfectly caught kickflip over grandma’s garden hose. One dollar from the sale of this bag will go to a selection of local non-profits, chosen by our skateboarding employees.",
    category: "Whole Bean",
    size: "12 ounces",
@@ -38,6 +43,9 @@ let products = [
    sideImage1: "",
    sideImage2: "",
    sideImage3: "",
+   bannerOn: "latin-america-on.png",
+   bannerOff: "latin-america-off.png",
+   subscription: false,
    recommendedItem1: "Artist Series Mug: Chet Childress",
    recommendedItem2: "Artist Series Tote: Chet Childress",
    recommendedItem3: "",
@@ -46,10 +54,11 @@ let products = [
    recommendedItem3Price: ""},
   
   {id: 2,
-   name: "12oz Skate Team Box Set",
+   name: "Skate Team Box Set",
    price: "29",
    image: "skate-team-box.nl",
    bgColor: "rgb(0, 63, 135)",
+   textColor: "#003f87",
    description: "This Colombian coffee highlights a collaboration between Stumptown and a few choice skateboarders we admire. The beans were produced by El Jordan growers and sourced by our partners (and fellow B Corp) Caravela Coffee. It’s as sweet and clean as a perfectly caught kickflip over grandma’s garden hose. Skate Team is sweet, balanced, and extremely versatile.",
    category: "Includes All Items Shown",
    size: "",
@@ -60,6 +69,9 @@ let products = [
    sideImage1: "",
    sideImage2: "",
    sideImage3: "",
+   bannerOn: "latin-america-on.png",
+   bannerOff: "latin-america-off.png",
+   subscription: false,
    recommendedItem1: "Skate Team Beanie",
    recommendedItem2: "",
    recommendedItem3: "",
@@ -68,10 +80,11 @@ let products = [
    recommendedItem3Price: ""},
   
   {id: 3,
-   name: "12oz Hair Bender",
+   name: "Hair Bender",
    price: "15",
    image: "coffee-hair-bender.nl",
    bgColor: "rgb(81, 44, 29)",
+   textColor: "#512c1d",
    description: "The sweet and balanced coffee that started it all. Hair Bender is our most popular coffee with good reason – it’s a day-maker however you brew it.",
    category: "Whole Bean",
    size: "12 ounces",
@@ -83,6 +96,9 @@ let products = [
    sideImage1: "",
    sideImage2: "",
    sideImage3: "",
+   bannerOn: "blends-on.png",
+   bannerOff: "blends-off.png",
+   subscription: true,
    recommendedItem1: "Hair Bender Woodblock Chocalte Bar",
    recommendedItem2: "",
    recommendedItem3: "",
@@ -91,10 +107,11 @@ let products = [
    recommendedItem3Price: ""},
   
   {id: 4,
-   name: "12oz Guatemala El Injerto Bourbon",
+   name: "Guatemala El Injerto Bourbon",
    price: "19",
    image: "coffee-guatemala-bourbon.nl",
    bgColor: "rgb(0, 63, 135)",
+   textColor: "#003f87",
    description: "We're always excited to welcome back the return of this stellar coffee. This year’s lot of El Injerto Bourbon has notes of orange blossom, honey, and fresh butter. What's not to love?",
    category: "Whole Bean",
    size: "12 oz",
@@ -105,6 +122,9 @@ let products = [
    sideImage1: "",
    sideImage2: "",
    sideImage3: "",
+   bannerOn: "latin-america-on.png",
+   bannerOff: "latin-america-off.png",
+   subscription: false,
    recommendedItem1: "Chemex Filters",
    recommendedItem2: "J Scale",
    recommendedItem3: "",
@@ -117,6 +137,7 @@ let products = [
    price: "17",
    image: "coffee-rwanda-huye.nl",
    bgColor: "rgb(209, 68, 20)",
+   textColor: "#d14414",
    description: "One of our favorite single origin offerings has returned just in time for the holidays. This year's lot of Huye Mountain is exceptional with sweetness, clarity, and balance evident in every cup.",
    category: "Whole Bean Coffee",
    size: "12 oz",
@@ -129,7 +150,7 @@ let products = [
    sideImage3: "",
    bannerOn: "africa-on.png",
    bannerOff: "africa-off.png",
-   textColor: "#d14414",
+   subscription: false,
    recommendedItem1: "Ethiopia Duromina",
    recommendedItem2: "",
    recommendedItem3: "",
@@ -142,9 +163,10 @@ let products = [
    price: "40",
    image: "east-fork-mug.nl",
    bgColor: "rgb(31, 24, 21)",
-   description: "We're delighted to welcome the beautiful ceramics of Alex Matisse and John Vigeland (aka East Fork) into the Stumptown family this holiday season. These mugs are made in the hills of North Carolina from locally-sourced materials, and their elegant design adds a touch of class to any morning. Drink up!",
-   category: "Whole Bean Coffee",
-   size: "12oz",
+   textColor: "#bf955a",
+   description: "We're delighted to welcome the beautiful ceramics of Alex Matisse and John Vigeland (aka <a href='https://eastfork.com'>East Fork</a>) into the Stumptown family this holiday season. These mugs are made in the hills of North Carolina from locally-sourced materials, and their elegant design adds a touch of class to any morning. Drink up!",
+   category: "12 oz Mug",
+   size: "",
    producer: "Sip in Style",
    producerDescription:"Not only handsome, this hand-glazed mug is sturdy and easy to clean -- all of the charm of handmade pottery with none of the hassle.",
    region: "",
@@ -155,6 +177,9 @@ let products = [
    sideImage1: "",
    sideImage2: "",
    sideImage3: "",
+   bannerOn: "default-on.png",
+   bannerOff: "default-off.png",
+   subscription: false,
    recommendedItem1: "House Blend",
    recommendedItem2: "Chemex Filters",
    recommendedItem3: "",
@@ -167,6 +192,7 @@ let products = [
    price: "15",
    image: "st-coffee-jar.nl",
    bgColor: "rgb(31, 24, 21)",
+   textColor: "#bf955a",
    description: "Forget the freezer. The Stumptown Coffee Jar is designed to store your coffee and look good doing it.",
    category: "Holds 12 oz coffee",
    size: "Glass with metal lid",
@@ -182,6 +208,9 @@ let products = [
    sideImage1: "",
    sideImage2: "",
    sideImage3: "",
+   bannerOn: "default-on.png",
+   bannerOff: "default-off.png",
+   subscription: false,
    recommendedItem1: "Camille Shu Mug",
    recommendedItem2: "Ethiopia Mordecofe",
    recommendedItem3: "Bonavite Thermal Carafe Electric Brewer",
@@ -194,6 +223,7 @@ let products = [
    price: "38",
    image: "african-trio.nl",
    bgColor: "rgb(209, 68, 20)",
+   textColor: "#d14414",
    description: "We don't like to play favorites, but let's just say, we take these home with us whenever we can.",
    category: "Three ½ lb bags",
    size: "Whole Bean Coffee",
@@ -206,6 +236,9 @@ let products = [
    sideImage1: "",
    sideImage2: "",
    sideImage3: "",
+   bannerOn: "africa-on.png",
+   bannerOff: "africa-off.png",
+   subscription: false,
    recommendedItem1: "Ethiopia Mordecofe",
    recommendedItem2: "Ethiopia Duromina",
    recommendedItem3: "Rwanda Huye Mountain",
@@ -218,9 +251,10 @@ let products = [
    price: "26",
    image: "miiR-camp-cup.nl",
    bgColor: "rgb(31, 24, 21)",
+   textColor: "#bf955a",
    description: "Our favorite Northwest smell sensation is hot coffee steam, campfire smoke, and the soft crush of fir needles underfoot. Wrap a mountain around you like a blanket, take a deep breath. Sip slowly.",
-   category: "Whole Bean Coffee",
-   size: "12 oz",
+   category: "",
+   size: "12 ounces",
    producer: "A modern take on the classic camp cup",
    producerDescription:"This sturdy, double-walled, stainless steel mug is built to keep your coffee hot and your hands cool. Includes press-on lid to prevent spills.",
    region: "",
@@ -232,6 +266,9 @@ let products = [
    sideImage1: "",
    sideImage2: "",
    sideImage3: "",
+   bannerOn: "default-on.png",
+   bannerOff: "default-off.png",
+   subscription: false,
    recommendedItem1: "HairBender",
    recommendedItem2: "Holler Mountain",
    recommendedItem3: "House Blend",
@@ -244,9 +281,10 @@ let products = [
    price: "30",
    image: "miiR-wide-mouth.nl",
    bgColor: "rgb(31, 24, 21)",
+   textColor: "#bf955a",
    description: "Let your morning coffee be a cloud underfoot, sturdy walls around you, last night's dreams still fresh on your mind. Watch the fog lift while you slowly sip.",
-   category: "16 ounces",
-   size: "12oz",
+   category: "",
+   size: "16 ounces",
    producer: "A modern take on the classic insulated bottle",
    producerDescription:"This sturdy, double-walled, stainless steel bottle is built to keep your coffee hot and your hands cool -- or vice versa. Includes screw-on lid to prevent spills.",
    region: "",
@@ -258,6 +296,9 @@ let products = [
    sideImage1: "",
    sideImage2: "",
    sideImage3: "",
+   bannerOn: "default-on.png",
+   bannerOff: "default-off.png",
+   subscription: false,
    recommendedItem1: "Stumptown Blend Trio",
    recommendedItem2: "Guatemala El Injerto Bourbon",
    recommendedItem3: "",
@@ -270,6 +311,7 @@ let products = [
    price: "28",
    image: "miiR-travel-tumbler.nl",
    bgColor: "rgb(31, 24, 21)",
+   textColor: "#bf955a",
    description: "The sunrise shimmers on your morning cup. It feels good to be awake. You hear the world come alive beside you, see the mist drift over the lake. Stretch your legs, breathe deep. It's golden all around.",
    category: "",
    size: "12 ounces",
@@ -284,6 +326,9 @@ let products = [
    sideImage1: "",
    sideImage2: "",
    sideImage3: "",
+   bannerOn: "default-on.png",
+   bannerOff: "default-off.png",
+   subscription: false,
    recommendedItem1: "Chemex (Wood Handle)",
    recommendedItem2: "Chemex Filters",
    recommendedItem3: "French Roast",
@@ -296,9 +341,10 @@ let products = [
    price: "18",
    image: "miiR-8oz-tumbler.nl",
    bgColor: "rgb(31, 24, 21)",
+   textColor: "#bf955a",
    description: "The heat of the sunrise wakes you up through the tent wall. Shake the sand out of your shoes, coax last night's campfire to life. Breathe in sagebrush, watch a tumbleweed roll by. Watch out for rattlesnakes while your water boils.",
    category: "",
-   size: "8 oz",
+   size: "8 ounces",
    producer: "Good to go",
    producerDescription:"This sturdy, double-walled, stainless steel tumbler is built to keep your coffee hot and your hands cool -- or vice versa. Includes press-on lid to prevent spills.",
    region: "",
@@ -310,6 +356,9 @@ let products = [
    sideImage1: "",
    sideImage2: "",
    sideImage3: "",
+   bannerOn: "default-on.png",
+   bannerOff: "default-off.png",
+   subscription: false,
    recommendedItem1: "Trapper Creek Decaf",
    recommendedItem2: "Bee House Pour Over",
    recommendedItem3: "Melitta Filters #4",
@@ -318,16 +367,16 @@ let products = [
    recommendedItem3Price: "$5"}
 ]
 
-
+let product = products[11]
 window.onload = function(){
-  let product = products[5]
+  
   document.querySelector("#counterNum").innerHTML = localStorage.getItem("cartCounter")
   document.querySelector(".product-title").innerHTML = product.name
-  document.querySelector(".product-title").style.color = product.textColor
+  document.querySelector(".product-title").style.color = product.bgColor
   document.querySelector(".product-image").setAttribute("src", "img/" + product.image)
   document.querySelector(".product-image").setAttribute("alt", product.size + " " + product.name)
   document.querySelector(".product-price").innerHTML = product.price
-  document.querySelector(".product-price").style.color = product.textColor
+  document.querySelector(".product-price").style.color = product.bgColor
   document.querySelector(".product-description").innerHTML = product.description
   document.querySelector(".product-type").innerHTML = product.category
   document.querySelector(".product-size").innerHTML = product.size
@@ -336,17 +385,21 @@ window.onload = function(){
   document.querySelector(".region").innerHTML = product.region
   document.querySelector(".region-descrip").innerHTML = product.regionDescription
   document.querySelector(".product-button").style.backgroundImage = "url(img/" + product.bannerOff + ")"
+  
+  if (product.subscription == false) {
+    document.querySelector(".product-subscription").style.display = "none"
+  } else {
+    document.querySelector(".product-subscription").innerHTML = "Available as a subscription"
+  }
 }
 
 //Hover State of "Add to Cart" Button
 document.querySelector(".product-button").onmouseover = function() {
-  let product = products[5]
   this.style.backgroundImage = "url(img/" + product.bannerOn + ")"
   this.style.color = product.textColor
   }
 
 document.querySelector(".product-button").onmouseout = function() {
-  let product = products[5]
   this.style.backgroundImage = "url(img/" + product.bannerOff + ")"
   this.style.color = "#f6f5f3"
   }
