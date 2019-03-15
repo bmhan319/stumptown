@@ -81,63 +81,6 @@ body {
   color: #bf955a;
 }
 
-/* creating banner manually
-.splash-text {
-  position: relative;
-  width: 55%;
-  margin: 80 auto 0;
-  height: 60px;
-  text-align: center;
-  background-color: #bf955a;
-  color: #f6f5f3;
-  padding: 20;
-}
-
-
-.splash-text:before {
-      content: "";
-      position: absolute;
-      right: -30px;
-      bottom: 0;
-      width: 0;
-      height: 0;
-      border-left: 30px solid transparent;
-      border-top: 30px solid #bf955a;
-      border-bottom: 30px solid  #bf955a;
-      border-right: 30px solid transparent;
-    }
-
-.splash-text:after {
-      content: "";
-      position: absolute;
-      left: -30;
-      bottom: 0;
-      width: 0;
-      height: 0;
-      border-left: 30px solid transparent;
-      border-top: 30px solid #bf955a;
-      border-bottom: 30px solid  #bf955a;
-      border-right: 30px solid transparent;
-    }
-
-
-.splash-text:hover {
-  background-color: #f6f5f3;
-  color: #bf955a;
-}
-
-.splash-text:hover::before {
-  border-top: 30px solid #f6f5f3;
-  border-bottom: 30px solid  #f6f5f3;
-}
-
-.splash-text:hover::after {
-  border-top: 30px solid #f6f5f3;
-  border-bottom: 30px solid  #f6f5f3;
-}
-
-*/
-
 /*----- Header Bar -----*/
 header {
   position: relative;
