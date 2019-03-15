@@ -149,7 +149,6 @@ header {
   top: 100;
   left: 50%;
   transform: translateX(-50%);
-  bordeR: 2px solid pink;
 }
 
 .right-col {
@@ -163,10 +162,6 @@ header {
 }
 
 /*-----Main Middle Col-----*/
-.product-title-box {
-   
-}
-
 .product-title {
   color: #d14414;
   text-align: center;
@@ -183,4 +178,46 @@ header {
   position: relative;
   left: 50%;
   transform: translate(-50%);
+}
+
+/*-----Main Right Col-----*/
+.product-price {
+  margin: 314 0 22 0;
+  text-align: center;
+  font-family: Merriweather, serif;
+  font-size: 9.7em;
+  color: #d14414
+}
+
+.product-price::before { 
+  content: "$";
+  font-size: .25em;
+  position: relative;
+  bottom:20;
+  padding-right: 20; 
+}
+
+.product-description {
+  padding: 0 13;
+  text-align: center;
+  font-family: Merriweather, serif;
+  font-weight: 400;
+  font-size: .9em;
+  line-height: 1.6;
+}
+
+.product-type {
+  text-align: center;
+  margin: 30 0 0 ;
+  font-family: Merriweather, serif;
+  font-weight: 700;
+  font-size: .85em;
+}
+
+.product-size {
+  text-align: center;
+  margin: 8 0 0 ;
+  font-family: Merriweather, serif;
+  font-weight: 700;
+  font-size: .85em;
 }

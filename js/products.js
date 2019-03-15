@@ -25,7 +25,7 @@ let products = [
   
   {id: 1,
    name: "12oz Skate Team",
-   price: "$15",
+   price: "15",
    image: "skate-team.nl",
    bgColor: "rgb(0, 63, 135)",
    description: "This Colombian coffee highlights a collaboration between Stumptown and a few choice skateboarders we admire. It’s as sweet and clean as a perfectly caught kickflip over grandma’s garden hose. One dollar from the sale of this bag will go to a selection of local non-profits, chosen by our skateboarding employees.",
@@ -47,7 +47,7 @@ let products = [
   
   {id: 2,
    name: "12oz Skate Team Box Set",
-   price: "$29",
+   price: "29",
    image: "skate-team-box.nl",
    bgColor: "rgb(0, 63, 135)",
    description: "This Colombian coffee highlights a collaboration between Stumptown and a few choice skateboarders we admire. The beans were produced by El Jordan growers and sourced by our partners (and fellow B Corp) Caravela Coffee. It’s as sweet and clean as a perfectly caught kickflip over grandma’s garden hose. Skate Team is sweet, balanced, and extremely versatile.",
@@ -69,7 +69,7 @@ let products = [
   
   {id: 3,
    name: "12oz Hair Bender",
-   price: "$15",
+   price: "15",
    image: "coffee-hair-bender.nl",
    bgColor: "rgb(81, 44, 29)",
    description: "The sweet and balanced coffee that started it all. Hair Bender is our most popular coffee with good reason – it’s a day-maker however you brew it.",
@@ -92,7 +92,7 @@ let products = [
   
   {id: 4,
    name: "12oz Guatemala El Injerto Bourbon",
-   price: "$19",
+   price: "19",
    image: "coffee-guatemala-bourbon.nl",
    bgColor: "rgb(0, 63, 135)",
    description: "We're always excited to welcome back the return of this stellar coffee. This year’s lot of El Injerto Bourbon has notes of orange blossom, honey, and fresh butter. What's not to love?",
@@ -114,7 +114,7 @@ let products = [
   
   {id: 5,
    name: "Rwanda Huye Mountain",
-   price: "$17",
+   price: "17",
    image: "coffee-rwanda-huye.nl",
    bgColor: "rgb(209, 68, 20)",
    description: "One of our favorite single origin offerings has returned just in time for the holidays. This year's lot of Huye Mountain is exceptional with sweetness, clarity, and balance evident in every cup.",
@@ -136,7 +136,7 @@ let products = [
   
   {id: 6,
    name: "East Fork Mug",
-   price: "$40",
+   price: "40",
    image: "east-fork-mug.nl",
    bgColor: "rgb(31, 24, 21)",
    description: "We're delighted to welcome the beautiful ceramics of Alex Matisse and John Vigeland (aka East Fork) into the Stumptown family this holiday season. These mugs are made in the hills of North Carolina from locally-sourced materials, and their elegant design adds a touch of class to any morning. Drink up!",
@@ -161,7 +161,7 @@ let products = [
   
   {id: 7,
    name: "Stumptown Coffee Jar",
-   price: "$15",
+   price: "15",
    image: "st-coffee-jar.nl",
    bgColor: "rgb(31, 24, 21)",
    description: "Forget the freezer. The Stumptown Coffee Jar is designed to store your coffee and look good doing it.",
@@ -188,7 +188,7 @@ let products = [
   
   {id: 8,
    name: "African Trio",
-   price: "$38",
+   price: "38",
    image: "african-trio.nl",
    bgColor: "rgb(209, 68, 20)",
    description: "We don't like to play favorites, but let's just say, we take these home with us whenever we can.",
@@ -212,7 +212,7 @@ let products = [
   
   {id: 9,
    name: "Miir Camp Cup",
-   price: "$26",
+   price: "26",
    image: "miiR-camp-cup.nl",
    bgColor: "rgb(31, 24, 21)",
    description: "Our favorite Northwest smell sensation is hot coffee steam, campfire smoke, and the soft crush of fir needles underfoot. Wrap a mountain around you like a blanket, take a deep breath. Sip slowly.",
@@ -238,7 +238,7 @@ let products = [
   
   {id: 10,
    name: "Miir Wide Moth Water Bottle",
-   price: "$30",
+   price: "30",
    image: "miiR-wide-mouth.nl",
    bgColor: "rgb(31, 24, 21)",
    description: "Let your morning coffee be a cloud underfoot, sturdy walls around you, last night's dreams still fresh on your mind. Watch the fog lift while you slowly sip.",
@@ -264,7 +264,7 @@ let products = [
   
   {id: 11,
    name: "Miir Travel Tumbler",
-   price: "$28",
+   price: "28",
    image: "miiR-travel-tumbler.nl",
    bgColor: "rgb(31, 24, 21)",
    description: "The sunrise shimmers on your morning cup. It feels good to be awake. You hear the world come alive beside you, see the mist drift over the lake. Stretch your legs, breathe deep. It's golden all around.",
@@ -290,7 +290,7 @@ let products = [
   
   {id: 12,
    name: "Miir 8oz Tumbler",
-   price: "$18",
+   price: "18",
    image: "miiR-8oz-tumbler.nl",
    bgColor: "rgb(31, 24, 21)",
    description: "The heat of the sunrise wakes you up through the tent wall. Shake the sand out of your shoes, coax last night's campfire to life. Breathe in sagebrush, watch a tumbleweed roll by. Watch out for rattlesnakes while your water boils.",
