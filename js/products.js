@@ -113,7 +113,7 @@ let products = [
    recommendedItem3Price: ""},
   
   {id: 5,
-   name: "12oz Rwanda Huye Mountain",
+   name: "Rwanda Huye Mountain",
    price: "$17",
    image: "coffee-rwanda-huye.nl",
    bgColor: "rgb(209, 68, 20)",
@@ -124,8 +124,8 @@ let products = [
    producerDescription:"The Huye Mountain washing station is comprised of approximately 500 smallholder farmers. David Rubanzangabo, Huye’s founder, rewards each of the producer groups who deliver to the washing station with different perks from our social premium.",
    region: "South Butare, Huye District, Rwanda",
    regionDescription: "The farmers who deliver coffee to Huye Mountain washing station cultivate their Bourbon variety coffee in the mountain highlands within the Huye, Maraba, Mbazi and Kigoma sectors of the Huye District, with producer groups that represent the farmers in each sector.",
-   sideImage1: "",
-   sideImage2: "",
+   sideImage1: "melon_honeysuckle.png",
+   sideImage2: "huye.png",
    sideImage3: "",
    recommendedItem1: "Ethiopia Duromina",
    recommendedItem2: "",
@@ -319,3 +319,18 @@ console.log(products[2].name)
 console.log(products[2].id)
 console.log(products[2].sideImage1)
 console.log(products[2].price)
+
+
+window.onload = function(){
+  document.querySelector(".product-title").innerHTML = products[5].name
+  document.querySelector(".product-image").setAttribute("src", "img/" + products[5].image)
+  document.querySelector(".product-image").setAttribute("alt", products[5].size + " " + products[5].name)
+  document.querySelector(".product-price").innerHTML = products[5].price
+  document.querySelector(".product-description").innerHTML = products[5].description
+  document.querySelector(".product-type").innerHTML = products[5].category
+  document.querySelector(".product-size").innerHTML = products[5].size
+  document.querySelector(".producer").innerHTML = products[5].producer
+  document.querySelector(".prod-descrip").innerHTML = products[5].producerDescription
+  document.querySelector(".region").innerHTML = products[5].region
+  document.querySelector(".region-descrip").innerHTML = products[5].regionDescription
+}

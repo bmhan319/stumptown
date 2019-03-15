@@ -1,4 +1,8 @@
 // Cart Confirmation
+window.onload = function(){
+  document.querySelector("#counterNum").innerHTML = cartCounter
+}
+
 let cartCounter = 0;
 function cartConfirm(index) {
   let numItems = document.querySelector("#counterNum")
