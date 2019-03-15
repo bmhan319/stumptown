@@ -29,10 +29,12 @@ body {
 
 /*----- Header Bar -----*/
 header {
-  position: relative;
+  position: fixed;
   width: 100%;
   top: 0;
   z-index: 10;
+  background-color: #f6f5f3;
+  opacity: .9;
 }
 
 .header-container {
@@ -117,4 +119,45 @@ header {
   font-size: 1em;
 }
 
-/* -----
+/* ----- Main Section -----*/
+.content {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  top: 100;
+  bordeR: 2px solid red;
+}
+
+.content-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  bordeR: 2px solid green;
+}
+
+.left-col {
+  width: 25%;
+  overflow: auto;
+  bordeR: 2px solid green;
+}
+
+.mid-col {
+  width: 50%;
+  height: 100%;
+  float: right;
+  position: fixed;
+  top: 100;
+  left: 50%;
+  transform: translateX(-50%);
+  bordeR: 2px solid pink;
+}
+
+.right-col {
+  width: 25%;
+  height: 100%;
+  float: right;
+  position: fixed;
+  top: 100;
+  right:0;
+  bordeR: 2px solid purple;
+}
