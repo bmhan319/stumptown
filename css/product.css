@@ -9,7 +9,8 @@
    Brown = rgb(81, 44, 29)
    Orange = rgb(209, 68, 20)
    Black = rgb(31, 24, 21)
-
+    
+   Red = #d14414;
 /* Fonts */
 /* Gotham Alt = Montserrat       font-family: 'Montserrat', sans-serif; */
 /* Sentinel Alt = Merriweather   font-family: 'Merriweather', serif; */
@@ -144,7 +145,6 @@ header {
 .mid-col {
   width: 50%;
   height: 100%;
-  float: right;
   position: fixed;
   top: 100;
   left: 50%;
@@ -160,4 +160,27 @@ header {
   top: 100;
   right:0;
   bordeR: 2px solid purple;
+}
+
+/*-----Main Middle Col-----*/
+.product-title-box {
+   
+}
+
+.product-title {
+  color: #d14414;
+  text-align: center;
+  font-size: 4.1em;
+  margin: 12 0 229;
+}
+
+.product-image-box {
+  width: 100%;
+}
+
+.product-image {
+  width: 87%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
 }

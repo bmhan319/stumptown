@@ -1,6 +1,6 @@
 // Cart Confirmation
 window.onload = function(){
-  document.querySelector("#counterNum").innerHTML = cartCounter
+  document.querySelector("#counterNum").innerHTML = localStorage.getItem("cartCounter")
 }
 
 let cartCounter = 0;
@@ -17,6 +17,7 @@ function cartConfirm(index) {
   setTimeout(function(){
     confirm.parentNode.replaceChild(cloneConfirm, confirm)      
   }, 3000);
+  localStorage.setItem("cartCounter", cartCounter);
 }
 
 //Close Cart Confirmation

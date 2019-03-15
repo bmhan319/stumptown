@@ -322,6 +322,7 @@ console.log(products[2].price)
 
 
 window.onload = function(){
+  document.querySelector("#counterNum").innerHTML = localStorage.getItem("cartCounter")
   document.querySelector(".product-title").innerHTML = products[5].name
   document.querySelector(".product-image").setAttribute("src", "img/" + products[5].image)
   document.querySelector(".product-image").setAttribute("alt", products[5].size + " " + products[5].name)
