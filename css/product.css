@@ -338,6 +338,7 @@ header {
   top: 100;
   width: 100%;
   border: 3px solid green;
+  z-index: 90;å
 }
 
 .recommend-row1 {
@@ -355,21 +356,67 @@ header {
   letter-spacing: 1;
 }
 
-.recommend-row2 {
+.recommend-row2{
   width: 100%;
   display: flex;
+}
+
+.recommend-row3 {
+  width: 100%;
+  display: flex;
+  margin-bottom: 100;
 }
 
 .recommend-row2-col1,
 .recommend-row2-col2,
 .recommend-row2-col3 {
+  display: flex;
   width: 33.3333334%;
-  border: 2px solid blue;
-  padding: 30 48
+
+  padding: 30 48;
+  align-items: center;
+  justify-content: center;
 }
 
-.products-image1,
-.products-image2,
-.products-image3 {
+.recommend-image1,
+.recommend-image3 {
   width: 100%;
+}
+
+.recommend-image2 {
+  width: 100%;
+}
+
+.recommend-row3-col1,
+.recommend-row3-col2,
+.recommend-row3-col3 {
+  width: 33.3333334%;
+  text-align: center;
+  
+}
+
+.text-hover-brown {
+  cursor: pointer;
+  color: #1f1815;
+}
+
+.recommend-name1,
+.recommend-name2,
+.recommend-name3 {
+  text-decoration: none;
+  font-size: .9em;
+  font-weight: 700; 
+  margin-bottom: 16;
+}
+
+.recommend-price1,
+.recommend-price2,
+.recommend-price3 {
+  text-decoration: none;
+  font-size: .9em;
+  font-weight: 400; 
+}
+
+.text-hover-brown:hover {
+  color:#bf955a;
 }

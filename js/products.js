@@ -2,7 +2,7 @@
 
 let products = [
   {id: 0,
-   name: "Papa New Guinea Besser",
+   name: "Papua New Guinea Besser",
    price: "18",
    image: "coffee-besser.png",
    bgColor: "rgb(31, 24, 21)",
@@ -455,18 +455,18 @@ window.onload = function(){
   document.querySelector(".map").setAttribute("alt", product.map )
   document.querySelector(".location-image").setAttribute("src", "img/" + product.sideImage3 )
   document.querySelector(".location-image").setAttribute("alt", product.sideImage3 )
-  document.querySelector(".products-name1").innerHTML = product.recommendedItem1
-  document.querySelector(".products-name2").innerHTML = product.recommendedItem2
-  document.querySelector(".products-name3").innerHTML = product.recommendedItem3
-  document.querySelector(".products-price1").innerHTML = product.recommendedItem1Price
-  document.querySelector(".products-price2").innerHTML = product.recommendedItem2Price
-  document.querySelector(".products-price3").innerHTML = product.recommendedItem3Price
-  document.querySelector(".products-image1").setAttribute("src", "img/" + product.recommendedImage1 )
-  document.querySelector(".products-image1").setAttribute("alt", product.recommendedItem1 )
-  document.querySelector(".products-image2").setAttribute("src", "img/" + product.recommendedImage2 )
-  document.querySelector(".products-image2").setAttribute("alt", product.recommendedItem2 )
-  document.querySelector(".products-image3").setAttribute("src", "img/" + product.recommendedImage3 )
-  document.querySelector(".products-image3").setAttribute("alt", product.recommendedItem3 )
+  document.querySelector(".recommend-name1").innerHTML = product.recommendedItem1
+  document.querySelector(".recommend-name2").innerHTML = product.recommendedItem2
+  document.querySelector(".recommend-name3").innerHTML = product.recommendedItem3
+  document.querySelector(".recommend-price1").innerHTML = product.recommendedItem1Price
+  document.querySelector(".recommend-price2").innerHTML = product.recommendedItem2Price
+  document.querySelector(".recommend-price3").innerHTML = product.recommendedItem3Price
+  document.querySelector(".recommend-image1").setAttribute("src", "img/" + product.recommendedImage1 )
+  document.querySelector(".recommend-image1").setAttribute("alt", product.recommendedItem1 )
+  document.querySelector(".recommend-image2").setAttribute("src", "img/" + product.recommendedImage2 )
+  document.querySelector(".recommend-image2").setAttribute("alt", product.recommendedItem2 )
+  document.querySelector(".recommend-image3").setAttribute("src", "img/" + product.recommendedImage3 )
+  document.querySelector(".recommend-image3").setAttribute("alt", product.recommendedItem3 )
   
   if (product.subscription == false) {
     document.querySelector(".product-subscription").style.display = "none"
