@@ -128,20 +128,17 @@ header {
   position: relative;
   z-index: 1;
   top: 100;
-  bordeR: 2px solid red;
+  border: 3px solid red;
 }
 
 .content-wrapper {
   position: relative;
   width: 100%;
   display: flex;
-  bordeR: 2px solid green;
 }
 
 .left-col {
   width: 25%;
-  overflow: auto;
-  bordeR: 2px solid green;
 }
 
 .mid-col {
@@ -254,4 +251,125 @@ header {
   font-size: 1.25em;
   cursor: pointer;
   outline: none;
+}
+
+/*-----Main Left Col-----*/
+.left-col-container {
+  position: relative;
+  width: 100%;
+  padding: 70vh 0 0 0;
+}
+
+.illustration1 {
+  position: relative;
+  width: 100%;
+  height: 230;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 24;
+}
+
+.producer {
+  margin-left: 24;
+  margin-right: 24;
+}
+
+.prod-descrip {
+  font-family: Merriweather, serif;
+  font-weight: 400;
+  font-size: .9em;
+  letter-spacing: 1;
+  line-height: 1.7;
+  margin-left: 24;
+  margin-right: 24;
+}
+
+.left-col-container a{
+  text-decoration: none;
+  text-align: center;
+  margin: 8 0 0 ;
+  font-weight: 700;
+  font-size: .85em;
+  color: #bf955a;
+  letter-spacing: 1;
+  margin-left: 24;
+  margin-right: 24;
+}
+
+.region {
+  margin-top: 86;
+  margin-left: 24;
+  margin-right: 24;
+}
+
+.region-descrip {
+  font-family: Merriweather, serif;
+  font-weight: 400;
+  font-size: .9em;
+  letter-spacing: 1;
+  line-height: 1.7;
+  margin-left: 24;
+  margin-right: 24;
+}
+
+.map-container {
+  width: 100%;
+  margin-top: 100;
+  margin-right: 24;
+}
+
+.map {
+  width: 100%;
+}
+
+.location-image-container {
+  width:100%;
+}
+
+.location-image {
+  width:200%;
+}
+
+/* -----Recommend Section ----- */
+
+.section-recommend {
+  position: relative;
+  top: 100;
+  width: 100%;
+  border: 3px solid green;
+}
+
+.recommend-row1 {
+  margin-top: 65;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.recommend-title {
+  margin: 14 0 5;
+  font-family: Merriweather, serif;
+  font-weight: 700;
+  font-size: 1.75em;
+  letter-spacing: 1;
+}
+
+.recommend-row2 {
+  width: 100%;
+  display: flex;
+}
+
+.recommend-row2-col1,
+.recommend-row2-col2,
+.recommend-row2-col3 {
+  width: 33.3333334%;
+  border: 2px solid blue;
+  padding: 30 48
+}
+
+.products-image1,
+.products-image2,
+.products-image3 {
+  width: 100%;
 }
