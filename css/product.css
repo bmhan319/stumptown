@@ -180,6 +180,10 @@ header {
 }
 
 /*-----Main Right Col-----*/
+.right-col-container {
+  
+}
+
 .product-price {
   margin: 314 0 22 0;
   text-align: center;

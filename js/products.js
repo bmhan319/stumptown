@@ -45,9 +45,9 @@ let products = [
    producerDescription:"Since we began partnering with Caravela, our import and export partner for this coffee, our two companies have been able to work with coffee growing communities in this remote region of Colombia to improve coffee quality, raise coffee prices paid to growers, reduce barriers to the more lucrative specialty coffee market, and in turn improve the profits and financial stability of individual farm owners. One of the major tenets of our Direct Trade coffee sourcing practices is to enter into long-term agreements with producers. This helps to ensure both a reliable supply of high-quality green coffee for us, as well as a reliable income for the producers.",
    region: "Tolima Department",
    regionDescription: "Nestled in the department of Tolima, beneath the shadows of the magnificent Nevado del Huila, Colombia’s highest volcano, the El Jordan group of farmers cultivate their coffee in a stunning valley with fertile, volcanic soil. The area surrounding Nevado del Huila is among the most fruitful in Colombia and provides an excellent microclimate for growing coffee.",
-   sideImage1: "",
+   sideImage1: "candiedapple_honey.png",
    sideImage2: "",
-   sideImage3: "",
+   sideImage3: "El_Jordan_Producer_Page_Image_007.jpg",
    bannerOn: "latin-america-on.png",
    bannerOff: "latin-america-off.png",
    subscription: false,
@@ -55,9 +55,9 @@ let products = [
    map: "SCR-CoffeePDP-Origin_Maps_latin.jpg",
    recommendedItem1: "Artist Series Mug: Chet Childress",
    recommendedItem2: "Artist Series Tote: Chet Childress",
-   recommendedItem3: "",
-   recommendedImage1:"",
-   recommendedImage2:"",
+   recommendedItem3: "none",
+   recommendedImage1:"chet_mug.png",
+   recommendedImage2:"chet_tote.png",
    recommendedImage3:"",
    recommendedItem1Price: "$12",
    recommendedItem2Price: "$15",
@@ -353,7 +353,7 @@ let products = [
    map: "",
    recommendedItem1: "Stumptown Blend Trio",
    recommendedItem2: "Guatemala El Injerto Bourbon",
-   recommendedItem3: "",
+   recommendedItem3: "none",
    recommendedImage1:"",
    recommendedImage2:"",
    recommendedImage3:"",
@@ -432,7 +432,7 @@ let products = [
    recommendedItem3Price: "$5"}
 ]
 
-let product = products[0]
+let product = products[1]
 window.onload = function(){
   
   document.querySelector("#counterNum").innerHTML = localStorage.getItem("cartCounter")
@@ -472,6 +472,16 @@ window.onload = function(){
     document.querySelector(".product-subscription").style.display = "none"
   } else {
     document.querySelector(".product-subscription").innerHTML = "Available as a subscription"
+  }
+  
+  if (product.recommendedItem3 == "none") {
+    document.querySelector(".recommend-row2-col1").style.width = "50%"
+    document.querySelector(".recommend-row2-col2").style.width = "50%"
+    document.querySelector(".recommend-row2-col3").style.display = "none"
+    document.querySelector(".recommend-row3-col1").style.width = "50%"
+    document.querySelector(".recommend-row3-col2").style.width = "50%"
+    document.querySelector(".recommend-row3-col3").style.display = "none"
+    
   }
 }
 
