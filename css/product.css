@@ -128,7 +128,6 @@ header {
   position: relative;
   z-index: 1;
   top: 100;
-  border: 3px solid red;
 }
 
 .content-wrapper {
@@ -139,13 +138,15 @@ header {
 
 .left-col {
   width: 25%;
+  margin-bottom:200px;
 }
 
 .mid-col {
   width: 50%;
   height: 100%;
-  position: fixed;
-  top: 100;
+  position: sticky;
+  position: -webkit-sticky;
+  top:100;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -154,7 +155,8 @@ header {
   width: 25%;
   height: 100%;
   float: right;
-  position: fixed;
+  position: sticky;
+  position: -webkit-sticky;
   top: 100;
   right:0;
 }
@@ -335,9 +337,8 @@ header {
 
 .section-recommend {
   position: relative;
-  top: 100;
+  top: -100;
   width: 100%;
-  border: 3px solid green;
   z-index: 90;å
 }
 
