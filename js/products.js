@@ -76,18 +76,18 @@ let products = [
    producerDescription:"In addition to twelve ounces of fine coffee beans from our partners at El Jordan, in a custom bag designed by skate team member Chet Childress, this limited edition box set features some exclusive treats for yourself and all the beloved skateboards in your life. A special sticker pack! Pinback buttons for your backpack or hoodie! A cassette copy of the soundtrack to our first-ever skate movie, Breaking the Crust! And best of all -- a full-color skate edition of our in-house zine, Bloom, including interviews with skate legends Elissa Steamer, Nick Boserio, and Silas Baxter-Neal, and more features celebrating our love of skateboarding.",
    region: "",
    regionDescription: "",
-   sideImage1: "",
+   sideImage1: "Eyeball.png",
    sideImage2: "",
-   sideImage3: "",
+   sideImage3: "none",
    bannerOn: "latin-america-on.png",
    bannerOff: "latin-america-off.png",
    subscription: false,
    readMore: false,
-   map: "",
+   map: "none",
    recommendedItem1: "Skate Team Beanie",
-   recommendedItem2: "",
-   recommendedItem3: "",
-   recommendedImage1:"",
+   recommendedItem2: "none",
+   recommendedItem3: "none",
+   recommendedImage1:"yellow-beanie.png",
    recommendedImage2:"",
    recommendedImage3:"",
    recommendedItem1Price: "$15",
@@ -432,7 +432,7 @@ let products = [
    recommendedItem3Price: "$5"}
 ]
 
-let product = products[1]
+let product = products[2]
 window.onload = function(){
   
   document.querySelector("#counterNum").innerHTML = localStorage.getItem("cartCounter")
@@ -481,8 +481,31 @@ window.onload = function(){
     document.querySelector(".recommend-row3-col1").style.width = "50%"
     document.querySelector(".recommend-row3-col2").style.width = "50%"
     document.querySelector(".recommend-row3-col3").style.display = "none"
+  } 
+  
+  if (product.recommendedItem2 == "none" && product.recommendedItem3 == "none") {
+    document.querySelector(".recommend-row2-col1").style.width = "100%"
+    document.querySelector(".recommend-row2-col2").style.display = "none"
+    document.querySelector(".recommend-row2-col3").style.display = "none"
+    document.querySelector(".recommend-row3-col1").style.width = "100%"
+    document.querySelector(".recommend-row3-col2").style.display = "none"
+    document.querySelector(".recommend-row3-col3").style.display = "none"
+  }
+  
+  if (product.readMore == false) {
+    document.querySelector(".read-more").style.display = "none"
     
   }
+  
+  if (product.map == "none") {
+    document.querySelector(".map-container").style.display = "none"
+  }
+  
+  if (product.sideImage3 == "none") {
+    document.querySelector(".location-image").style.display = "none"
+  }
+  
+  
 }
 
 //Hover State of "Add to Cart" Button
