@@ -14,13 +14,13 @@ let products = [
    producerDescription:"Bebes Sero purchased his coffee plantation and wet mill 12 years ago, however it was originally planted in the 1960’s. Stumptown’s relationship with Bebes Sero is a fresh one, and we’re super excited to offer his coffee for the third year in a row.",
    region: "Region: Obura-Wonenara District",
    regionDescription: "Bebes' washing station is settled in the mountains of the Eastern Highlands, often shaded with a dense cloud cover. We were fortunate to visit Bebes in 2016. On our visit we were struck by the beautiful array of flowers that surround his coffee varieties throughout his farm.",
-   sideImage1: "cranberry_fig.png",
    listItem1: "none",
    listItem2: "none",
    listItem3: "none",
    listItem4: "none",
    listItem5: "none",
-   sideImage2: "",
+   sideImage1: "cranberry_fig.png",
+   sideImage2: "none",
    sideImage3: "Papua_New_Guinea_Besser.jpg",
    bannerOn: "default-on.png",
    bannerOff: "default-off.png",
@@ -56,7 +56,7 @@ let products = [
    listItem4: "none",
    listItem5: "none",
    sideImage1: "candiedapple_honey.png",
-   sideImage2: "",
+   sideImage2: "none",
    sideImage3: "El_Jordan_Producer_Page_Image_007.jpg",
    bannerOn: "latin-america-on.png",
    bannerOff: "latin-america-off.png",
@@ -92,7 +92,7 @@ let products = [
    listItem4: "none",
    listItem5: "none",
    sideImage1: "Eyeball.png",
-   sideImage2: "",
+   sideImage2: "none",
    sideImage3: "none",
    bannerOn: "latin-america-on.png",
    bannerOff: "latin-america-off.png",
@@ -129,7 +129,7 @@ let products = [
    listItem4: "none",
    listItem5: "none",
    sideImage1: "citrus_dchoc.png",
-   sideImage2: "",
+   sideImage2: "none",
    sideImage3: "Shop-Coffee-PDP-Essence-Hair.jpg",
    bannerOn: "blends-on.png",
    bannerOff: "blends-off.png",
@@ -471,7 +471,7 @@ let products = [
    recommendedItem3Price: "$5"}
 ]
 
-let product = products[1]
+let product = products[2]
 window.onload = function(){
   
   document.querySelector("#counterNum").innerHTML = localStorage.getItem("cartCounter")
