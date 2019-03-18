@@ -15,6 +15,11 @@ let products = [
    region: "Region: Obura-Wonenara District",
    regionDescription: "Bebes' washing station is settled in the mountains of the Eastern Highlands, often shaded with a dense cloud cover. We were fortunate to visit Bebes in 2016. On our visit we were struck by the beautiful array of flowers that surround his coffee varieties throughout his farm.",
    sideImage1: "cranberry_fig.png",
+   listItem1: "none",
+   listItem2: "none",
+   listItem3: "none",
+   listItem4: "none",
+   listItem5: "none",
    sideImage2: "",
    sideImage3: "Papua_New_Guinea_Besser.jpg",
    bannerOn: "default-on.png",
@@ -45,6 +50,11 @@ let products = [
    producerDescription:"Since we began partnering with Caravela, our import and export partner for this coffee, our two companies have been able to work with coffee growing communities in this remote region of Colombia to improve coffee quality, raise coffee prices paid to growers, reduce barriers to the more lucrative specialty coffee market, and in turn improve the profits and financial stability of individual farm owners. One of the major tenets of our Direct Trade coffee sourcing practices is to enter into long-term agreements with producers. This helps to ensure both a reliable supply of high-quality green coffee for us, as well as a reliable income for the producers.",
    region: "Tolima Department",
    regionDescription: "Nestled in the department of Tolima, beneath the shadows of the magnificent Nevado del Huila, Colombia’s highest volcano, the El Jordan group of farmers cultivate their coffee in a stunning valley with fertile, volcanic soil. The area surrounding Nevado del Huila is among the most fruitful in Colombia and provides an excellent microclimate for growing coffee.",
+   listItem1: "none",
+   listItem2: "none",
+   listItem3: "none",
+   listItem4: "none",
+   listItem5: "none",
    sideImage1: "candiedapple_honey.png",
    sideImage2: "",
    sideImage3: "El_Jordan_Producer_Page_Image_007.jpg",
@@ -76,6 +86,11 @@ let products = [
    producerDescription:"In addition to twelve ounces of fine coffee beans from our partners at El Jordan, in a custom bag designed by skate team member Chet Childress, this limited edition box set features some exclusive treats for yourself and all the beloved skateboards in your life. A special sticker pack! Pinback buttons for your backpack or hoodie! A cassette copy of the soundtrack to our first-ever skate movie, Breaking the Crust! And best of all -- a full-color skate edition of our in-house zine, Bloom, including interviews with skate legends Elissa Steamer, Nick Boserio, and Silas Baxter-Neal, and more features celebrating our love of skateboarding.",
    region: "",
    regionDescription: "",
+   listItem1: "none",
+   listItem2: "none",
+   listItem3: "none",
+   listItem4: "none",
+   listItem5: "none",
    sideImage1: "Eyeball.png",
    sideImage2: "",
    sideImage3: "none",
@@ -108,18 +123,23 @@ let products = [
    producerDescription:"Named for a long-shuttered beauty parlor that housed the first Stumptown location, Hair Bender was the very first blend that Stumptown-founder Duane Sorenson introduced to the world. In fact, we still have the Hair Bender sign in our headquarters, watching over us as we roast each batch.  It’s our most popular coffee with good reason. A cup of Hair Bender has clarity and complexity; Indonesia’s rich textures are balanced by the classic flavors of Latin America and Africa. We use it at our cafes for espresso, but it’s great for all brew methods.",
    region: "",
    regionDescription: "",
-   sideImage1: "",
+   listItem1: "none",
+   listItem2: "none",
+   listItem3: "none",
+   listItem4: "none",
+   listItem5: "none",
+   sideImage1: "citrus_dchoc.png",
    sideImage2: "",
-   sideImage3: "",
+   sideImage3: "Shop-Coffee-PDP-Essence-Hair.jpg",
    bannerOn: "blends-on.png",
    bannerOff: "blends-off.png",
    subscription: true,
    readMore: false,
    map: "Shop-Coffee-PDP-Map-Blends.jpg",
    recommendedItem1: "Hair Bender Woodblock Chocalte Bar",
-   recommendedItem2: "",
-   recommendedItem3: "",
-   recommendedImage1:"",
+   recommendedItem2: "none",
+   recommendedItem3: "none",
+   recommendedImage1:"woodblock-choc.png",
    recommendedImage2:"",
    recommendedImage3:"",
    recommendedItem1Price: "$4",
@@ -135,13 +155,18 @@ let products = [
    description: "We're always excited to welcome back the return of this stellar coffee. This year’s lot of El Injerto Bourbon has notes of orange blossom, honey, and fresh butter. What's not to love?",
    category: "Whole Bean",
    size: "12 oz",
-   producer: "Arturo Aguirre Sr. and Arturo Aguirre Jr.",
+   producer: "Producer: Arturo Aguirre Sr. and Arturo Aguirre Jr.",
    producerDescription:"Father and son team Arturo Aguirre Sr. and Arturo Aguirre Jr. own and operate Finca El Injerto with dedication to sustaining a farming community and a meticulous approach to processing some of the highest quality coffee in Guatemala. The relationship between Stumptown and El Injerto is one of our strongest and longest. We’re proud to offer this exceptional coffee for over a decade.",
-   region: "Huehuetenango",
+   region: "Region: Huehuetenango",
    regionDescription: "Tucked away in the mountains of Huehuetenango not far from Guatemala’s border with Chiapas, this fourth-generation coffee farm is impressive in many ways. Since 1905, Finca El Injerto has produced exceptional coffee with a commitment to respecting and preserving the natural resources of the Huehuetenango region. More than half of the land at Injerto is a protected forest. Natural spring water is used throughout Injerto’s operations.",
-   sideImage1: "",
-   sideImage2: "",
-   sideImage3: "",
+   listItem1: "none",
+   listItem2: "none",
+   listItem3: "none",
+   listItem4: "none",
+   listItem5: "none",
+   sideImage1: "honey_orange.png",
+   sideImage2: "injertojr_sr.png",
+   sideImage3: "Shop-Coffee-PDP-Latin-Guatemala_FincaElInjerto_Pacamara-Essence.jpg",
    bannerOn: "latin-america-on.png",
    bannerOff: "latin-america-off.png",
    subscription: false,
@@ -149,9 +174,9 @@ let products = [
    map: "SCR-CoffeePDP-Origin_Maps_latin.jpg",
    recommendedItem1: "Chemex Filters",
    recommendedItem2: "J Scale",
-   recommendedItem3: "",
-   recommendedImage1:"",
-   recommendedImage2:"",
+   recommendedItem3: "none",
+   recommendedImage1:"chemex-filter.png",
+   recommendedImage2:"jscale.png",
    recommendedImage3:"",
    recommendedItem1Price: "$9",
    recommendedItem2Price: "$40",
@@ -166,22 +191,27 @@ let products = [
    description: "One of our favorite single origin offerings has returned just in time for the holidays. This year's lot of Huye Mountain is exceptional with sweetness, clarity, and balance evident in every cup.",
    category: "Whole Bean Coffee",
    size: "12 oz",
-   producer: "David Rubanzangabo & Tim Schilling, Huye Mountain",
+   producer: "Producer: David Rubanzangabo & Tim Schilling, Huye Mountain",
    producerDescription:"The Huye Mountain washing station is comprised of approximately 500 smallholder farmers. David Rubanzangabo, Huye’s founder, rewards each of the producer groups who deliver to the washing station with different perks from our social premium.",
-   region: "South Butare, Huye District, Rwanda",
+   region: "Region: South Butare, Huye District, Rwanda",
    regionDescription: "The farmers who deliver coffee to Huye Mountain washing station cultivate their Bourbon variety coffee in the mountain highlands within the Huye, Maraba, Mbazi and Kigoma sectors of the Huye District, with producer groups that represent the farmers in each sector.",
+   listItem1: "none",
+   listItem2: "none",
+   listItem3: "none",
+   listItem4: "none",
+   listItem5: "none",
    sideImage1: "melon_honeysuckle.png",
    sideImage2: "huye.png",
-   sideImage3: "",
+   sideImage3: "Shop-Coffee-PDP-African-Rwanda_HuyeMountain-Essence.jpg",
    bannerOn: "africa-on.png",
    bannerOff: "africa-off.png",
    subscription: false,
    readMore: true,
    map: "SCR-CoffeePDP-Origin_Maps_african.jpg",
    recommendedItem1: "Ethiopia Duromina",
-   recommendedItem2: "",
-   recommendedItem3: "",
-   recommendedImage1:"",
+   recommendedItem2: "none",
+   recommendedItem3: "none",
+   recommendedImage1:"ethiopia-duromina.png",
    recommendedImage2:"",
    recommendedImage3:"",
    recommendedItem1Price: "$19",
@@ -204,19 +234,21 @@ let products = [
    listItem1: "Made in the North Carolina mountains from regional materials",
    listItem2: "Microwave and dishwasher safe",
    listItem3: "Glazed by hand; slight variation and movement in color and glaze application can be expected and embraced",
-   sideImage1: "",
-   sideImage2: "",
-   sideImage3: "",
+   listItem4: "none",
+   listItem5: "none",
+   sideImage1: "sip-in-style.jpg",
+   sideImage2: "none",
+   sideImage3: "none",
    bannerOn: "default-on.png",
    bannerOff: "default-off.png",
    subscription: false,
    readMore: false,
-   map: "",
+   map: "none",
    recommendedItem1: "House Blend",
    recommendedItem2: "Chemex Filters",
-   recommendedItem3: "",
-   recommendedImage1:"",
-   recommendedImage2:"",
+   recommendedItem3: "none",
+   recommendedImage1:"coffee-house.png",
+   recommendedImage2:"chemex-filter.png",
    recommendedImage3:"",
    recommendedItem1Price: "$15",
    recommendedItem2Price: "$9",
@@ -273,6 +305,9 @@ let products = [
    regionDescription: "We get asked lots of questions about how best to navigate our coffee menu and flavor notes. So here you have it!",
    listItem1: "Includes Ethiopia Duromina, Ethiopia Mordecofe, and Rwanda Huye Mountain",
    listItem2: "Gift box included",
+   listItem3: "none",
+   listItem4: "none",
+   listItem5: "none",
    sideImage1: "",
    sideImage2: "",
    sideImage3: "",
@@ -308,6 +343,7 @@ let products = [
    listItem2: "Double wall vacuum insulated",
    listItem3: "Medical grade stainless steel",
    listItem4: "BPA free",
+   listItem5: "none",
    sideImage1: "",
    sideImage2: "",
    sideImage3: "",
@@ -343,6 +379,7 @@ let products = [
    listItem2: "Double wall vacuum insulated",
    listItem3: "Medical grade stainless steel",
    listItem4: "BPA free",
+   listItem5: "none",
    sideImage1: "",
    sideImage2: "",
    sideImage3: "",
@@ -378,6 +415,7 @@ let products = [
    listItem2: "Double wall vacuum insulated",
    listItem3: "Medical grade stainless steel",
    listItem4: "BPA free",
+   listItem5: "none",
    sideImage1: "",
    sideImage2: "",
    sideImage3: "",
@@ -413,6 +451,7 @@ let products = [
    listItem2: "Double wall vacuum insulated",
    listItem3: "Medical grade stainless steel",
    listItem4: "BPA free",
+   listItem5: "none",
    sideImage1: "",
    sideImage2: "",
    sideImage3: "",
@@ -432,7 +471,7 @@ let products = [
    recommendedItem3Price: "$5"}
 ]
 
-let product = products[2]
+let product = products[6]
 window.onload = function(){
   
   document.querySelector("#counterNum").innerHTML = localStorage.getItem("cartCounter")
@@ -451,6 +490,7 @@ window.onload = function(){
   document.querySelector(".region-descrip").innerHTML = product.regionDescription
   document.querySelector(".product-button").style.backgroundImage = "url(img/" + product.bannerOff + ")"
   document.querySelector(".illustration1").style.backgroundImage = "url(img/" + product.sideImage1 + ")"
+  document.querySelector(".illustration2").style.backgroundImage = "url(img/" + product.sideImage2 + ")"
   document.querySelector(".map").setAttribute("src", "img/" + product.map )
   document.querySelector(".map").setAttribute("alt", product.map )
   document.querySelector(".location-image").setAttribute("src", "img/" + product.sideImage3 )
@@ -505,6 +545,23 @@ window.onload = function(){
     document.querySelector(".location-image").style.display = "none"
   }
   
+  if (product.listItem1 !== "none" ) {
+    document.querySelector(".prod-list").style.display = "block"
+    
+    if (product.listItem2 == "none") {
+      document.querySelector(".prod-list").innerHTML = "<li>" + product.listItem1 + "</li>"
+    } else if (product.listItem3 == "none") {
+      document.querySelector(".prod-list").innerHTML = "<li>" + product.listItem1 + "</li><li>" + product.listItem2 + "</li>"
+    } else if (product.listItem4 == "none") {
+      document.querySelector(".prod-list").innerHTML = "<li>" + product.listItem1 + "</li><li>" + product.listItem2 + "</li><li>" + product.listItem3 + "</li>"      
+    } else if (product.listItem5 == "none") {
+      document.querySelector(".prod-list").innerHTML = "<li>" + product.listItem1 + "</li><li>" + product.listItem2 + "</li><li>" + product.listItem3 + "</li><li>" + product.listItem4 + "</li>"
+    } else {
+      document.querySelector(".prod-list").innerHTML = "<li>" + product.listItem1 + "</li><li>" + product.listItem2 + "</li><li>" + product.listItem3 + "</li><li>" + product.listItem4 + "</li><li>" + product.listItem5 + "</li>"
+    } 
+  } else {
+    document.querySelector(".prod-list").style.display = "none"
+  }
   
 }
 
