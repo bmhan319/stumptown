@@ -369,7 +369,7 @@ header {
   position: relative;
   top: 100;
   width: 100%;
-  z-index: -20;
+  z-index: 00;
 }
 
 .recommend-row1 {
