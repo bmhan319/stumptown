@@ -24,7 +24,16 @@ body {
   padding: 0;
   margin: 0;
   background-color: #f6f5f3;
-  overflow-y: visible; 
+  overflow-y: visible;
+  transition: opacity 1s linear;
+}
+
+.bodyNoView {
+  opacity: 0;
+}
+
+.bodyView {
+  opacity: 1;
 }
 
 /*----- Splash Page -----*/

@@ -28,7 +28,18 @@ body {
   margin: 0;
   background-color: #f6f5f3;
   overflow-y: visible; 
+  transition: opacity 1s linear .5s;
 }
+
+.bodyNoView {
+  opacity: 0;
+  
+}
+
+.bodyView {
+  opacity: 1;
+}
+
 
 /*----- Header Bar -----*/
 header {

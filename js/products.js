@@ -476,6 +476,8 @@ let product = products;
 window.onload = function(){
   let y = window.innerHeight - 350
   product = product[localStorage.getItem("productIndex")]
+  document.querySelector("#bodyScroll").classList.add("bodyView")
+  document.querySelector("#bodyScroll").classList.remove("bodyNoView")
   
   document.querySelector(".left-col-container").style.paddingTop = y
   document.querySelector(".head-title").innerHTML = product.name + "- Stumptown Coffee"
