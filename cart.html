@@ -69,16 +69,16 @@
           </tr>
           <tr class=table-row>
             <td class="item-image"><img src="img/skate-team-box.nl" /></td>
-            <td class="item-name">12oz Skate Team Box Set</td>
-            <td class="item-price">$29</td>
+            <td class="item-name"></td>
+            <td class="item-price"></td>
             <td class="item-quantity">
               <div class="item-quantity-container">
                 <div class="item-quantity-box">
-                  <div class="item-down-box">
+                  <div class="item-down-box" onclick="numItem(-1)">
                     <img class="item-down-image" src="img/icons-2x.png" />  
                   </div>
                   <p class="quantity"></p>
-                  <div class="item-up-box">
+                  <div class="item-up-box" onclick="numItem(1)">
                     <img class="item-up-image" src="img/icons-2x.png" />  
                   </div>
                 </div>
@@ -87,36 +87,9 @@
                 </div>
               </div>
             </td>
-            <td class="item-subtotal">$29</td>
+            <td class="item-subtotal"></td>
             <td class="item-remove">
-              <div class="item-remove-box">
-                <img class="item-remove-image" src="img/icons-2x.png" />
-              </div>
-            </td>
-          </tr>
-          <tr class="table-row">
-            <td class="item-image"><img src="img/skate-team.nl" /></td>
-            <td class="item-name">12oz Skate Team</td>
-            <td class="item-price">$15</td>
-            <td class="item-quantity">
-              <div class="item-quantity-container">
-                <div class="item-quantity-box">
-                  <div class="item-down-box">
-                    <img class="item-down-image" src="img/icons-2x.png" />  
-                  </div>
-                  <p class="quantity">23</p>
-                  <div class="item-up-box">
-                    <img class="item-up-image" src="img/icons-2x.png" />  
-                  </div>
-                </div>
-                <div class="item-update-container">
-                  <button class="item-update-button" type="button">Update</button>
-                </div>
-              </div>
-            </td>
-            <td class="item-subtotal">$15</td>
-            <td class="item-remove">
-              <div class="item-remove-box">
+              <div class="item-remove-box" onclick="clearItem()">
                 <img class="item-remove-image" src="img/icons-2x.png" />
               </div>
             </td>
