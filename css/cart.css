@@ -228,7 +228,7 @@ th{
 .item-remove {
   width: 4%;
   overflow: hidden;
-  text-align: center;
+  padding: 0 0 0 20;
 }
 
 .item-remove-box {
@@ -236,12 +236,17 @@ th{
   height: 25px;
   overflow: hidden;
   cursor: pointer;
+  transition: opacity .2s linear;
+}
+
+.item-remove-box:hover {
+  opacity: .4;
 }
 
 .item-remove-image {
   position: relative;
-  top: -2435;
-  left:-13
+  top: -2436;
+  left:-14;
 }
 
 /*----- 2nd Table -----*/
