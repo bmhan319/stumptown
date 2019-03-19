@@ -48,58 +48,66 @@
       </div>
     </header>
     
-    <main class="emptyCart">
+    <main id="emptyCart" class="emptyCart">
       <div class="emptyCart-title"><h1>Cart</h1></div>
       <div class="emptyCart-text1"><p>There is nothing to see here. Yet.</p></div>
       <div class="emptyCart-shopNow"><a href="#">Shop Now</a></div>
       <div class="emptyCart-image1"><img src="img/skeleton.png" alt="skeleton sitting against tree" /></div>
     </main>
     
-    
-    
-    
-    
-    
-    <!--
-    <nav id="nav" class="section-nav">
-      <div class="nav-row1">
-        <div class="nav-row1-a">
-          <div class="nav-close-box" onclick="openNav()">
-            <div class="nav-close">
-              <img class="nav-X-icon" src="img/icons-2x.png" alt="X icon"/>
-            </div>
-            <span class="nav-close-text">Close</span>
-          </div>
+    <main id="filledCart" class="filledCart">
+      <div class="emptyCart-title"><h1>Cart</h1></div>
+      <div class="table-container">
+        <table class="cart-items">
+          <tr class="table-headings">
+            <th class="table-heading">Item</th>
+            <th class="table-heading"></th>
+            <th class="table-heading">Price</th>
+            <th class="table-heading">Quantity</th>
+            <th class="table-heading">SubTotal</th>
+            <th class="table-heading"></th>
+          </tr>
+          <tr class=table-row>
+            <td class="item-image"><img src="img/skate-team-box.nl" /></td>
+            <td class="item-name">12oz Skate Team Box Set</td>
+            <td class="item-price">$29</td>
+            <td class="item-quantity"></td>
+            <td class="item-subtotal">$29</td>
+            <td class="item-remove">X</td>
+          </tr>
+          <tr class="table-row">
+            <td class="item-image"><img src="img/skate-team.nl" /></td>
+            <td class="item-name">12oz Skate Team</td>
+            <td class="item-price">$15</td>
+            <td class="item-quantity"></td>
+            <td class="item-subtotal">$15</td>
+            <td class="item-remove">X</td>
+          </tr>
+        </table>
+
+        <div class="items-total-container">
+          <table class="items-total">
+            <tr class="items-total-row1">
+              <td class="item-total-subtotal">Subtotal</td>
+              <td class="item-total-price1">$44</td>
+            </tr>
+            <tr class="items-total-row2">
+              <td class="item-total-shipping">Shipping</td>
+              <td class="item-total-price2">TBD</td>
+            </tr>
+            <tr class="items-total-row3">
+              <td class="item-total-promo">Promotion (Skate Team Box Set)</td>
+              <td class="item-total-price3">-$15.00</td>
+            </tr>
+            <tr class="items-total-row4">
+              <td class="items-total-total">Total</td>
+              <td class="item-total-price4">$29.00</td>
+            </tr>
+          </table>
         </div>
-        <div class="nav-row1-b">
-          <div class="nav-login-box">
-            <div class="nav-skull">
-              <img class="nav-skull-icon" src="img/icons-2x.png" alt="skull icon"/>  
-            </div>
-            <span class="nav-login-text">Login</span>
-          </div>
-        </div>
-        <div class="nav-row1-c"></div>
       </div>
-      <div id="expand" class="nav-row2">
-        <div class="nav-link-box">
-          <a class="nav-link-a" href="#"><div class="nav-link nav-link1">Shop</div></a>
-          <a class="nav-link-a" href="#"><div class="nav-link nav-link2">Subscriptions</div></a>
-          <a class="nav-link-a" href="#"><div class="nav-link nav-link3">Flower of Flowers</div></a>
-          <a class="nav-link-a" href="#"><div class="nav-link nav-link4">Blog</div></a>
-          <a class="nav-link-a" href="#"><div class="nav-link nav-link5">The Brew Guide</div></a>
-          <a class="nav-link-a" href="#"><div class="nav-link nav-link6">Locations</div></a>
-        </div>
-      </div>
-      <div class="nav-row3">
-        <div class="nav-row3-col"></div>
-        <div class="nav-row3-col"><a href="#">Home</a></div>
-        <div class="nav-row3-col"><a href="#">Cold Brew</a></div>
-        <div class="nav-row3-col"><a href="#">Our Story</a></div>
-        <div class="nav-row3-col"><a href="#">Serve Stumptown</a></div>
-        <div class="nav-row3-col"></div>
-      </div>
-    </nav>
+      
+    </main>
     
     <footer class="section-footer">
       <div class="footer-container">
@@ -136,7 +144,9 @@
         </div>
       </div>
     </footer>
--->
     
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/cart.js"></script>
   </body>
 </html>

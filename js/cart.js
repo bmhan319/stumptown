@@ -1,6 +1,17 @@
+
+
 // Cart Confirmation
 window.onload = function(){
   document.querySelector("#counterNum").innerHTML = localStorage.getItem("cartCounter")
+  
+  if (document.querySelector("#counterNum").innerHTML == 0) {
+    document.querySelector("#emptyCart").style.display = "block"
+    document.querySelector("#filledCart").style.display = "none"
+    document.querySelector("#counterNum").innerHTML = 0
+  } else {
+    document.querySelector("#emptyCart").style.display = "none"
+    document.querySelector("#filledCart").style.display = "block"
+  }
 }
 
 
