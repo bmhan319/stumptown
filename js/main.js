@@ -18,6 +18,10 @@ function fixedNav() {
 }
 
 
+// Opening Product Page with Correct Product Info
+function openProduct(id) {
+  localStorage.setItem("productIndex", id)
+}
 
 
 

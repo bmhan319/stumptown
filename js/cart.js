@@ -3,6 +3,8 @@ window.onload = function(){
   document.querySelector("#counterNum").innerHTML = localStorage.getItem("cartCounter")
 }
 
+
+// Car Confirmation Container
 let cartCounter = 0;
 function cartConfirm(index) {
   let numItems = document.querySelector("#counterNum")

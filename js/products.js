@@ -472,9 +472,11 @@ let products = [
 ]
 
 
-let product = products[9]
+let product = products;
 window.onload = function(){
   let y = window.innerHeight - 350
+  product = product[localStorage.getItem("productIndex")]
+  
   document.querySelector(".left-col-container").style.paddingTop = y
   document.querySelector(".head-title").innerHTML = product.name + "- Stumptown Coffee"
   document.querySelector("#counterNum").innerHTML = localStorage.getItem("cartCounter")
