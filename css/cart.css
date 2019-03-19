@@ -155,16 +155,93 @@ th{
 }
 
 .item-quantity {
-  width: 22%;
+  width: 21%;
+}
+
+.item-quantity-container {
+  display: block;
+}
+
+.item-quantity-box {
+  display: flex;
+  align-items: center;
+}
+
+.item-update-container {
+  width: 100%;
+  align-items: center;
+  display: none;
+}
+
+.item-update-button {
+  width: 110px;
+  height: 25px;
+  border: 0;
+  padding: 0;
+  margin-top: 10;
+  color: #f6f5f3;
+  background-color: #bf955a;
+  font-size: .9em;
+  cursor: pointer;
+}
+
+.item-down-box,
+.item-up-box {
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  margin-right: 11;
+  cursor: pointer;
+}
+
+.item-up-box {
+  margin-left: 11;
+  margin-right: 0;
+}
+
+.item-down-image {
+  position: relative;
+  top: -1038;
+  left: 1;
+  width: 238;
+}
+
+.item-up-image {
+  position: relative;
+  top: -903;
+  left: 1;
+  width: 238;
+}
+
+.quantity {
+  width:30px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .item-subtotal {
-  width: 18%;
+  width: 17%;
   padding-left: 54;
 }
 
 .item-remove {
-  width: 2%;
+  width: 4%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.item-remove-box {
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.item-remove-image {
+  position: relative;
+  top: -2435;
+  left:-13
 }
 
 /*----- 2nd Table -----*/
