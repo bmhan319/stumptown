@@ -29,6 +29,7 @@ body {
   background-color: #f6f5f3;
   overflow-y: visible; 
   transition: opacity 1s linear .5s;
+  position: relative;
 }
 
 .bodyNoView {
@@ -87,6 +88,7 @@ body {
 
 /*----- Filled Cart Section -----*/
 .filledCart {
+  display: block;
   position: relative;
   width: 100%;
   height:100%;;
@@ -158,6 +160,7 @@ th{
 
 .item-subtotal {
   width: 18%;
+  padding-left: 54;
 }
 
 .item-remove {
@@ -166,11 +169,12 @@ th{
 
 /*----- 2nd Table -----*/
 .items-total-container {
+  display: flex;
   position: relative;
   width: 770;
-  float: right;
+  margin: 0 0 0 auto ;
   background-color: #fff;
-  padding: 57 50 50 50;
+  padding: 57 50 20 50;
 }
 
 .items-total {
@@ -220,3 +224,8 @@ th{
   float: right;
 }
 
+.checkout {
+  position: relative;
+  width: 100%;
+  border: 2px solid green;
+}
