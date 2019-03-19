@@ -471,7 +471,7 @@ let products = [
    recommendedItem3Price: "$5"}
 ]
 
-let product = products[2]
+let product = products[12]
 window.onload = function(){
   
   document.querySelector("#counterNum").innerHTML = localStorage.getItem("cartCounter")
