@@ -236,7 +236,7 @@ let products = [
    listItem3: "Glazed by hand; slight variation and movement in color and glaze application can be expected and embraced",
    listItem4: "none",
    listItem5: "none",
-   sideImage1: "sip-in-style.jpg",
+   sideImage1: genImage(),
    sideImage2: "none",
    sideImage3: "none",
    bannerOn: "default-on.png",
@@ -272,7 +272,7 @@ let products = [
    listItem3: "Amber Glass with stainless steel lid",
    listItem4: "Limited-edition design",
    listItem5: "7 in x 3.75 in",
-   sideImage1: "bear-trap.jpg",
+   sideImage1: genImage(),
    sideImage2: "none",
    sideImage3: "none",
    bannerOn: "default-on.png",
@@ -308,7 +308,7 @@ let products = [
    listItem3: "none",
    listItem4: "none",
    listItem5: "none",
-   sideImage1: "st-tiger.jpg",
+   sideImage1: genImage(),
    sideImage2: "none",
    sideImage3: "none",
    bannerOn: "africa-on.png",
@@ -344,7 +344,7 @@ let products = [
    listItem3: "Medical grade stainless steel",
    listItem4: "BPA free",
    listItem5: "none",
-   sideImage1: "st-tiger.jpg",
+   sideImage1: genImage(),
    sideImage2: "none",
    sideImage3: "none",
    bannerOn: "default-on.png",
@@ -380,7 +380,7 @@ let products = [
    listItem3: "Medical grade stainless steel",
    listItem4: "BPA free",
    listItem5: "none",
-   sideImage1: "st-coffe-roaster.jpg",
+   sideImage1: genImage(),
    sideImage2: "none",
    sideImage3: "none",
    bannerOn: "default-on.png",
@@ -416,7 +416,7 @@ let products = [
    listItem3: "Medical grade stainless steel",
    listItem4: "BPA free",
    listItem5: "none",
-   sideImage1: "bear-trap.jpg",
+   sideImage1: genImage(),
    sideImage2: "none",
    sideImage3: "none",
    bannerOn: "default-on.png",
@@ -452,7 +452,7 @@ let products = [
    listItem3: "Medical grade stainless steel",
    listItem4: "BPA free",
    listItem5: "none",
-   sideImage1: "st-rowboat.jpg",
+   sideImage1: genImage(),
    sideImage2: "none",
    sideImage3: "none",
    bannerOn: "default-on.png",
@@ -471,7 +471,7 @@ let products = [
    recommendedItem3Price: "$5"}
 ]
 
-let product = products[12]
+let product = products[11]
 window.onload = function(){
   
   document.querySelector("#counterNum").innerHTML = localStorage.getItem("cartCounter")
@@ -567,6 +567,15 @@ window.onload = function(){
     document.querySelector(".prod-list").style.display = "none"
   }
   
+}
+
+//Random Image Generator
+function genImage() {
+  let number;
+  let image;
+  number = Math.floor(Math.random() * 10)
+  image = "random" + number + ".jpg"
+  return image
 }
 
 //Hover State of "Add to Cart" Button
