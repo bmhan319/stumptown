@@ -5,6 +5,7 @@ let products = [
    name: "Papua New Guinea Besser",
    price: "18",
    image: "coffee-besser.png",
+   numItems: 0,
    bgColor: "rgb(31, 24, 21)",
    textColor: "#bf955a",
    description: "Papua New Guinea Besser is beautifully layered, with a perfect balance of sweetness and acidity. It’s a coffee that is complex, yet versatile and can be brewed any which way you prefer. Cheers.",
