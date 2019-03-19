@@ -474,6 +474,7 @@ let products = [
 let product = products[11]
 window.onload = function(){
   
+  document.querySelector(".head-title").innerHTML = product.name + "- Stumptown Coffee"
   document.querySelector("#counterNum").innerHTML = localStorage.getItem("cartCounter")
   document.querySelector(".product-title").innerHTML = product.name
   document.querySelector(".product-title").style.color = product.bgColor
