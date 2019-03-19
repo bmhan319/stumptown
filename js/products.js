@@ -471,9 +471,11 @@ let products = [
    recommendedItem3Price: "$5"}
 ]
 
-let product = products[11]
+
+let product = products[9]
 window.onload = function(){
-  
+  let y = window.innerHeight - 350
+  document.querySelector(".left-col-container").style.paddingTop = y
   document.querySelector(".head-title").innerHTML = product.name + "- Stumptown Coffee"
   document.querySelector("#counterNum").innerHTML = localStorage.getItem("cartCounter")
   document.querySelector(".product-title").innerHTML = product.name
@@ -569,6 +571,12 @@ window.onload = function(){
   }
   
 }
+
+//Keeping Left Col tied to a static bottom position
+window.onresize = function(){
+    let y = window.innerHeight - 350
+    document.querySelector(".left-col-container").style.paddingTop = y
+  }
 
 //Random Image Generator
 function genImage() {
