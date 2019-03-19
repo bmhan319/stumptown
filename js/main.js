@@ -1,3 +1,8 @@
+//Page Fades In
+window.onload = function() {
+  document.querySelector("#bodyScroll")
+}
+
 // Menu Bar to Fixed Position on Scoll
 document.addEventListener("scroll", fixedNav);
   

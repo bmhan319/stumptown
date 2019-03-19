@@ -33,104 +33,10 @@ body {
 
 .bodyNoView {
   opacity: 0;
-  
 }
 
 .bodyView {
   opacity: 1;
-}
-
-
-/*----- Header Bar -----*/
-header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 10;
-  background-color: #f6f5f3;
-  opacity: .9;
-}
-
-.header-container {
-  display: flex;
-  width: 100%;
-  padding: 0 22 0 22;
-}
-
-.header-left,
-.header-middle,
-.header-right {
-  display: flex;
-  width: 33.33333334%;
-  height: 100px;
-  align-items: center;
-}
-
-.header-middle {
-  justify-content: center;
-}
-
-.header-right {
-  justify-content: flex-end;
-}
-
-.header-left-box,
-.header-middle-box,
-.header-right-box {
-  display: flex;
-  cursor: pointer;
-  transition: opacity .5s ease;
-}
-
-.header-image-box {
-  width: 52px;
-  height: 52px;
-  overflow: hidden;
-  margin-right: 10px;
-}
-
-.header-image-box-mid {
-  width: 140;
-  height: 40;
-  overflow: hidden;
-}
-
-.header-left-box:hover,
-.header-middle-box:hover,
-.header-right-box:hover {
-  opacity: .4;
-}
-
-.header-left img {
-  position: relative;
-  width: 250;
-  top:-484;
-  left: 7;
-}
-
-.stump-logo {
-  position: relative;
-  width: 270;
-  top:-379;
-  left:3;
-}
-
-.header-right img {
-  position: relative;
-  width: 250;
-  top:-533;
-  left: 3;
-}
-
-.header-text {
-  margin: auto 0;
-  font-family: 'Merriweather', serif;
-  color: #bf955a;
-  font-size: .85em;
-}
-
-.header-text-right {
-  font-size: 1em;
 }
 
 /* ----- Main Section -----*/

@@ -3,11 +3,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title class="head-title"></title>
+    <title>Shopping Cart | Stumptown</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/header.css" />
-    <link rel="stylesheet" type="text/css" href="css/product.css" />
     <link rel="stylesheet" type="text/css" href="css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="css/cart.css" />
     <link rel="stylesheet" type="text/css" href="css/footer.css" />
     <!--<link rel="stylesheet" type="text/css" href="css/responsive.css" />-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
@@ -17,6 +17,7 @@
   </head>
   
   <body id="bodyScroll">
+    
     <header id="header">
       <div class="header-container">
         <div class="header-left">
@@ -27,7 +28,7 @@
             <p class="header-text" onclick="openNav()">Menu</p>
           </div>
         </div>
-        
+
         <div class="header-middle">
           <div class="header-middle-box">
             <div class="header-image-box-mid">
@@ -35,7 +36,7 @@
             </div>
           </div>
         </div>
-        
+
         <div class="header-right">
           <div class="header-right-box">
             <div class="header-image-box">
@@ -47,101 +48,19 @@
       </div>
     </header>
     
-    <main class="content">
-      <div class="content-wrapper">
-        
-        <div class="left-col">
-          <div class="left-col-container">
-            <div class="illustration1"></div>
-            <div class="illustration2"></div>
-            <h2 class="producer"></h2>
-            <p class=prod-descrip></p>
-            <ul class=prod-list></ul>
-            <a class="read-more" href="#">Read More</a>
-            <h2 class="region"></h2>
-            <p class="region-descrip"></p>
-            <div class="map-container">
-              <img class="map" />
-            </div>  
-            <div class="location-image-container">
-              <img class="location-image"/>
-            </div>
-          </div>
-        </div>
-        
-        <div class="mid-right-container">
-          <div class="mid-col">
-            <h1 class="product-title"></h1>
-            <div class="product-image-box">
-              <img class="product-image" src="img/"/>
-            </div>
-          </div>
-
-          <div class="right-col">
-            <div class="right-col-container">
-              <h1 class="product-price"></h1>
-              <p class="product-description"></p>
-              <p class="product-type"></p>
-              <p class="product-size"></p>
-              <p class="product-subscription"></p>
-              <button class="product-button">Add to Cart</button>
-            </div>
-          </div>
-        </div>
-        
-      </div>
+    <main class="emptyCart">
+      <div class="emptyCart-title"><h1>Cart</h1></div>
+      <div class="emptyCart-text1"><p>There is nothing to see here. Yet.</p></div>
+      <div class="emptyCart-shopNow"><a href="#">Shop Now</a></div>
+      <div class="emptyCart-image1"><img src="img/skeleton.png" alt="skeleton sitting against tree" /></div>
     </main>
     
-    <section class="section-recommend">
-      <div class="recommend-row1">
-        <h2 class="recommend-title">Enjoy With</h2>
-        <img class="recommend-image" src="img/flourish-title.svg" alt="flourish icon" />
-      </div>
-      
-      <div class="recommend-row2">
-        <span class="recommend-row2-col1">
-          <div class="products-box">
-            <a href="#"><img class="recommend-image1"/></a>
-          </div>
-        </span>
-        
-        <span class="recommend-row2-col2">
-          <div class="products-box">
-            <a href="#"><img class="recommend-image2"/></a>
-          </div>
-        </span>
-        
-        <span class="recommend-row2-col3">
-          <div class="products-box">
-            <a href="#"><img class="recommend-image3"/></a>
-          </div>
-        </span>
-      </div>
-          
-      <div class="recommend-row3">
-        <div class="recommend-row3-col1">
-          <div class="text-hover-brown">
-            <div class="recommend-name1"></div>
-            <div class="recommend-price1"></div>
-          </div>
-        </div>
-          
-        <div class="recommend-row3-col2">
-          <div class="text-hover-brown">
-            <div class="recommend-name2"></div>
-            <div class="recommend-price2"></div>
-          </div>
-        </div>
-        
-        <div class="recommend-row3-col3">
-          <div class="text-hover-brown">
-            <div class="recommend-name3"></div>
-            <div class="recommend-price3"></div>
-          </div>
-        </div>
-      </div>  
-    </section>
-
+    
+    
+    
+    
+    
+    <!--
     <nav id="nav" class="section-nav">
       <div class="nav-row1">
         <div class="nav-row1-a">
@@ -217,9 +136,7 @@
         </div>
       </div>
     </footer>
+-->
     
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/nav.js"></script>
-  <script src="js/cart.js"></script>
-  <script src="js/products.js"></script>
   </body>
+</html>
