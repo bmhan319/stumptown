@@ -253,19 +253,19 @@ th{
 .items-total-container {
   display: flex;
   position: relative;
-  width: 770;
+  width: 570;
   margin: 0 0 0 auto ;
   background-color: #fff;
-  padding: 57 50 20 50;
+  padding: 57 0 20;
 }
 
 .items-total {
-  width: 100%;
-  float: right;
+  width: 450;
+  margin: 0 auto;
   border-collapse: collapse;
 }
 
-.items-total-row4 td{
+.items-total-row3 td{
   border-top: 1px solid #bf955a;
 }
 

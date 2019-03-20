@@ -42,7 +42,6 @@ let products = [
    name: "Skate Team",
    price: "15",
    image: "skate-team.nl",
-   numItems: 0,
    bgColor: "rgb(0, 63, 135)",
    textColor: "#003f87",
    description: "This Colombian coffee highlights a collaboration between Stumptown and a few choice skateboarders we admire. It’s as sweet and clean as a perfectly caught kickflip over grandma’s garden hose. One dollar from the sale of this bag will go to a selection of local non-profits, chosen by our skateboarding employees.",
@@ -79,7 +78,6 @@ let products = [
    name: "Skate Team Box Set",
    price: "29",
    image: "skate-team-box.nl",
-   numItems: 0,
    bgColor: "rgb(0, 63, 135)",
    textColor: "#003f87",
    description: "This Colombian coffee highlights a collaboration between Stumptown and a few choice skateboarders we admire. The beans were produced by El Jordan growers and sourced by our partners (and fellow B Corp) Caravela Coffee. It’s as sweet and clean as a perfectly caught kickflip over grandma’s garden hose. Skate Team is sweet, balanced, and extremely versatile.",
@@ -116,7 +114,6 @@ let products = [
    name: "Hair Bender",
    price: "15",
    image: "coffee-hair-bender.nl",
-   numItems: 0,
    bgColor: "rgb(81, 44, 29)",
    textColor: "#512c1d",
    description: "The sweet and balanced coffee that started it all. Hair Bender is our most popular coffee with good reason – it’s a day-maker however you brew it.",
@@ -154,7 +151,6 @@ let products = [
    name: "Guatemala El Injerto Bourbon",
    price: "19",
    image: "coffee-guatemala-bourbon.nl",
-   numItems: 0,
    bgColor: "rgb(0, 63, 135)",
    textColor: "#003f87",
    description: "We're always excited to welcome back the return of this stellar coffee. This year’s lot of El Injerto Bourbon has notes of orange blossom, honey, and fresh butter. What's not to love?",
@@ -191,7 +187,6 @@ let products = [
    name: "Rwanda Huye Mountain",
    price: "17",
    image: "coffee-rwanda-huye.nl",
-   numItems: 0,
    bgColor: "rgb(209, 68, 20)",
    textColor: "#d14414",
    description: "One of our favorite single origin offerings has returned just in time for the holidays. This year's lot of Huye Mountain is exceptional with sweetness, clarity, and balance evident in every cup.",
@@ -228,7 +223,6 @@ let products = [
    name: "East Fork Mug",
    price: "40",
    image: "east-fork-mug.nl",
-   numItems: 0,
    bgColor: "rgb(31, 24, 21)",
    textColor: "#bf955a",
    description: "We're delighted to welcome the beautiful ceramics of Alex Matisse and John Vigeland (aka <a href='https://eastfork.com'>East Fork</a>) into the Stumptown family this holiday season. These mugs are made in the hills of North Carolina from locally-sourced materials, and their elegant design adds a touch of class to any morning. Drink up!",
@@ -265,7 +259,6 @@ let products = [
    name: "Stumptown Coffee Jar",
    price: "15",
    image: "st-coffee-jar.nl",
-   numItems: 0,
    bgColor: "rgb(31, 24, 21)",
    textColor: "#bf955a",
    description: "Forget the freezer. The Stumptown Coffee Jar is designed to store your coffee and look good doing it.",
@@ -302,7 +295,6 @@ let products = [
    name: "African Trio",
    price: "38",
    image: "african-trio.nl",
-   numItems: 0,
    bgColor: "rgb(209, 68, 20)",
    textColor: "#d14414",
    description: "We don't like to play favorites, but let's just say, we take these home with us whenever we can.",
@@ -339,7 +331,6 @@ let products = [
    name: "MiiR Camp Cup",
    price: "26",
    image: "miiR-camp-cup.nl",
-   numItems: 0,
    bgColor: "rgb(31, 24, 21)",
    textColor: "#bf955a",
    description: "Our favorite Northwest smell sensation is hot coffee steam, campfire smoke, and the soft crush of fir needles underfoot. Wrap a mountain around you like a blanket, take a deep breath. Sip slowly.",
@@ -376,7 +367,6 @@ let products = [
    name: "MiiR Wide Moth Water Bottle",
    price: "30",
    image: "miiR-wide-mouth.nl",
-   numItems: 0,
    bgColor: "rgb(31, 24, 21)",
    textColor: "#bf955a",
    description: "Let your morning coffee be a cloud underfoot, sturdy walls around you, last night's dreams still fresh on your mind. Watch the fog lift while you slowly sip.",
@@ -413,7 +403,6 @@ let products = [
    name: "MiiR Travel Tumbler",
    price: "28",
    image: "miiR-travel-tumbler.nl",
-   numItems: 0,
    bgColor: "rgb(31, 24, 21)",
    textColor: "#bf955a",
    description: "The sunrise shimmers on your morning cup. It feels good to be awake. You hear the world come alive beside you, see the mist drift over the lake. Stretch your legs, breathe deep. It's golden all around.",
@@ -450,7 +439,6 @@ let products = [
    name: "MiiR 8oz Tumbler",
    price: "18",
    image: "miiR-8oz-tumbler.nl",
-   numItems: 0,
    bgColor: "rgb(31, 24, 21)",
    textColor: "#bf955a",
    description: "The heat of the sunrise wakes you up through the tent wall. Shake the sand out of your shoes, coax last night's campfire to life. Breathe in sagebrush, watch a tumbleweed roll by. Watch out for rattlesnakes while your water boils.",
@@ -484,117 +472,6 @@ let products = [
    recommendedItem3Price: "$5"}
 ]
 
-
-let product = products;
-window.onload = function(){
-  let y = window.innerHeight - 350
-  product = product[localStorage.getItem("productIndex")]
-  document.querySelector("#bodyScroll").classList.add("bodyView")
-  document.querySelector("#bodyScroll").classList.remove("bodyNoView")
-  
-  document.querySelector(".left-col-container").style.paddingTop = y
-  document.querySelector(".head-title").innerHTML = product.name + "- Stumptown Coffee"
-  document.querySelector("#counterNum").innerHTML = localStorage.getItem("cartCounter")
-  document.querySelector(".product-title").innerHTML = product.name
-  document.querySelector(".product-title").style.color = product.bgColor
-  document.querySelector(".product-image").setAttribute("src", "img/" + product.image)
-  document.querySelector(".product-image").setAttribute("alt", product.size + " " + product.name)
-  document.querySelector(".product-price").innerHTML = product.price
-  document.querySelector(".product-price").style.color = product.bgColor
-  document.querySelector(".product-description").innerHTML = product.description
-  document.querySelector(".product-type").innerHTML = product.category
-  document.querySelector(".product-size").innerHTML = product.size
-  document.querySelector(".producer").innerHTML = product.producer
-  document.querySelector(".prod-descrip").innerHTML = product.producerDescription
-  document.querySelector(".region").innerHTML = product.region
-  document.querySelector(".region-descrip").innerHTML = product.regionDescription
-  document.querySelector(".product-button").style.backgroundImage = "url(img/" + product.bannerOff + ")"
-  document.querySelector(".illustration1").style.backgroundImage = "url(img/" + product.sideImage1 + ")"
-  document.querySelector(".illustration2").style.backgroundImage = "url(img/" + product.sideImage2 + ")"
-  document.querySelector(".map").setAttribute("src", "img/" + product.map )
-  document.querySelector(".map").setAttribute("alt", product.map )
-  document.querySelector(".location-image").setAttribute("src", "img/" + product.sideImage3 )
-  document.querySelector(".location-image").setAttribute("alt", product.sideImage3 )
-  document.querySelector(".recommend-name1").innerHTML = product.recommendedItem1
-  document.querySelector(".recommend-name2").innerHTML = product.recommendedItem2
-  document.querySelector(".recommend-name3").innerHTML = product.recommendedItem3
-  document.querySelector(".recommend-price1").innerHTML = product.recommendedItem1Price
-  document.querySelector(".recommend-price2").innerHTML = product.recommendedItem2Price
-  document.querySelector(".recommend-price3").innerHTML = product.recommendedItem3Price
-  document.querySelector(".recommend-image1").setAttribute("src", "img/" + product.recommendedImage1 )
-  document.querySelector(".recommend-image1").setAttribute("alt", product.recommendedItem1 )
-  document.querySelector(".recommend-image2").setAttribute("src", "img/" + product.recommendedImage2 )
-  document.querySelector(".recommend-image2").setAttribute("alt", product.recommendedItem2 )
-  document.querySelector(".recommend-image3").setAttribute("src", "img/" + product.recommendedImage3 )
-  document.querySelector(".recommend-image3").setAttribute("alt", product.recommendedItem3 )
-  
-  if (product.sideImage2 == "none") {
-    document.querySelector(".illustration2").style.display = "none"
-  }
-  
-  if (product.subscription == false) {
-    document.querySelector(".product-subscription").style.display = "none"
-  } else {
-    document.querySelector(".product-subscription").innerHTML = "Available as a subscription"
-  }
-  
-  if (product.recommendedItem3 == "none") {
-    document.querySelector(".recommend-row2-col1").style.width = "50%"
-    document.querySelector(".recommend-row2-col2").style.width = "50%"
-    document.querySelector(".recommend-row2-col3").style.display = "none"
-    document.querySelector(".recommend-row3-col1").style.width = "50%"
-    document.querySelector(".recommend-row3-col2").style.width = "50%"
-    document.querySelector(".recommend-row3-col3").style.display = "none"
-  } 
-  
-  if (product.recommendedItem2 == "none" && product.recommendedItem3 == "none") {
-    document.querySelector(".recommend-row2-col1").style.width = "100%"
-    document.querySelector(".recommend-row2-col2").style.display = "none"
-    document.querySelector(".recommend-row2-col3").style.display = "none"
-    document.querySelector(".recommend-row3-col1").style.width = "100%"
-    document.querySelector(".recommend-row3-col2").style.display = "none"
-    document.querySelector(".recommend-row3-col3").style.display = "none"
-  }
-  
-  if (product.readMore == false) {
-    document.querySelector(".read-more").style.display = "none"
-    
-  }
-  
-  if (product.map == "none") {
-    document.querySelector(".map-container").style.display = "none"
-  }
-  
-  if (product.sideImage3 == "none") {
-    document.querySelector(".location-image").style.display = "none"
-  }
-  
-  if (product.listItem1 !== "none" ) {
-    document.querySelector(".prod-list").style.display = "block"
-    
-    if (product.listItem2 == "none") {
-      document.querySelector(".prod-list").innerHTML = "<li>" + product.listItem1 + "</li>"
-    } else if (product.listItem3 == "none") {
-      document.querySelector(".prod-list").innerHTML = "<li>" + product.listItem1 + "</li><li>" + product.listItem2 + "</li>"
-    } else if (product.listItem4 == "none") {
-      document.querySelector(".prod-list").innerHTML = "<li>" + product.listItem1 + "</li><li>" + product.listItem2 + "</li><li>" + product.listItem3 + "</li>"      
-    } else if (product.listItem5 == "none") {
-      document.querySelector(".prod-list").innerHTML = "<li>" + product.listItem1 + "</li><li>" + product.listItem2 + "</li><li>" + product.listItem3 + "</li><li>" + product.listItem4 + "</li>"
-    } else {
-      document.querySelector(".prod-list").innerHTML = "<li>" + product.listItem1 + "</li><li>" + product.listItem2 + "</li><li>" + product.listItem3 + "</li><li>" + product.listItem4 + "</li><li>" + product.listItem5 + "</li>"
-    } 
-  } else {
-    document.querySelector(".prod-list").style.display = "none"
-  }
-  
-}
-
-//Keeping Left Col tied to a static bottom position
-window.onresize = function(){
-    let y = window.innerHeight - 350
-    document.querySelector(".left-col-container").style.paddingTop = y
-  }
-
 //Random Image Generator
 function genImage() {
   let number;
@@ -603,14 +480,3 @@ function genImage() {
   image = "random" + number + ".jpg"
   return image
 }
-
-//Hover State of "Add to Cart" Button
-document.querySelector(".product-button").onmouseover = function() {
-  this.style.backgroundImage = "url(img/" + product.bannerOn + ")"
-  this.style.color = product.textColor
-  }
-
-document.querySelector(".product-button").onmouseout = function() {
-  this.style.backgroundImage = "url(img/" + product.bannerOff + ")"
-  this.style.color = "#f6f5f3"
-  }
