@@ -1,6 +1,12 @@
+let cartCounter = sessionStorage.getItem("cartCounter")
+
 //Page Fades In
-window.onload = function() {
+window.onload = function(){
+  let numItems = document.querySelector("#counterNum")
+  document.querySelector("#bodyScroll").classList.add("bodyView")
+  document.querySelector("#bodyScroll").classList.remove("bodyNoView")
   document.querySelector("#bodyScroll")
+  numItems.innerHTML = cartCounter
 }
 
 // Menu Bar to Fixed Position on Scoll
@@ -31,7 +37,6 @@ function openProduct(id) {
 
 
 // Cart Confirmation Container
-let cartCounter = 0;
 function cartConfirm(index) {
   let numItems = document.querySelector("#counterNum")
   let confirm = document.querySelector("#cart-confirm")
@@ -39,7 +44,7 @@ function cartConfirm(index) {
 
   confirm.classList.add("confirm-animate")
   confirm.style.backgroundColor = products[index].bgColor
-  cartCounter = cartCounter + 1
+  cartCounter++
   numItems.innerHTML = cartCounter
 
   setTimeout(function(){
