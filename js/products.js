@@ -485,16 +485,18 @@ let products = [
 ]
 
 
-let product = products;
+let product = products
+
 window.onload = function(){
   let y = window.innerHeight - 350
+  
   product = product[localStorage.getItem("productIndex")]
   document.querySelector("#bodyScroll").classList.add("bodyView")
   document.querySelector("#bodyScroll").classList.remove("bodyNoView")
   
   document.querySelector(".left-col-container").style.paddingTop = y
   document.querySelector(".head-title").innerHTML = product.name + "- Stumptown Coffee"
-  document.querySelector("#counterNum").innerHTML = localStorage.getItem("cartCounter")
+  document.querySelector("#counterNum").innerHTML = sessionStorage.getItem("cartCounter")
   document.querySelector(".product-title").innerHTML = product.name
   document.querySelector(".product-title").style.color = product.bgColor
   document.querySelector(".product-image").setAttribute("src", "img/" + product.image)
@@ -509,6 +511,7 @@ window.onload = function(){
   document.querySelector(".region").innerHTML = product.region
   document.querySelector(".region-descrip").innerHTML = product.regionDescription
   document.querySelector(".product-button").style.backgroundImage = "url(img/" + product.bannerOff + ")"
+  document.querySelector(".product-button").setAttribute("onclick", "cartConfirm(" + product.id + ")")
   document.querySelector(".illustration1").style.backgroundImage = "url(img/" + product.sideImage1 + ")"
   document.querySelector(".illustration2").style.backgroundImage = "url(img/" + product.sideImage2 + ")"
   document.querySelector(".map").setAttribute("src", "img/" + product.map )
@@ -614,3 +617,23 @@ document.querySelector(".product-button").onmouseout = function() {
   this.style.backgroundImage = "url(img/" + product.bannerOff + ")"
   this.style.color = "#f6f5f3"
   }
+
+// Cart Confirmation Container
+let cartCounter2 = sessionStorage.getItem("cartCounter")
+function cartConfirm(index) {
+  let numItems = document.querySelector("#counterNum")
+  let confirm = document.querySelector("#cart-confirm")
+  let cloneConfirm = confirm.cloneNode(true)
+
+  confirm.classList.add("confirm-animate")
+  confirm.style.backgroundColor = products[index].bgColor
+  cartCounter2++
+  numItems.innerHTML = cartCounter2
+
+  setTimeout(function(){
+    confirm.parentNode.replaceChild(cloneConfirm, confirm)      
+  }, 3000);
+  products[index].numItems++
+  sessionStorage.setItem("cartCounter", cartCounter2)
+  sessionStorage.setItem(index, JSON.stringify(products[index]))
+}
