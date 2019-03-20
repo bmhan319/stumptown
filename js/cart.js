@@ -12,11 +12,13 @@ window.onload = function(){
       let item = JSON.parse(sessionStorage.getItem(i))
       addRow(item)
       subtotal = subtotal + (item.price * item.numItems)
+      products[i].numItems = Number(document.querySelector("#quantity" + i).innerHTML)
     }
   }
   
   document.querySelector(".item-total-price1").innerHTML = subtotal
   document.querySelector(".item-total-price4").innerHTML = subtotal
+  
 }
 
 // Add Rows to Table
@@ -78,23 +80,25 @@ function cartVisible() {
 
 // Add/Subtract Item from Cart
 function numItem(num, index) {
-  let numItems = document.querySelector("#counterNum") //Cart Icon Number
   document.querySelector("#quantity" + index).innerHTML = Number(document.querySelector("#quantity" + index).innerHTML) + num
   document.querySelector("#subTotal" + index).innerHTML = Number(document.querySelector("#quantity" + index).innerHTML * document.querySelector("#price" + index).innerHTML)
-  
+  products[index].numItems = Number(products[index].numItems + num)
+  sessionStorage.setItem(index, JSON.stringify(products[index]))
+  document.querySelector("#counterNum").innerHTML = Number(document.querySelector("#counterNum").innerHTML) + num
+  sessionStorage.setItem("cartCounter", document.querySelector("#counterNum").innerHTML)
 }
 
 
 
 
 // Clear Item from Cart
-function clearItem(index, numItems) {
+function clearItem(index, numItem) {
   let row = document.querySelector("#itemRow" + index)
   let counterNum = document.querySelector("#counterNum")
   
   sessionStorage.removeItem(index)
   row.style.display = "none"
-  counterNum.innerHTML = counterNum.innerHTML - numItems
+  counterNum.innerHTML = counterNum.innerHTML - products[index].numItems
   sessionStorage.setItem("cartCounter", counterNum.innerHTML)
   cartVisible()
 }
