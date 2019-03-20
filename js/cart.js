@@ -87,13 +87,9 @@ function numItem(num, index) {
   document.querySelector("#counterNum").innerHTML = Number(document.querySelector("#counterNum").innerHTML) + num
   sessionStorage.setItem("cartCounter", document.querySelector("#counterNum").innerHTML)
   
-  if (document.querySelector("#quantity" + index).innerHTML <= 0) {
-    document.querySelector("#quantity" + index).innerHTML = 0
-    document.querySelector("#subTotal" + index).innerHTML = 0
-    document.querySelector("#counterNum").innerHTML = 0
+  if (document.querySelector("#quantity" + index).innerHTML == 0) {
+    console.log("hi")
   }
-  
-  sessionStorage.setItem("cartCounter", document.querySelector("#counterNum").innerHTML)
   
   totalAmount()
   
