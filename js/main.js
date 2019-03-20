@@ -46,8 +46,8 @@ function cartConfirm(index) {
     confirm.parentNode.replaceChild(cloneConfirm, confirm)      
   }, 3000);
   products[index].numItems++
-  localStorage.setItem("cartCounter", cartCounter)
-  localStorage.setItem(index, JSON.stringify(products[index]))
+  sessionStorage.setItem("cartCounter", cartCounter)
+  sessionStorage.setItem(index, JSON.stringify(products[index]))
 }
 
 //Close Cart Confirmation
