@@ -86,8 +86,22 @@ function numItem(num, index) {
   sessionStorage.setItem(index, JSON.stringify(products[index]))
   document.querySelector("#counterNum").innerHTML = Number(document.querySelector("#counterNum").innerHTML) + num
   sessionStorage.setItem("cartCounter", document.querySelector("#counterNum").innerHTML)
+  totalAmount()
 }
 
+//Figure Subtotal and Total
+function totalAmount() {
+  let subTotal = 0;
+  for (var i = 0; i < (sessionStorage.length + 20); i++) {
+    if (sessionStorage[i] == undefined) {
+      continue
+    } else {
+      subTotal = subTotal + Number(document.querySelector("#subTotal" + i).innerHTML)
+      document.querySelector(".item-total-price1").innerHTML = subTotal
+      document.querySelector(".item-total-price4").innerHTML = subTotal
+    }
+  }
+}
 
 
 
