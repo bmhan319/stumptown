@@ -1,13 +1,11 @@
-
-let cartCounter
+let counter = sessionStorage.getItem("cartCounter")
 
 window.onload = function(){
   let subtotal = 0
-  document.querySelector("#counterNum").innerHTML = sessionStorage.getItem("cartCounter")
+  document.querySelector("#counterNum").innerHTML = counter
   cartVisible()
   
   for (var i = 0; i < (sessionStorage.length + 20); i++) {
-    
     if (sessionStorage[i] == undefined) {
       continue
     } else {
@@ -33,6 +31,7 @@ function addRow(item) {
   let cell6 = row.insertCell(5);
   
   row.setAttribute("id", "itemRow")
+  row.setAttribute("id", "itemRow" + item.id)
   row.setAttribute("class", "table-row")
   
   cell1.setAttribute("class", "item-image")
@@ -41,17 +40,22 @@ function addRow(item) {
   cell4.setAttribute("class", "item-quantity")
   cell5.setAttribute("class", "item-subtotal")
   cell6.setAttribute("class", "item-remove")
+  populateTable()
   
+  // Fill in Product Data to Cart Rows
+  function populateTable() {
   cell1.innerHTML = '<img class="image" src="" />'
   cell2.innerHTML = document.querySelector(".item-name").innerHTML = item.name
   cell3.innerHTML = document.querySelector(".item-price").innerHTML = "$" + item.price
   cell4.innerHTML = '<div class="item-quantity-container"><div class="item-quantity-box"><div class="item-down-box" onclick="numItem(-1)"><img class="item-down-image" src="img/icons-2x.png" /></div><p class="quantity"></p><div class="item-up-box" onclick="numItem(1)"><img class="item-up-image" src="img/icons-2x.png" /></div></div><div class="item-update-container"><button class="item-update-button" type="button">Update</button></div></div>'
   cell5.innerHTML = document.querySelector(".item-subtotal").innerHTML = "$" + (item.price * item.numItems)
-  cell6.innerHTML = '<div class="item-remove-box" onclick="clearItem()"><img class="item-remove-image" src="img/icons-2x.png" /></div>'
+  cell6.innerHTML = '<div class="item-remove-box"><img class="item-remove-image" src="img/icons-2x.png" /></div>'
   
   document.querySelector(".image").setAttribute("src", "img/" + item.image )
   document.querySelector(".image").setAttribute("alt", item.image )
   document.querySelector(".quantity").innerHTML = item.numItems
+  document.querySelector(".item-remove-box").setAttribute("onclick", "clearItem(" + item.id + "," + item.numItems + ")" )
+  }
 }
 
 // Cart Visble/Invisible
@@ -92,11 +96,14 @@ function numItem(num) {
 
 
 // Clear Item from Cart
-function clearItem() {
-  let row = document.querySelector("#itemRow")
-  let numItems = document.querySelector("#counterNum")
+function clearItem(index, numItems) {
+  let row = document.querySelector("#itemRow" + index)
+  let counterNum = document.querySelector("#counterNum")
+  
+  sessionStorage.removeItem(index)
   row.style.display = "none"
-  item.numItems = 0
-  document.querySelector("#counterNum").innerHTML = 0
+  counterNum.innerHTML = counterNum.innerHTML - numItems
+  sessionStorage.setItem("cartCounter", counterNum.innerHTML)
   cartVisible()
 }
+
