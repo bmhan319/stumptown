@@ -212,6 +212,10 @@ th{
   width: 238;
 }
 
+.item-price::before {
+  content: "$";
+}
+
 .quantity {
   width:30px;
   margin: 0;
@@ -222,6 +226,10 @@ th{
 .item-subtotal {
   width: 17%;
   padding-left: 54;
+}
+
+.item-subtotal::before {
+  content: "$";
 }
 
 .item-remove {
@@ -285,6 +293,11 @@ th{
   padding-bottom: 31;
   float: right;
   padding-right: 60;
+}
+
+.item-total-price1::before,
+.item-total-price4::before {
+  content: "$";
 }
 
 .items-total-total {

@@ -15,8 +15,8 @@ window.onload = function(){
     }
   }
   
-  document.querySelector(".item-total-price1").innerHTML = "$" + subtotal
-  document.querySelector(".item-total-price4").innerHTML = "$" + subtotal
+  document.querySelector(".item-total-price1").innerHTML = subtotal
+  document.querySelector(".item-total-price4").innerHTML = subtotal
 }
 
 // Add Rows to Table
@@ -46,15 +46,17 @@ function addRow(item) {
   function populateTable() {
   cell1.innerHTML = '<img class="image" src="" />'
   cell2.innerHTML = document.querySelector(".item-name").innerHTML = item.name
-  cell3.innerHTML = document.querySelector(".item-price").innerHTML = "$" + item.price
+  cell3.innerHTML = document.querySelector(".item-price").innerHTML = item.price
   cell4.innerHTML = '<div class="item-quantity-container"><div class="item-quantity-box"><div class="item-down-box"><img class="item-down-image" src="img/icons-2x.png" /></div><p class="quantity"></p><div class="item-up-box"><img class="item-up-image" src="img/icons-2x.png" /></div></div><div class="item-update-container"><button class="item-update-button" type="button">Update</button></div></div>'
-  cell5.innerHTML = document.querySelector(".item-subtotal").innerHTML = "$" + (item.price * item.numItems)
+  cell5.innerHTML = document.querySelector(".item-subtotal").innerHTML = (item.price * item.numItems)
   cell6.innerHTML = '<div class="item-remove-box"><img class="item-remove-image" src="img/icons-2x.png" /></div>'
   
   document.querySelector(".image").setAttribute("src", "img/" + item.image )
   document.querySelector(".image").setAttribute("alt", item.image )
+  document.querySelector(".item-price").setAttribute("id", "price" + item.id )
   document.querySelector(".quantity").setAttribute("id", "quantity" + item.id )
   document.querySelector(".quantity").innerHTML = item.numItems
+  document.querySelector(".item-subtotal").setAttribute("id", "subTotal" + item.id )
   document.querySelector(".item-down-box").setAttribute("onclick", "numItem(-1," + item.id + ")" )
   document.querySelector(".item-up-box").setAttribute("onclick", "numItem(1," + item.id + ")" )
   document.querySelector(".item-remove-box").setAttribute("onclick", "clearItem(" + item.id + "," + item.numItems + ")" )
@@ -78,6 +80,8 @@ function cartVisible() {
 function numItem(num, index) {
   let numItems = document.querySelector("#counterNum") //Cart Icon Number
   document.querySelector("#quantity" + index).innerHTML = Number(document.querySelector("#quantity" + index).innerHTML) + num
+  document.querySelector("#subTotal" + index).innerHTML = Number(document.querySelector("#quantity" + index).innerHTML * document.querySelector("#price" + index).innerHTML)
+  
 }
 
 
