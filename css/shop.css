@@ -98,4 +98,18 @@ body {
 .col-right {
   width: 100%;
   border: 1px solid green;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.item1,
+.item2 {
+  padding-left: 0px;
+  text-align: center;
+}
+
+.products-image {
+  
+  width: 80%;
+  bordeR: 1px solid blue;
 }
