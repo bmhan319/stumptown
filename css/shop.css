@@ -1,0 +1,101 @@
+/* Colors */
+/* Tan = #d0c3ae; rgba(208,195,174,0.2);
+   Brown = #bf955a;
+   Black = #1f1815;
+   White Background = #f6f5f3;
+   Blue = #003f87;
+   Dark Brown = #512c1d;
+
+   Cart Confirmation Colors
+   Blue = rgb(0, 63, 135)
+   Brown = rgb(81, 44, 29)
+   Orange = rgb(209, 68, 20)
+   Black = rgb(31, 24, 21)
+    
+   Red = #d14414;
+/* Fonts */
+/* Gotham Alt = Montserrat       font-family: 'Montserrat', sans-serif; */
+/* Sentinel Alt = Merriweather   font-family: 'Merriweather', serif; */
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #f6f5f3;
+}
+
+
+/*----- Main Section -----*/
+.section-main {
+  width: 100%;
+  border: 1px solid blue;
+  position: relative;
+  top: 100;
+}
+
+.promo-banner {
+  width: 100%;
+  height: 45;
+  background-color: #bf955a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.promo-text { 
+  padding: 0;
+  margin: 0;
+  color: #f6f5f3;
+  font-size: .9em;
+}
+
+.shop-container {
+  width: 100%;
+  margin-top: 80;
+  display: flex;
+}
+
+/*----- Left Column -----*/
+
+.col-left {
+  width: 200px;
+  border: 1px solid red;
+  padding: 0 32;
+}
+
+.shop-coffee,
+.shop-gifts,
+.shop-gear {
+  display: grid;
+  grid-template-columns: 200px;
+}
+
+.shop-link-image {
+  width: 70;
+  padding-bottom: 27;
+  padding-top: 26;
+}
+
+.shop-link {
+  text-decoration: none;
+  color: #bf955a;
+  font-size: .90em;
+  line-height: 1.8;
+  transition: opacity .2s linear;
+}
+
+.shop-link:hover {
+  opacity: .4;
+}
+
+/*----- Right Column -----*/
+
+.col-right {
+  width: 100%;
+  border: 1px solid green;
+}

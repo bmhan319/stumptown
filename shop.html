@@ -1,13 +1,14 @@
-<html class="hiddenScroll">
+<html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Shopping Cart | Stumptown</title>
+    <title class="head-title"></title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/header.css" />
+    <link rel="stylesheet" type="text/css" href="css/cartConfirm.css" />
+    <link rel="stylesheet" type="text/css" href="css/shop.css" />
     <link rel="stylesheet" type="text/css" href="css/nav.css" />
-    <link rel="stylesheet" type="text/css" href="css/cart.css" />
     <link rel="stylesheet" type="text/css" href="css/footer.css" />
     <!--<link rel="stylesheet" type="text/css" href="css/responsive.css" />-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
@@ -17,7 +18,6 @@
   </head>
   
   <body id="bodyScroll">
-    
     <header id="header">
       <div class="header-container">
         <div class="header-left">
@@ -28,7 +28,7 @@
             <p class="header-text" onclick="openNav()">Menu</p>
           </div>
         </div>
-
+        
         <div class="header-middle">
           <div class="header-middle-box">
             <div class="header-image-box-mid">
@@ -36,7 +36,7 @@
             </div>
           </div>
         </div>
-
+        
         <div class="header-right">
           <div class="header-right-box">
             <div class="header-image-box">
@@ -48,85 +48,48 @@
       </div>
     </header>
     
-    <main id="emptyCart" class="emptyCart">
-      <div class="emptyCart-title"><h1>Cart</h1></div>
-      <div class="emptyCart-text1"><p>There is nothing to see here. Yet.</p></div>
-      <div class="emptyCart-shopNow"><a href="#">Shop Now</a></div>
-      <div class="emptyCart-image1"><img src="img/skeleton.png" alt="skeleton sitting against tree" /></div>
-    </main>
-    
-    <main id="filledCart" class="filledCart">
-      <div class="emptyCart-title"><h1>Cart</h1></div>
-      <div class="table-container">
-        <table id="itemTable" class="cart-items">
-          <tr class="table-headings">
-            <th class="table-heading">Item</th>
-            <th class="table-heading"></th>
-            <th class="table-heading">Price</th>
-            <th class="table-heading">Quantity</th>
-            <th class="table-heading">SubTotal</th>
-            <th class="table-heading"></th>
-          </tr>
-          <!--
-          <tr id="itemRow" class=table-row>
-            <td class="item-image"></td>
-            <td class="item-name"></td>
-            <td class="item-price"></td>
-            <td class="item-quantity">
-              <div class="item-quantity-container">
-                <div class="item-quantity-box">
-                  <div class="item-down-box" onclick="numItem(-1)">
-                    <img class="item-down-image" src="img/icons-2x.png" />  
-                  </div>
-                  <p class="quantity"></p>
-                  <div class="item-up-box" onclick="numItem(1)">
-                    <img class="item-up-image" src="img/icons-2x.png" />  
-                  </div>
-                </div>
-                <div class="item-update-container">
-                  <button class="item-update-button" type="button">Update</button>
-                </div>
-              </div>
-            </td>
-            <td class="item-subtotal"></td>
-            <td class="item-remove">
-              <div class="item-remove-box" onclick="clearItem()">
-                <img class="item-remove-image" src="img/icons-2x.png" />
-              </div>
-            </td>
-          </tr>
--->
-        </table>
-
-        <div class="items-total-container">
-          <table class="items-total">
-            <tr class="items-total-row1">
-              <td class="item-total-subtotal">Subtotal</td>
-              <td class="item-total-price1"></td>
-            </tr>
-            <tr class="items-total-row2">
-              <td class="item-total-shipping">Shipping</td>
-              <td class="item-total-price2">TBD</td>
-            </tr>
-            <tr class="items-total-row3">
-              <td class="items-total-total">Total</td>
-              <td class="item-total-price4"></td>
-            </tr>
-          </table>
-        </div>
-        
-        <div class="checkout">
-          <button type="submit">Checkout</button>
-          <br>
-          <a href="#">Keep Shopping</a>
-        </div>
-        
+    <main class="section-main">
+      <div class=promo-banner>
+        <p class="promo-text">Free shipping on orders over $40!</p>
       </div>
       
-      
+      <section class="shop-container">
+        <div class="col-left">
+          <div class="shop-coffee">
+            <img class="shop-link-image" src="img/coffee-taxon.jpg"/>
+            <a class="shop-link" href="#">All Coffee</a>
+            <a class="shop-link" href="#">Latin America</a>
+            <a class="shop-link" href="#">Asia Pacific</a>
+            <a class="shop-link" href="#">Africa</a>
+            <a class="shop-link" href="#">Blends</a>
+            <a class="shop-link" href="#">Subscriptions</a>
+          </div>
+          <div class="shop-gifts">
+            <img class="shop-link-image" src="img/gifts-taxon.jpg"/>
+            <a class="shop-link" href="#">Gift Guide</a>
+            <a class="shop-link" href="#">Gift a Subscription</a>
+          </div>
+          <div class="shop-gear">
+            <img class="shop-link-image" src="img/gear-taxon.jpg"/>
+            <a class="shop-link" href="#">All Gear</a>
+            <a class="shop-link" href="#">Brewers</a>
+            <a class="shop-link" href="#">Brew Kits</a>
+            <a class="shop-link" href="#">Grinders</a>
+            <a class="shop-link" href="#">Mugs</a>
+            <a class="shop-link" href="#">Weigh + Pour</a>
+            <a class="shop-link" href="#">Filters + Parts</a>
+            <a class="shop-link" href="#">Merch</a>
+            <a class="shop-link" href="#">Skate Team</a>
+          </div>
+          <div class="shop-top">
+            <a href="#"><img src="img/back-to-top.png"/></a>
+          </div>
+        </div>
+        <div class="col-right"></div>
+      </section>
       
     </main>
-    
+
     <nav id="nav" class="section-nav">
       <div class="nav-row1">
         <div class="nav-row1-a">
@@ -204,8 +167,6 @@
     </footer>
     
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/products.js"></script>
   <script src="js/nav.js"></script>
   <script src="js/cart.js"></script>
   </body>
-</html>
