@@ -56,7 +56,7 @@ body {
 
 .shop-container {
   width: 100%;
-  margin-top: 80;
+  margin-top: 0;
   display: flex;
 }
 
@@ -64,8 +64,7 @@ body {
 
 .col-left {
   width: 200px;
-  border: 1px solid red;
-  padding: 0 32;
+  padding: 80 32 0;
 }
 
 .shop-coffee,
@@ -97,19 +96,68 @@ body {
 
 .col-right {
   width: 100%;
-  border: 1px solid green;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
-.item1,
-.item2 {
-  padding-left: 0px;
+.item {
+  margin-top: 0;
+  height: 500;
   text-align: center;
+  position: relative;
+}
+
+.products {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.products-box01 {
+  width: 100%;
+  height: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .products-image {
-  
-  width: 80%;
-  bordeR: 1px solid blue;
+  width: 70%;
+}
+
+.products-box02 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100;
+}
+
+.text-hover-brown {
+  color: #1f1815;
+}
+
+.text-hover-brown:hover {
+  color: #bf955a;
+  cursor: pointer;
+}
+
+.products-name {
+  font-weight: 700;
+  font-size: .9em;
+}
+
+.products-price {
+  margin-top: 14;
+}
+
+.products-cart {
+  margin-top: 17;
+  color:#bf955a;
+  font-size: .9em;
+  transition: opacity .2s linear;
+}
+
+.products-cart:hover {
+  opacity: .4;
 }
