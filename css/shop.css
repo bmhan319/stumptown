@@ -65,6 +65,8 @@ body {
 .col-left {
   width: 200px;
   padding: 80 32 0;
+  bordeR: 2px solid red;
+  position: relative;
 }
 
 .shop-coffee,
@@ -92,6 +94,31 @@ body {
   opacity: .4;
 }
 
+.shop-top-hide {
+  position: fixed;
+  bottom: 30;
+  opacity: 0;
+  transition: opacity .2s linear;
+}
+
+.shop-top-show {
+  position: fixed;
+  bottom: 30;
+  opacity: 1;
+  transition: opacity .2s linear;
+}
+
+.shop-top-show-absolute {
+  position: absolute;
+  bottom: 30;
+  opacity: 1;
+  transition: opacity .2s linear;
+}
+
+.shop-top-image {
+  width: 70;
+}
+
 /*----- Right Column -----*/
 
 .col-right {
@@ -99,6 +126,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  bordeR: 2px solid green;
 }
 
 .item {
@@ -156,6 +184,7 @@ body {
   color:#bf955a;
   font-size: .9em;
   transition: opacity .2s linear;
+  cursor: pointer;
 }
 
 .products-cart:hover {
