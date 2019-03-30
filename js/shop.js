@@ -34,13 +34,17 @@ function locateFooter() {
 }
 window.addEventListener("scroll", locateFooter)
 
-/*
-window.onresize = function() {
-  if (window.innerHeight >=750) {
-    document.querySelector(".shop-top-show").style.top = "90vh"
-  } else {
-    document.querySelector(".shop-top-show").style.top = "80vh"
-  }
 
+// Scroll back to top of page
+$(document).ready(function() {
+    $("#shopTop").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+});
+
+// Opening Product Page with Correct Product Info
+function openProduct(id) {
+  localStorage.setItem("productIndex", id)
 }
-*/

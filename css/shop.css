@@ -33,7 +33,6 @@ body {
 /*----- Main Section -----*/
 .section-main {
   width: 100%;
-  border: 1px solid blue;
   position: relative;
   top: 100;
 }
@@ -65,7 +64,6 @@ body {
 .col-left {
   width: 200px;
   padding: 80 32 0;
-  bordeR: 2px solid red;
   position: relative;
 }
 
@@ -115,8 +113,14 @@ body {
   transition: opacity .2s linear;
 }
 
+.shop-top-image-hide {
+  width: 70;
+  opacity: 0;
+}
+
 .shop-top-image {
   width: 70;
+  opacity: 1;
 }
 
 /*----- Right Column -----*/
@@ -126,7 +130,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  bordeR: 2px solid green;
 }
 
 .item {
