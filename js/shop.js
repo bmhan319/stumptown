@@ -48,3 +48,10 @@ $(document).ready(function() {
 function openProduct(id) {
   localStorage.setItem("productIndex", id)
 }
+
+
+//Show all Products on load
+window.onload = function() {
+  
+}
+  

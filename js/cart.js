@@ -1,25 +1,26 @@
-let counter = sessionStorage.getItem("cartCounter")
+let counter = sessionStorage.getItem("cartCounter");
 
-window.onload = function(){
-  let subtotal = 0
-  document.querySelector("#counterNum").innerHTML = counter
-  cartVisible()
-  
-  for (var i = 0; i < (sessionStorage.length + 20); i++) {
+window.onload = function() {
+  let subtotal = 0;
+  document.querySelector("#counterNum").innerHTML = counter;
+  cartVisible();
+
+  for (var i = 0; i < sessionStorage.length + 20; i++) {
     if (sessionStorage[i] == undefined) {
-      continue
+      continue;
     } else {
-      let item = JSON.parse(sessionStorage.getItem(i))
-      addRow(item)
-      subtotal = subtotal + (item.price * item.numItems)
-      products[i].numItems = Number(document.querySelector("#quantity" + i).innerHTML)
+      let item = JSON.parse(sessionStorage.getItem(i));
+      addRow(item);
+      subtotal = subtotal + item.price * item.numItems;
+      products[i].numItems = Number(
+        document.querySelector("#quantity" + i).innerHTML
+      );
     }
   }
-  
-  document.querySelector(".item-total-price1").innerHTML = subtotal
-  document.querySelector(".item-total-price4").innerHTML = subtotal
-  
-}
+
+  document.querySelector(".item-total-price1").innerHTML = subtotal;
+  document.querySelector(".item-total-price4").innerHTML = subtotal;
+};
 
 // Add Rows to Table
 function addRow(item) {
@@ -31,96 +32,121 @@ function addRow(item) {
   let cell4 = row.insertCell(3);
   let cell5 = row.insertCell(4);
   let cell6 = row.insertCell(5);
-  
-  row.setAttribute("id", "itemRow")
-  row.setAttribute("id", "itemRow" + item.id)
-  row.setAttribute("class", "table-row")
-  
-  cell1.setAttribute("class", "item-image")
-  cell2.setAttribute("class", "item-name")
-  cell3.setAttribute("class", "item-price")
-  cell4.setAttribute("class", "item-quantity")
-  cell5.setAttribute("class", "item-subtotal")
-  cell6.setAttribute("class", "item-remove")
-  populateTable()
-  
+
+  row.setAttribute("id", "itemRow");
+  row.setAttribute("id", "itemRow" + item.id);
+  row.setAttribute("class", "table-row");
+
+  cell1.setAttribute("class", "item-image");
+  cell2.setAttribute("class", "item-name");
+  cell3.setAttribute("class", "item-price");
+  cell4.setAttribute("class", "item-quantity");
+  cell5.setAttribute("class", "item-subtotal");
+  cell6.setAttribute("class", "item-remove");
+  populateTable();
+
   // Fill in Product Data to Cart Rows
   function populateTable() {
-  cell1.innerHTML = '<img class="image" src="" />'
-  cell2.innerHTML = document.querySelector(".item-name").innerHTML = item.name
-  cell3.innerHTML = document.querySelector(".item-price").innerHTML = item.price
-  cell4.innerHTML = '<div class="item-quantity-container"><div class="item-quantity-box"><div class="item-down-box"><img class="item-down-image" src="img/icons-2x.png" /></div><p class="quantity"></p><div class="item-up-box"><img class="item-up-image" src="img/icons-2x.png" /></div></div><div class="item-update-container"><button class="item-update-button" type="button">Update</button></div></div>'
-  cell5.innerHTML = document.querySelector(".item-subtotal").innerHTML = (item.price * item.numItems)
-  cell6.innerHTML = '<div class="item-remove-box"><img class="item-remove-image" src="img/icons-2x.png" /></div>'
-  
-  document.querySelector(".image").setAttribute("src", "img/" + item.image )
-  document.querySelector(".image").setAttribute("alt", item.image )
-  document.querySelector(".item-price").setAttribute("id", "price" + item.id )
-  document.querySelector(".quantity").setAttribute("id", "quantity" + item.id )
-  document.querySelector(".quantity").innerHTML = item.numItems
-  document.querySelector(".item-subtotal").setAttribute("id", "subTotal" + item.id )
-  document.querySelector(".item-down-box").setAttribute("onclick", "numItem(-1," + item.id + ")" )
-  document.querySelector(".item-up-box").setAttribute("onclick", "numItem(1," + item.id + ")" )
-  document.querySelector(".item-remove-box").setAttribute("onclick", "clearItem(" + item.id + "," + item.numItems + ")" )
+    cell1.innerHTML = '<img class="image" src="" />';
+    cell2.innerHTML = document.querySelector(".item-name").innerHTML =
+      item.name;
+    cell3.innerHTML = document.querySelector(".item-price").innerHTML =
+      item.price;
+    cell4.innerHTML =
+      '<div class="item-quantity-container"><div class="item-quantity-box"><div class="item-down-box"><img class="item-down-image" src="img/icons-2x.png" /></div><p class="quantity"></p><div class="item-up-box"><img class="item-up-image" src="img/icons-2x.png" /></div></div><div class="item-update-container"><button class="item-update-button" type="button">Update</button></div></div>';
+    cell5.innerHTML = document.querySelector(".item-subtotal").innerHTML =
+      item.price * item.numItems;
+    cell6.innerHTML =
+      '<div class="item-remove-box"><img class="item-remove-image" src="img/icons-2x.png" /></div>';
+
+    document.querySelector(".image").setAttribute("src", "img/" + item.image);
+    document.querySelector(".image").setAttribute("alt", item.image);
+    document.querySelector(".item-price").setAttribute("id", "price" + item.id);
+    document
+      .querySelector(".quantity")
+      .setAttribute("id", "quantity" + item.id);
+    document.querySelector(".quantity").innerHTML = item.numItems;
+    document
+      .querySelector(".item-subtotal")
+      .setAttribute("id", "subTotal" + item.id);
+    document
+      .querySelector(".item-down-box")
+      .setAttribute("onclick", "numItem(-1," + item.id + ")");
+    document
+      .querySelector(".item-up-box")
+      .setAttribute("onclick", "numItem(1," + item.id + ")");
+    document
+      .querySelector(".item-remove-box")
+      .setAttribute(
+        "onclick",
+        "clearItem(" + item.id + "," + item.numItems + ")"
+      );
   }
 }
 
 // Cart Visble/Invisible
 function cartVisible() {
   if (document.querySelector("#counterNum").innerHTML == 0) {
-    document.querySelector("#emptyCart").style.display = "block"
-    document.querySelector("#filledCart").style.display = "none"
-    document.querySelector("#counterNum").innerHTML = 0
-    localStorage.clear()
+    document.querySelector("#emptyCart").style.display = "block";
+    document.querySelector("#filledCart").style.display = "none";
+    document.querySelector("#counterNum").innerHTML = 0;
+    localStorage.clear();
   } else {
-    document.querySelector("#emptyCart").style.display = "none"
-    document.querySelector("#filledCart").style.display = "block"
+    document.querySelector("#emptyCart").style.display = "none";
+    document.querySelector("#filledCart").style.display = "block";
   }
 }
 
 // Add/Subtract Item from Cart
 function numItem(num, index) {
-  document.querySelector("#quantity" + index).innerHTML = Number(document.querySelector("#quantity" + index).innerHTML) + num
-  document.querySelector("#subTotal" + index).innerHTML = Number(document.querySelector("#quantity" + index).innerHTML * document.querySelector("#price" + index).innerHTML)
-  products[index].numItems = Number(products[index].numItems + num)
-  sessionStorage.setItem(index, JSON.stringify(products[index]))
-  document.querySelector("#counterNum").innerHTML = Number(document.querySelector("#counterNum").innerHTML) + num
-  sessionStorage.setItem("cartCounter", document.querySelector("#counterNum").innerHTML)
-  
+  document.querySelector("#quantity" + index).innerHTML =
+    Number(document.querySelector("#quantity" + index).innerHTML) + num;
+  document.querySelector("#subTotal" + index).innerHTML = Number(
+    document.querySelector("#quantity" + index).innerHTML *
+      document.querySelector("#price" + index).innerHTML
+  );
+  products[index].numItems = Number(products[index].numItems + num);
+  sessionStorage.setItem(index, JSON.stringify(products[index]));
+  document.querySelector("#counterNum").innerHTML =
+    Number(document.querySelector("#counterNum").innerHTML) + num;
+  sessionStorage.setItem(
+    "cartCounter",
+    document.querySelector("#counterNum").innerHTML
+  );
+
   if (document.querySelector("#quantity" + index).innerHTML == 0) {
-    console.log("hi")
+    console.log("hi");
+    document.querySelector(".item-down-box").style.pointerEvents = "none";
+  } else {
+    document.querySelector(".item-down-box").style.pointerEvents = "auto";
   }
-  
-  totalAmount()
-  
-  
+
+  totalAmount();
 }
 
 //Figure Subtotal and Total
 function totalAmount() {
   let subTotal = 0;
-  for (var i = 0; i < (sessionStorage.length + 20); i++) {
+  for (var i = 0; i < sessionStorage.length + 20; i++) {
     if (sessionStorage[i] == undefined) {
-      continue
+      continue;
     } else {
-      subTotal = subTotal + Number(document.querySelector("#subTotal" + i).innerHTML)
-      document.querySelector(".item-total-price1").innerHTML = subTotal
-      document.querySelector(".item-total-price4").innerHTML = subTotal
+      subTotal =
+        subTotal + Number(document.querySelector("#subTotal" + i).innerHTML);
+      document.querySelector(".item-total-price1").innerHTML = subTotal;
+      document.querySelector(".item-total-price4").innerHTML = subTotal;
     }
   }
 }
 
-
-
 // Clear Item from Cart
 function clearItem(index, numItem) {
-  let row = document.querySelector("#itemRow" + index)
-  let counterNum = document.querySelector("#counterNum")
-  
-  sessionStorage.removeItem(index)
-  row.style.display = "none"
-  counterNum.innerHTML = counterNum.innerHTML - products[index].numItems
-  sessionStorage.setItem("cartCounter", counterNum.innerHTML)
-  cartVisible()
-}
+  let row = document.querySelector("#itemRow" + index);
+  let counterNum = document.querySelector("#counterNum");
 
+  sessionStorage.removeItem(index);
+  row.style.display = "none";
+  counterNum.innerHTML = counterNum.innerHTML - products[index].numItems;
+  sessionStorage.setItem("cartCounter", counterNum.innerHTML);
+  cartVisible();
+}
