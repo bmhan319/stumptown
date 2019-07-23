@@ -89,14 +89,18 @@ function addRow(item) {
 
 // Cart Visble/Invisible
 function cartVisible() {
-  if (document.querySelector("#counterNum").innerHTML == 0) {
-    document.querySelector("#emptyCart").style.display = "block";
-    document.querySelector("#filledCart").style.display = "none";
-    document.querySelector("#counterNum").innerHTML = 0;
+  let counterNum = document.querySelector("#counterNum");
+  let filledCart = document.querySelector("#filledCart");
+  let emptyCart = document.querySelector("#emptyCart");
+
+  if (counterNum.innerHTML == 0) {
+    emptyCart.style.display = "block";
+    filledCart.style.display = "none";
+    counterNum.innerHTML = 0;
     localStorage.clear();
   } else {
-    document.querySelector("#emptyCart").style.display = "none";
-    document.querySelector("#filledCart").style.display = "block";
+    emptyCart.style.display = "none";
+    filledCart.style.display = "block";
   }
 }
 
@@ -105,13 +109,12 @@ function numItem(num, index) {
   let quantity = document.querySelector("#quantity" + index);
   let subTotal = document.querySelector("#subTotal" + index);
   let price = document.querySelector("#price" + index);
-  let product = products[index].numItems;
   let counterNum = document.querySelector("#counterNum");
   let itemBox = document.querySelector(".item-down-box" + index);
 
   quantity.innerHTML = Number(quantity.innerHTML) + num;
   subTotal.innerHTML = Number(quantity.innerHTML * price.innerHTML);
-  product = Number(product + num);
+  products[index].numItems = Number(products[index].numItems + num);
 
   sessionStorage.setItem(index, JSON.stringify(products[index]));
 
