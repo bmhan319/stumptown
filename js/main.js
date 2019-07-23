@@ -20,7 +20,7 @@ function fadeIn() {
     let topOfObject = productRow.top;
     let bottomOfWindow = window.innerHeight;
 
-    if (topOfObject < bottomOfWindow) {
+    if (topOfObject < bottomOfWindow && topOfObject > 0) {
       fade[i].style.opacity = 1;
     }
   }
