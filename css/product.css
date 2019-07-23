@@ -65,7 +65,7 @@ body {
   height: 100%;
   position: sticky;
   position: -webkit-sticky;
-  top: 100;
+  top: 180;
 }
 
 .mid-col {
@@ -92,7 +92,7 @@ body {
 .product-image-box {
   width: 100%;
   position: relative;
-  margin: auto 0;
+  margin: 300 0;
 }
 
 .product-image {
