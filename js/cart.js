@@ -147,10 +147,14 @@ function totalAmount() {
 // Clear Item from Cart
 function clearItem(index, numItem) {
   let row = document.querySelector("#itemRow" + index);
+  let sub = document.querySelector("#subTotal" + index);
   let counterNum = document.querySelector("#counterNum");
+  console.log(sub);
 
   sessionStorage.removeItem(index);
   row.style.display = "none";
+  sub.innerHTML = 0;
+  totalAmount();
   counterNum.innerHTML = counterNum.innerHTML - products[index].numItems;
   sessionStorage.setItem("cartCounter", counterNum.innerHTML);
   cartVisible();
