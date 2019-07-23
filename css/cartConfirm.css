@@ -8,7 +8,7 @@
   position: fixed;
   top: -90;
   left: 0;
-  display: none;
+  overflow: hidden;
 }
 
 .confirm-animate {

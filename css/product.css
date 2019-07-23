@@ -18,7 +18,7 @@
 /* Sentinel Alt = Merriweather   font-family: 'Merriweather', serif; */
 
 * {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
 }
 
@@ -27,8 +27,8 @@ body {
   padding: 0;
   margin: 0;
   background-color: #f6f5f3;
-  overflow-y: visible; 
-  transition: opacity 1s linear .5s;
+  overflow-y: visible;
+  transition: opacity 1s linear 0.5s;
 }
 
 .bodyNoView {
@@ -56,7 +56,7 @@ body {
 .left-col {
   width: 25%;
   padding-bottom: 100;
-  margin-bottom:00px;
+  margin-bottom: 00px;
 }
 
 .mid-right-container {
@@ -65,7 +65,7 @@ body {
   height: 100%;
   position: sticky;
   position: -webkit-sticky;
-  top:100;
+  top: 100;
 }
 
 .mid-col {
@@ -114,12 +114,12 @@ body {
   font-size: 9.7em;
 }
 
-.product-price::before { 
+.product-price::before {
   content: "$";
-  font-size: .25em;
+  font-size: 0.25em;
   position: relative;
-  bottom:20;
-  padding-right: 20; 
+  bottom: 20;
+  padding-right: 20;
 }
 
 .product-description {
@@ -127,38 +127,38 @@ body {
   text-align: center;
   font-family: Merriweather, serif;
   font-weight: 400;
-  font-size: .9em;
+  font-size: 0.9em;
   line-height: 1.6;
 }
 
 .product-description a {
   text-decoration: none;
   font-family: Merriweather, serif;
-  color:#bf955a;
+  color: #bf955a;
 }
 
 .product-type {
   text-align: center;
-  margin: 30 0 0 ;
+  margin: 30 0 0;
   font-family: Merriweather, serif;
   font-weight: 700;
-  font-size: .85em;
+  font-size: 0.85em;
 }
 
 .product-size {
   text-align: center;
-  margin: 8 0 0 ;
+  margin: 8 0 0;
   font-family: Merriweather, serif;
   font-weight: 700;
-  font-size: .85em;
+  font-size: 0.85em;
 }
 
 .product-subscription {
   text-align: center;
-  margin: 8 0 0 ;
+  margin: 8 0 0;
   font-family: Merriweather, serif;
   font-weight: 700;
-  font-size: .85em;
+  font-size: 0.85em;
   color: #bf955a;
 }
 
@@ -217,7 +217,7 @@ body {
 .prod-descrip {
   font-family: Merriweather, serif;
   font-weight: 400;
-  font-size: .9em;
+  font-size: 0.9em;
   letter-spacing: 1;
   line-height: 1.7;
   margin-left: 24;
@@ -227,19 +227,19 @@ body {
   padding-bottom: 200;
 }
 
-.prod-list li{
+.prod-list li {
   font-weight: 400;
   font-family: Merriweather, serif;
   font-size: 1em;
   padding-bottom: 16px;
 }
 
-.left-col-container a{
+.left-col-container a {
   text-decoration: none;
   text-align: center;
-  margin: 8 0 0 ;
+  margin: 8 0 0;
   font-weight: 700;
-  font-size: .85em;
+  font-size: 0.85em;
   color: #bf955a;
   letter-spacing: 1;
   margin-left: 24;
@@ -255,7 +255,7 @@ body {
 .region-descrip {
   font-family: Merriweather, serif;
   font-weight: 400;
-  font-size: .9em;
+  font-size: 0.9em;
   letter-spacing: 1;
   line-height: 1.7;
   margin-left: 24;
@@ -273,11 +273,11 @@ body {
 }
 
 .location-image-container {
-  width:100%;
+  width: 100%;
 }
 
 .location-image {
-  width:200%;
+  width: 200%;
 }
 
 /* -----Recommend Section ----- */
@@ -304,7 +304,7 @@ body {
   letter-spacing: 1;
 }
 
-.recommend-row2{
+.recommend-row2 {
   width: 100%;
   display: flex;
 }
@@ -340,7 +340,6 @@ body {
 .recommend-row3-col3 {
   width: 33.3333334%;
   text-align: center;
-  
 }
 
 .text-hover-brown {
@@ -352,8 +351,8 @@ body {
 .recommend-name2,
 .recommend-name3 {
   text-decoration: none;
-  font-size: .9em;
-  font-weight: 700; 
+  font-size: 0.9em;
+  font-weight: 700;
   margin-bottom: 16;
 }
 
@@ -361,10 +360,10 @@ body {
 .recommend-price2,
 .recommend-price3 {
   text-decoration: none;
-  font-size: .9em;
-  font-weight: 400; 
+  font-size: 0.9em;
+  font-weight: 400;
 }
 
 .text-hover-brown:hover {
-  color:#bf955a;
+  color: #bf955a;
 }
