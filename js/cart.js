@@ -73,6 +73,9 @@ function addRow(item) {
       .querySelector(".item-down-box")
       .setAttribute("onclick", "numItem(-1," + item.id + ")");
     document
+      .querySelector(".item-down-box")
+      .classList.add("item-down-box" + item.id);
+    document
       .querySelector(".item-up-box")
       .setAttribute("onclick", "numItem(1," + item.id + ")");
     document
@@ -116,9 +119,11 @@ function numItem(num, index) {
 
   if (document.querySelector("#quantity" + index).innerHTML == 0) {
     console.log("hi");
-    document.querySelector(".item-down-box").style.pointerEvents = "none";
+    document.querySelector(".item-down-box" + index).style.pointerEvents =
+      "none";
   } else {
-    document.querySelector(".item-down-box").style.pointerEvents = "auto";
+    document.querySelector(".item-down-box" + index).style.pointerEvents =
+      "auto";
   }
 
   totalAmount();
