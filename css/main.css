@@ -15,7 +15,7 @@
 /* Sentinel Alt = Merriweather   font-family: 'Merriweather', serif; */
 
 * {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
 }
 
@@ -44,7 +44,7 @@ body {
   /*height: 1186;*/
   height: 97vh;
   background-image: url(../img/Landscape_Rwanda_Huye_Mountain.jpg);
-  background-size:cover;
+  background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -63,7 +63,7 @@ body {
   width: 100%;
 }
 
-.splash-logo-container img{
+.splash-logo-container img {
   width: 100%;
 }
 
@@ -117,10 +117,10 @@ header {
 }
 
 .header-left-box,
-.header-right-box{
+.header-right-box {
   display: flex;
   cursor: pointer;
-  transition: opacity .5s ease;
+  transition: opacity 0.5s ease;
 }
 
 .header-image-box {
@@ -132,28 +132,28 @@ header {
 
 .header-left-box:hover,
 .header-right-box:hover {
-  opacity: .4;
+  opacity: 0.4;
 }
 
 .header-left img {
   position: relative;
   width: 250;
-  top:-484;
+  top: -484;
   left: 7;
 }
 
 .header-right img {
   position: relative;
   width: 250;
-  top:-533;
+  top: -533;
   left: 3;
 }
 
 .header-text {
   margin: auto 0;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   color: #bf955a;
-  font-size: .85em;
+  font-size: 0.85em;
 }
 
 .header-text-right {
@@ -164,8 +164,13 @@ header {
 .section-products {
   position: relative;
   width: 100%;
-  top:-9;
-  margin-top:0;
+  top: -9;
+  margin-top: 0;
+}
+
+.fadein {
+  opacity: 0;
+  transition: opacity 1s linear;
 }
 
 .section-products-row01,
@@ -174,7 +179,7 @@ header {
 .section-products-row04,
 .section-products-row05,
 .section-products-row06,
-.section-products-row07, 
+.section-products-row07,
 .section-products-row08 {
   width: 98vw;
   margin: 0 auto;
@@ -203,8 +208,7 @@ header {
 
 .products-box01 {
   width: 100%;
-  justify-content:center;
-
+  justify-content: center;
 }
 
 .products-box02 {
@@ -212,7 +216,6 @@ header {
   position: relative;
   bottom: 65;
   text-align: center;
-
 }
 
 .products-image {
@@ -230,7 +233,7 @@ header {
 }
 
 .miir-wide-mouth {
-  width: 60%
+  width: 60%;
 }
 
 .miir-water-bottle {
@@ -238,37 +241,37 @@ header {
 }
 
 .products-box01 a,
-.products-box02 a{ 
+.products-box02 a {
   text-decoration: none;
 }
 
 .products-name {
   color: #1f1815;
   font-weight: 700;
-  font-size: .9em;
+  font-size: 0.9em;
   padding-bottom: 16;
 }
 
 .products-price {
   color: #1f1815;
   font-weight: 400;
-  font-size: .9em;
+  font-size: 0.9em;
   padding-bottom: 16;
 }
 
 .products-cart {
-  color:#bf955a;
+  color: #bf955a;
   cursor: pointer;
-  transition: opacity .5s ease;
+  transition: opacity 0.5s ease;
 }
 
 .text-hover-brown:hover > .products-name,
-.text-hover-brown:hover > .products-price{
+.text-hover-brown:hover > .products-price {
   color: #bf955a;
 }
 
 .products-cart:hover {
-  opacity: .4;
+  opacity: 0.4;
 }
 
 /*----- Links Section -----*/
@@ -278,7 +281,6 @@ header {
 }
 
 .links-container {
-
   width: 40%;
   margin: 0 auto 100;
   text-align: center;
@@ -293,7 +295,7 @@ header {
   font-family: Merriweather, serif;
   font-weight: 700;
   font-size: 1.75em;
-  letter-spacing: 1
+  letter-spacing: 1;
 }
 
 .links-row1 img {
@@ -316,9 +318,9 @@ header {
 .link-boxes {
   margin-bottom: 40;
   cursor: pointer;
-  transition: opacity .2s ease;
+  transition: opacity 0.2s ease;
 }
 
 .link-boxes:hover {
-  opacity: .4;
+  opacity: 0.4;
 }
