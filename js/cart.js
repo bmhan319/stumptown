@@ -102,28 +102,26 @@ function cartVisible() {
 
 // Add/Subtract Item from Cart
 function numItem(num, index) {
-  document.querySelector("#quantity" + index).innerHTML =
-    Number(document.querySelector("#quantity" + index).innerHTML) + num;
-  document.querySelector("#subTotal" + index).innerHTML = Number(
-    document.querySelector("#quantity" + index).innerHTML *
-      document.querySelector("#price" + index).innerHTML
-  );
-  products[index].numItems = Number(products[index].numItems + num);
-  sessionStorage.setItem(index, JSON.stringify(products[index]));
-  document.querySelector("#counterNum").innerHTML =
-    Number(document.querySelector("#counterNum").innerHTML) + num;
-  sessionStorage.setItem(
-    "cartCounter",
-    document.querySelector("#counterNum").innerHTML
-  );
+  let quantity = document.querySelector("#quantity" + index);
+  let subTotal = document.querySelector("#subTotal" + index);
+  let price = document.querySelector("#price" + index);
+  let product = products[index].numItems;
+  let counterNum = document.querySelector("#counterNum");
+  let itemBox = document.querySelector(".item-down-box" + index);
 
-  if (document.querySelector("#quantity" + index).innerHTML == 0) {
-    console.log("hi");
-    document.querySelector(".item-down-box" + index).style.pointerEvents =
-      "none";
+  quantity.innerHTML = Number(quantity.innerHTML) + num;
+  subTotal.innerHTML = Number(quantity.innerHTML * price.innerHTML);
+  product = Number(product + num);
+
+  sessionStorage.setItem(index, JSON.stringify(products[index]));
+
+  counterNum.innerHTML = Number(counterNum.innerHTML) + num;
+  sessionStorage.setItem("cartCounter", counterNum.innerHTML);
+
+  if (quantity.innerHTML == 0) {
+    itemBox.style.pointerEvents = "none";
   } else {
-    document.querySelector(".item-down-box" + index).style.pointerEvents =
-      "auto";
+    itemBox.style.pointerEvents = "auto";
   }
 
   totalAmount();
