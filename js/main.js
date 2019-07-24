@@ -13,7 +13,8 @@ window.onload = function() {
 document.addEventListener("scroll", fadeIn);
 
 function fadeIn() {
-  let fade = document.querySelectorAll(".fadein");
+  const fade = document.querySelectorAll(".fadein");
+  const loader = document.querySelectorAll(".loader");
 
   for (var i = 0; i < fade.length; i++) {
     let productRow = fade[i].getBoundingClientRect();
