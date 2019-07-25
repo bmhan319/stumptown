@@ -5,6 +5,13 @@
     height: 97vh;
   }
 
+  .splash-text {
+    height: auto;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+
   /*----- Header Bar -----*/
   header {
     position: relative;
@@ -112,5 +119,194 @@
   .footer-row2 p {
     margin: 0 0 10 0;
     font-size: 0.9em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /*----- Header Bar -----*/
+  .header-image-box {
+    width: 52px;
+    height: 52px;
+  }
+
+  .header-left img {
+    width: 250;
+    top: -484;
+  }
+
+  .header-right img {
+    width: 250;
+    top: -533;
+  }
+
+  .header-text {
+    display: block;
+  }
+
+  /*----- Product Page -----*/
+  .section-products {
+    position: relative;
+    width: 100%;
+    top: 91;
+    margin-top: 0;
+  }
+
+  .fadein {
+    opacity: 0;
+    transition: opacity 1s linear;
+  }
+
+  .section-products-row01,
+  .section-products-row02,
+  .section-products-row03,
+  .section-products-row04,
+  .section-products-row05,
+  .section-products-row06,
+  .section-products-row07,
+  .section-products-row08 {
+    width: 98vw;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 66;
+  }
+
+  .products {
+    width: 50vw;
+    position: relative;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 90px;
+    align-items: center;
+  }
+
+  .products-singlea {
+    width: 55%;
+    margin: 0 auto;
+  }
+
+  .products-singleb {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .products-box01 {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .products-box02 {
+    width: 100%;
+    position: relative;
+    bottom: 65;
+    text-align: center;
+  }
+
+  .products-image {
+    display: flex;
+    width: 86%;
+    padding-bottom: 135;
+    margin: 0 auto;
+  }
+
+  .products-imageb {
+    display: flex;
+    width: 97%;
+    padding-bottom: 135;
+    margin: 0 auto;
+  }
+
+  .miir-wide-mouth {
+    width: 60%;
+  }
+
+  .miir-water-bottle {
+    width: 76%;
+  }
+
+  .products-box01 a,
+  .products-box02 a {
+    text-decoration: none;
+  }
+
+  .products-name {
+    color: #1f1815;
+    font-weight: 700;
+    font-size: 0.7em;
+    padding-bottom: 12;
+  }
+
+  .products-price {
+    color: #1f1815;
+    font-weight: 400;
+    font-size: 0.7em;
+    padding-bottom: 12;
+  }
+
+  .products-cart {
+    color: #bf955a;
+    cursor: pointer;
+    transition: opacity 0.5s ease;
+    font-weight: 400;
+    font-size: 0.8em;
+  }
+
+  .text-hover-brown:hover > .products-name,
+  .text-hover-brown:hover > .products-price {
+    color: #bf955a;
+  }
+
+  .products-cart:hover {
+    opacity: 0.4;
+  }
+
+  /*----- Links Section -----*/
+  .section-links {
+    width: 100%;
+    position: relative;
+  }
+
+  .links-container {
+    width: 40%;
+    margin: 125 auto 0;
+    text-align: center;
+  }
+
+  .links-row1 {
+    width: 100%;
+  }
+
+  .links-row1 h2 {
+    margin: 0;
+    font-family: Merriweather, serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    letter-spacing: 1.25;
+  }
+
+  .links-row1 img {
+    width: 12%;
+  }
+
+  .links-row2 {
+    width: 100%;
+    margin: 41 0 0 0;
+    display: inline-block;
+  }
+
+  .links-row2 a {
+    color: #bf955a;
+    text-decoration: none;
+    font-size: 3.75em;
+    font-weight: 700;
+  }
+
+  .link-boxes {
+    margin-bottom: 26;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+  }
+
+  .link-boxes:hover {
+    opacity: 0.4;
   }
 }
