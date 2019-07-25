@@ -163,7 +163,7 @@ header {
 .section-products {
   position: relative;
   width: 100%;
-  top: -9;
+  top: 91;
   margin-top: 0;
 }
 
@@ -247,21 +247,23 @@ header {
 .products-name {
   color: #1f1815;
   font-weight: 700;
-  font-size: 0.9em;
-  padding-bottom: 16;
+  font-size: 0.7em;
+  padding-bottom: 12;
 }
 
 .products-price {
   color: #1f1815;
   font-weight: 400;
-  font-size: 0.9em;
-  padding-bottom: 16;
+  font-size: 0.7em;
+  padding-bottom: 12;
 }
 
 .products-cart {
   color: #bf955a;
   cursor: pointer;
   transition: opacity 0.5s ease;
+  font-weight: 400;
+  font-size: 0.8em;
 }
 
 .text-hover-brown:hover > .products-name,
@@ -281,7 +283,7 @@ header {
 
 .links-container {
   width: 40%;
-  margin: 0 auto 100;
+  margin: 125 auto 0;
   text-align: center;
 }
 
@@ -290,32 +292,32 @@ header {
 }
 
 .links-row1 h2 {
-  margin: 14;
+  margin: 0;
   font-family: Merriweather, serif;
   font-weight: 700;
-  font-size: 1.75em;
-  letter-spacing: 1;
+  font-size: 1.5em;
+  letter-spacing: 1.25;
 }
 
 .links-row1 img {
-  width: 9%;
+  width: 12%;
 }
 
 .links-row2 {
   width: 100%;
-  margin: 58 0 0 0;
+  margin: 41 0 0 0;
   display: inline-block;
 }
 
 .links-row2 a {
   color: #bf955a;
   text-decoration: none;
-  font-size: 4.5em;
+  font-size: 3.75em;
   font-weight: 700;
 }
 
 .link-boxes {
-  margin-bottom: 40;
+  margin-bottom: 26;
   cursor: pointer;
   transition: opacity 0.2s ease;
 }

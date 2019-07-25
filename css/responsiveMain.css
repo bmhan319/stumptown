@@ -31,4 +31,86 @@
   .header-text-right {
     font-size: 1em;
   }
+
+  /*----- Product Page -----*/
+  .section-products {
+    top: -9;
+  }
+
+  .products-name {
+    font-size: 0.9em;
+    padding-bottom: 16;
+  }
+
+  .products-price {
+    font-size: 0.9em;
+    padding-bottom: 16;
+  }
+
+  .products-cart {
+    font-size: 1em;
+  }
+
+  /*----- Links Section -----*/
+  .links-container {
+    margin: 0 auto 100;
+  }
+
+  .links-row1 h2 {
+    margin: 14;
+    font-family: Merriweather, serif;
+    font-weight: 700;
+    font-size: 1.75em;
+    letter-spacing: 1;
+  }
+
+  .links-row1 img {
+    width: 9%;
+  }
+
+  .links-row2 {
+    margin: 58 0 0 0;
+  }
+
+  .links-row2 a {
+    font-size: 4.5em;
+  }
+
+  .link-boxes {
+    margin-bottom: 40;
+  }
+
+  /*----- Footer -----*/
+
+  .footer-row1-col1,
+  .footer-row1-col3 {
+    letter-spacing: 0.05em;
+  }
+
+  .footer-row1-col1 p:nth-child(1),
+  .footer-row1-col1 p:nth-child(2),
+  .footer-row1-col3 p:nth-child(1) {
+    font-size: 0.9em;
+  }
+
+  .footer-row1-col1 p:nth-child(3) {
+    font-size: 1em;
+  }
+
+  .footer-row1-col2-rowa a {
+    font-size: 1.75em;
+  }
+
+  .footer-row1-col2-rowb img {
+    width: 100%;
+  }
+
+  .footer-email {
+    font-size: 0.9em;
+  }
+
+  .footer-row2 p {
+    margin: 0 0 10 0;
+    font-size: 0.9em;
+  }
 }
