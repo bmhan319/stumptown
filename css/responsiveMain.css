@@ -1,0 +1,34 @@
+@media only screen and (min-width: 1024px) {
+  /*----- Splash Page -----*/
+  .splash-page {
+    top: -69;
+    height: 97vh;
+  }
+
+  /*----- Header Bar -----*/
+  header {
+    position: relative;
+    top: -69;
+  }
+
+  .header-container {
+    padding: 0 8 0 22;
+  }
+
+  .header-left,
+  .header-right {
+    height: 100px;
+  }
+
+  .header-image-box {
+    margin-right: 16;
+  }
+
+  .header-text {
+    font-size: 0.85em;
+  }
+
+  .header-text-right {
+    font-size: 1em;
+  }
+}

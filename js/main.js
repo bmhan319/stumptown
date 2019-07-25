@@ -14,7 +14,7 @@ document.addEventListener("scroll", fadeIn);
 
 function fadeIn() {
   const fade = document.querySelectorAll(".fadein");
-  const loader = document.querySelectorAll(".loader");
+  //const loader = document.querySelectorAll(".loader");
 
   for (var i = 0; i < fade.length; i++) {
     let productRow = fade[i].getBoundingClientRect();
@@ -23,6 +23,7 @@ function fadeIn() {
 
     if (topOfObject < bottomOfWindow && topOfObject > 0) {
       fade[i].style.opacity = 1;
+      //loader[i].style.opacity = 0;
     }
   }
 }
@@ -32,17 +33,23 @@ document.addEventListener("scroll", fixedNav);
 
 function fixedNav() {
   let height = innerHeight - 100;
+  let width = innerWidth;
   let head = document.querySelector("#header");
   let products = document.querySelector(".section-products");
 
-  if (scrollY >= height) {
+  if (width >= 1024) {
+    if (scrollY >= height) {
+      head.style.position = "fixed";
+      head.style.top = 0;
+      products.style.marginTop = 100;
+    } else {
+      head.style.position = "relative";
+      head.style.top = -69;
+      products.style.marginTop = 0;
+    }
+  } else {
     head.style.position = "fixed";
     head.style.top = 0;
-    products.style.marginTop = 100;
-  } else {
-    head.style.position = "relative";
-    head.style.top = -69;
-    products.style.marginTop = 0;
   }
 }
 
