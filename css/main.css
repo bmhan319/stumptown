@@ -26,6 +26,7 @@ body {
   background-color: #f6f5f3;
   overflow-y: visible;
   transition: opacity 1s linear;
+  overflow-x: hidden;
 }
 
 .bodyNoView {
@@ -39,10 +40,8 @@ body {
 /*----- Splash Page -----*/
 .splash-page {
   position: relative;
-  top: -69;
   width: 100%;
-  /*height: 1186;*/
-  height: 97vh;
+  height: 100vh;
   background-image: url(../img/Landscape_Rwanda_Huye_Mountain.jpg);
   background-size: cover;
   background-position: 50% 50%;
@@ -54,7 +53,7 @@ body {
 }
 
 .splash-container {
-  padding-top: 50;
+  padding-top: 0;
   width: 550;
   top: 490;
 }
@@ -74,15 +73,21 @@ body {
 
 .splash-text {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 330;
+  height: 60;
   margin: 75 auto 0;
-  text-align: center;
   background-image: url(../img/default-off.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
   color: #f6f5f3;
   padding: 25;
+  font-size: 0.8em;
+  font-weight: 700;
+  letter-spacing: 1;
 }
 
 .splash-text:hover {
@@ -92,28 +97,29 @@ body {
 
 /*----- Header Bar -----*/
 header {
-  position: relative;
+  position: fixed;
   width: 100%;
-  top: -69;
+  top: 0;
   z-index: 10;
 }
 
 .header-container {
   display: flex;
   width: 100%;
-  padding: 0 8 0 22;
+  padding: 0 22 0 22;
 }
 
 .header-left,
 .header-right {
   display: flex;
   width: 50%;
-  height: 100px;
+  height: 80px;
   align-items: center;
 }
 
 .header-right {
   justify-content: flex-end;
+  margin-right: 10;
 }
 
 .header-left-box,
@@ -124,10 +130,10 @@ header {
 }
 
 .header-image-box {
-  width: 52px;
-  height: 52px;
+  width: 40px;
+  height: 40px;
   overflow: hidden;
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 .header-left-box:hover,
@@ -137,15 +143,15 @@ header {
 
 .header-left img {
   position: relative;
-  width: 250;
-  top: -484;
+  width: 180;
+  top: -346;
   left: 7;
 }
 
 .header-right img {
   position: relative;
-  width: 250;
-  top: -533;
+  width: 180;
+  top: -382;
   left: 3;
 }
 
@@ -153,18 +159,20 @@ header {
   margin: auto 0;
   font-family: "Merriweather", serif;
   color: #bf955a;
-  font-size: 0.85em;
+  font-size: 0.75em;
+  display: none;
 }
 
 .header-text-right {
-  font-size: 1em;
+  font-size: 0.85em;
+  display: block;
 }
 
 /*----- Product Page -----*/
 .section-products {
   position: relative;
   width: 100%;
-  top: -9;
+  top: 91;
   margin-top: 0;
 }
 
@@ -181,14 +189,14 @@ header {
 .section-products-row06,
 .section-products-row07,
 .section-products-row08 {
-  width: 98vw;
+  width: 100%;
   margin: 0 auto;
-  display: flex;
-  margin-bottom: 66;
+  display: block;
+  margin-bottom: 0;
 }
 
 .products {
-  width: 50vw;
+  width: 100%;
   position: relative;
   display: grid;
   grid-template-columns: 100%;
@@ -196,8 +204,12 @@ header {
   align-items: center;
 }
 
+.empty {
+  display: none;
+}
+
 .products-singlea {
-  width: 55%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -216,19 +228,20 @@ header {
   position: relative;
   bottom: 65;
   text-align: center;
+  padding-bottom: 32;
 }
 
 .products-image {
   display: flex;
   width: 86%;
-  padding-bottom: 135;
+  padding-bottom: 100;
   margin: 0 auto;
 }
 
 .products-imageb {
   display: flex;
   width: 97%;
-  padding-bottom: 135;
+  padding-bottom: 100;
   margin: 0 auto;
 }
 
@@ -249,20 +262,22 @@ header {
   color: #1f1815;
   font-weight: 700;
   font-size: 0.9em;
-  padding-bottom: 16;
+  padding-bottom: 12;
 }
 
 .products-price {
   color: #1f1815;
   font-weight: 400;
   font-size: 0.9em;
-  padding-bottom: 16;
+  padding-bottom: 12;
 }
 
 .products-cart {
   color: #bf955a;
   cursor: pointer;
   transition: opacity 0.5s ease;
+  font-weight: 400;
+  font-size: 1em;
 }
 
 .text-hover-brown:hover > .products-name,
@@ -282,7 +297,7 @@ header {
 
 .links-container {
   width: 40%;
-  margin: 0 auto 100;
+  margin: 125 auto 0;
   text-align: center;
 }
 
@@ -291,32 +306,32 @@ header {
 }
 
 .links-row1 h2 {
-  margin: 14;
+  margin: 0;
   font-family: Merriweather, serif;
   font-weight: 700;
-  font-size: 1.75em;
+  font-size: 0.95em;
   letter-spacing: 1;
 }
 
 .links-row1 img {
-  width: 9%;
+  width: 12%;
 }
 
 .links-row2 {
   width: 100%;
-  margin: 58 0 0 0;
+  margin: 31 0 0 0;
   display: inline-block;
 }
 
 .links-row2 a {
   color: #bf955a;
   text-decoration: none;
-  font-size: 4.5em;
+  font-size: 2.25em;
   font-weight: 700;
 }
 
 .link-boxes {
-  margin-bottom: 40;
+  margin-bottom: 22;
   cursor: pointer;
   transition: opacity 0.2s ease;
 }
@@ -324,6 +339,3 @@ header {
 .link-boxes:hover {
   opacity: 0.4;
 }
-
-
-.
