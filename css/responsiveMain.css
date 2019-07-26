@@ -190,53 +190,20 @@
   }
 
   /*----- Links Section -----*/
-  .section-links {
-    width: 100%;
-    position: relative;
-  }
-
-  .links-container {
-    width: 40%;
-    margin: 125 auto 0;
-    text-align: center;
-  }
-
-  .links-row1 {
-    width: 100%;
-  }
-
   .links-row1 h2 {
-    margin: 0;
-    font-family: Merriweather, serif;
-    font-weight: 700;
     font-size: 1.5em;
     letter-spacing: 1.25;
   }
 
-  .links-row1 img {
-    width: 12%;
-  }
-
   .links-row2 {
-    width: 100%;
     margin: 41 0 0 0;
-    display: inline-block;
   }
 
   .links-row2 a {
-    color: #bf955a;
-    text-decoration: none;
     font-size: 3.75em;
-    font-weight: 700;
   }
 
   .link-boxes {
     margin-bottom: 26;
-    cursor: pointer;
-    transition: opacity 0.2s ease;
-  }
-
-  .link-boxes:hover {
-    opacity: 0.4;
   }
 }
