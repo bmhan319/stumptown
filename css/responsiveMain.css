@@ -1,127 +1,3 @@
-@media only screen and (min-width: 1024px) {
-  /*----- Splash Page -----*/
-  .splash-page {
-    top: -69;
-    height: 97vh;
-  }
-
-  .splash-text {
-    height: auto;
-    font-size: 1em;
-    font-weight: 400;
-    letter-spacing: 0;
-  }
-
-  /*----- Header Bar -----*/
-  header {
-    position: relative;
-    top: -69;
-  }
-
-  .header-container {
-    padding: 0 8 0 22;
-  }
-
-  .header-left,
-  .header-right {
-    height: 100px;
-  }
-
-  .header-image-box {
-    margin-right: 16;
-  }
-
-  .header-text {
-    font-size: 0.85em;
-  }
-
-  .header-text-right {
-    font-size: 1em;
-  }
-
-  /*----- Product Page -----*/
-  .section-products {
-    top: -9;
-  }
-
-  .products-name {
-    font-size: 0.9em;
-    padding-bottom: 16;
-  }
-
-  .products-price {
-    font-size: 0.9em;
-    padding-bottom: 16;
-  }
-
-  .products-cart {
-    font-size: 1em;
-  }
-
-  /*----- Links Section -----*/
-  .links-container {
-    margin: 0 auto 100;
-  }
-
-  .links-row1 h2 {
-    margin: 14;
-    font-family: Merriweather, serif;
-    font-weight: 700;
-    font-size: 1.75em;
-    letter-spacing: 1;
-  }
-
-  .links-row1 img {
-    width: 9%;
-  }
-
-  .links-row2 {
-    margin: 58 0 0 0;
-  }
-
-  .links-row2 a {
-    font-size: 4.5em;
-  }
-
-  .link-boxes {
-    margin-bottom: 40;
-  }
-
-  /*----- Footer -----*/
-
-  .footer-row1-col1,
-  .footer-row1-col3 {
-    letter-spacing: 0.05em;
-  }
-
-  .footer-row1-col1 p:nth-child(1),
-  .footer-row1-col1 p:nth-child(2),
-  .footer-row1-col3 p:nth-child(1) {
-    font-size: 0.9em;
-  }
-
-  .footer-row1-col1 p:nth-child(3) {
-    font-size: 1em;
-  }
-
-  .footer-row1-col2-rowa a {
-    font-size: 1.75em;
-  }
-
-  .footer-row1-col2-rowb img {
-    width: 100%;
-  }
-
-  .footer-email {
-    font-size: 0.9em;
-  }
-
-  .footer-row2 p {
-    margin: 0 0 10 0;
-    font-size: 0.9em;
-  }
-}
-
 @media only screen and (min-width: 768px) {
   /*----- Header Bar -----*/
   .header-image-box {
@@ -205,5 +81,200 @@
 
   .link-boxes {
     margin-bottom: 26;
+  }
+
+  /*----- Footer -----*/
+  .footer-container {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 2;
+  }
+
+  .footer-item1,
+  .footer-item3 {
+    width: 100%;
+    text-align: center;
+    padding-top: 46px;
+    letter-spacing: 0em;
+  }
+
+  .footer-item1 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .footer-item1 p:nth-child(1),
+  .footer-item1 p:nth-child(2),
+  .footer-item3 p:nth-child(1) {
+    font-size: 0.75em;
+  }
+
+  .footer-item1 p:nth-child(3) {
+    font-size: 0.9em;
+  }
+
+  .footer-item2 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+  }
+
+  .link-box a {
+    font-size: 1.55em;
+  }
+
+  .footer-item3 {
+    grid-column-start: 9;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-top: 0;
+  }
+
+  .footer-form {
+    width: 60%;
+  }
+
+  .footer-email {
+    font-size: 0.7em;
+  }
+
+  .footer-item4 img {
+    width: 50%;
+    margin-bottom: 6;
+  }
+
+  .footer-item4 p {
+    font-size: 0.7em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /*----- Splash Page -----*/
+  .splash-page {
+    top: -69;
+    height: 97vh;
+  }
+
+  .splash-text {
+    height: auto;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+
+  /*----- Header Bar -----*/
+  header {
+    position: relative;
+    top: -69;
+  }
+
+  .header-container {
+    padding: 0 8 0 22;
+  }
+
+  .header-left,
+  .header-right {
+    height: 100px;
+  }
+
+  .header-image-box {
+    margin-right: 16;
+  }
+
+  .header-text {
+    font-size: 0.85em;
+  }
+
+  .header-text-right {
+    font-size: 1em;
+  }
+
+  /*----- Product Page -----*/
+  .section-products {
+    top: -9;
+  }
+
+  .products-name {
+    font-size: 0.9em;
+    padding-bottom: 16;
+  }
+
+  .products-price {
+    font-size: 10.9em;
+    padding-bottom: 16;
+  }
+
+  .products-cart {
+    font-size: 1em;
+  }
+
+  /*----- Links Section -----*/
+  .links-container {
+    margin: 0 auto 0;
+  }
+
+  .links-row1 h2 {
+    margin: 14;
+    font-family: Merriweather, serif;
+    font-weight: 700;
+    font-size: 1.75em;
+    letter-spacing: 1;
+  }
+
+  .links-row1 img {
+    width: 9%;
+  }
+
+  .links-row2 {
+    margin: 58 0 0 0;
+  }
+
+  .links-row2 a {
+    font-size: 4.5em;
+  }
+
+  .link-boxes {
+    margin-bottom: 40;
+  }
+
+  /*----- Footer -----*/
+  .footer-container {
+    padding: 80 0 75;
+  }
+
+  .footer-item1 p:nth-child(1),
+  .footer-item1 p:nth-child(2),
+  .footer-item3 p:nth-child(1) {
+    font-size: 0.95em;
+  }
+
+  .footer-item1 p:nth-child(3) {
+    font-size: 1.05em;
+  }
+
+  .link-box a {
+    font-size: 1.95em;
+  }
+
+  .footer-item4 {
+    margin-bottom: 12;
+  }
+
+  .footer-form {
+    width: 50%;
+  }
+
+  .footer-email {
+    font-size: 0.9em;
+  }
+
+  .footer-item4 img {
+    width: 75%;
+    margin-bottom: 6;
+  }
+
+  .footer-item4 p {
+    font-size: 0.8em;
   }
 }
