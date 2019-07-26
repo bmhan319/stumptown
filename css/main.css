@@ -109,6 +109,10 @@ header {
   padding: 0 22;
 }
 
+.header-middle {
+  display: none;
+}
+
 .header-left,
 .header-right {
   display: flex;
