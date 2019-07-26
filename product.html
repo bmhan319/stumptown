@@ -1,91 +1,108 @@
 <html class="hiddenScroll">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title class="head-title"></title>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/header.css" />
     <link rel="stylesheet" type="text/css" href="css/cartConfirm.css" />
     <link rel="stylesheet" type="text/css" href="css/product.css" />
     <link rel="stylesheet" type="text/css" href="css/nav.css" />
     <link rel="stylesheet" type="text/css" href="css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsiveFooter.css" />
     <!--<link rel="stylesheet" type="text/css" href="css/responsive.css" />-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
-    <link href="https://d3r55vhm3z8vu.cloudfront.net/assets/favicon/apple-touch-icon-57x57-c6aa43496193917ff7694e0894047d95.png" rel="apple-touch-icon" sizes="57x57">
-    <link href="img/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://d3r55vhm3z8vu.cloudfront.net/assets/favicon/apple-touch-icon-57x57-c6aa43496193917ff7694e0894047d95.png"
+      rel="apple-touch-icon"
+      sizes="57x57"
+    />
+    <link
+      href="img/favicon-16x16.png"
+      rel="icon"
+      sizes="16x16"
+      type="image/png"
+    />
   </head>
-  
+
   <body id="bodyScroll">
     <header id="header">
       <div class="header-container">
         <div class="header-left">
           <div class="header-left-box">
             <div class="header-image-box" onclick="openNav()">
-              <img src="img/icons-2x.png">
+              <img src="img/icons-2x.png" />
             </div>
             <p class="header-text" onclick="openNav()">Menu</p>
           </div>
         </div>
-        
+
         <div class="header-middle">
           <div class="header-middle-box">
             <div class="header-image-box-mid">
-              <a href="index.html"><img class="stump-logo" src="img/icons-2x.png"></a>
+              <a href="index.html"
+                ><img class="stump-logo" src="img/icons-2x.png"
+              /></a>
             </div>
           </div>
         </div>
-        
+
         <div class="header-right">
           <div class="header-right-box">
             <div class="header-image-box">
-              <a href="cart.html"><img src="img/icons-2x.png"></a>
+              <a href="cart.html"><img src="img/icons-2x.png"/></a>
             </div>
-          <p id="counterNum" class="header-text header-text-right">0</p>
+            <p id="counterNum" class="header-text header-text-right">0</p>
           </div>
         </div>
       </div>
     </header>
-    
+
     <section id="cart-confirm" class="section-cart-confirmation">
       <div class="cart-confirmation">
         <div class="confirmation-image-box">
-          <img class="confirmation-image" src="img/icons-2x.png" alt=""/>
+          <img class="confirmation-image" src="img/icons-2x.png" alt="" />
         </div>
         <div class="confirmation-close-box" onclick="closeConfirm()">
-          <img class="confirmation-close-image" src="img/icons-2x.png" alt=""/>
+          <img class="confirmation-close-image" src="img/icons-2x.png" alt="" />
         </div>
       </div>
     </section>
-    
+
     <main class="content">
       <div class="content-wrapper">
-        
         <div class="left-col">
           <div class="left-col-container">
             <div class="illustration1"></div>
             <div class="illustration2"></div>
             <h2 class="producer"></h2>
-            <p class=prod-descrip></p>
-            <ul class=prod-list></ul>
+            <p class="prod-descrip"></p>
+            <ul class="prod-list"></ul>
             <a class="read-more" href="#">Read More</a>
             <h2 class="region"></h2>
             <p class="region-descrip"></p>
             <div class="map-container">
               <img class="map" />
-            </div>  
+            </div>
             <div class="location-image-container">
-              <img class="location-image"/>
+              <img class="location-image" />
             </div>
           </div>
         </div>
-        
+
         <div class="mid-right-container">
           <div class="mid-col">
             <h1 class="product-title"></h1>
             <div class="product-image-box">
-              <img class="product-image" src="img/"/>
+              <img class="product-image" src="img/" />
             </div>
           </div>
 
@@ -100,36 +117,39 @@
             </div>
           </div>
         </div>
-        
       </div>
     </main>
-    
+
     <section class="section-recommend">
       <div class="recommend-row1">
         <h2 class="recommend-title">Enjoy With</h2>
-        <img class="recommend-image" src="img/flourish-title.svg" alt="flourish icon" />
+        <img
+          class="recommend-image"
+          src="img/flourish-title.svg"
+          alt="flourish icon"
+        />
       </div>
-      
+
       <div class="recommend-row2">
         <span class="recommend-row2-col1">
           <div class="products-box">
             <a href="#"><img class="recommend-image1"/></a>
           </div>
         </span>
-        
+
         <span class="recommend-row2-col2">
           <div class="products-box">
             <a href="#"><img class="recommend-image2"/></a>
           </div>
         </span>
-        
+
         <span class="recommend-row2-col3">
           <div class="products-box">
             <a href="#"><img class="recommend-image3"/></a>
           </div>
         </span>
       </div>
-          
+
       <div class="recommend-row3">
         <div class="recommend-row3-col1">
           <div class="text-hover-brown">
@@ -137,21 +157,21 @@
             <div class="recommend-price1"></div>
           </div>
         </div>
-          
+
         <div class="recommend-row3-col2">
           <div class="text-hover-brown">
             <div class="recommend-name2"></div>
             <div class="recommend-price2"></div>
           </div>
         </div>
-        
+
         <div class="recommend-row3-col3">
           <div class="text-hover-brown">
             <div class="recommend-name3"></div>
             <div class="recommend-price3"></div>
           </div>
         </div>
-      </div>  
+      </div>
     </section>
 
     <nav id="nav" class="section-nav">
@@ -159,7 +179,7 @@
         <div class="nav-row1-a">
           <div class="nav-close-box" onclick="openNav()">
             <div class="nav-close">
-              <img class="nav-X-icon" src="img/icons-2x.png" alt="X icon"/>
+              <img class="nav-X-icon" src="img/icons-2x.png" alt="X icon" />
             </div>
             <span class="nav-close-text">Close</span>
           </div>
@@ -167,7 +187,11 @@
         <div class="nav-row1-b">
           <div class="nav-login-box">
             <div class="nav-skull">
-              <img class="nav-skull-icon" src="img/icons-2x.png" alt="skull icon"/>  
+              <img
+                class="nav-skull-icon"
+                src="img/icons-2x.png"
+                alt="skull icon"
+              />
             </div>
             <span class="nav-login-text">Login</span>
           </div>
@@ -176,12 +200,24 @@
       </div>
       <div id="expand" class="nav-row2">
         <div class="nav-link-box">
-          <a class="nav-link-a" href="shop.html"><div class="nav-link nav-link1">Shop</div></a>
-          <a class="nav-link-a" href="#"><div class="nav-link nav-link2">Subscriptions</div></a>
-          <a class="nav-link-a" href="#"><div class="nav-link nav-link3">Flower of Flowers</div></a>
-          <a class="nav-link-a" href="#"><div class="nav-link nav-link4">Blog</div></a>
-          <a class="nav-link-a" href="#"><div class="nav-link nav-link5">The Brew Guide</div></a>
-          <a class="nav-link-a" href="#"><div class="nav-link nav-link6">Locations</div></a>
+          <a class="nav-link-a" href="shop.html"
+            ><div class="nav-link nav-link1">Shop</div></a
+          >
+          <a class="nav-link-a" href="#"
+            ><div class="nav-link nav-link2">Subscriptions</div></a
+          >
+          <a class="nav-link-a" href="#"
+            ><div class="nav-link nav-link3">Flower of Flowers</div></a
+          >
+          <a class="nav-link-a" href="#"
+            ><div class="nav-link nav-link4">Blog</div></a
+          >
+          <a class="nav-link-a" href="#"
+            ><div class="nav-link nav-link5">The Brew Guide</div></a
+          >
+          <a class="nav-link-a" href="#"
+            ><div class="nav-link nav-link6">Locations</div></a
+          >
         </div>
       </div>
       <div class="nav-row3">
@@ -193,12 +229,12 @@
         <div class="nav-row3-col"></div>
       </div>
     </nav>
-    
+
     <footer class="section-footer">
       <div class="footer-container">
         <div class="footer-row1">
           <div class="footer-row1-col1">
-            <p>NEED HELP?  CALL US</p>
+            <p>NEED HELP? CALL US</p>
             <p>MONDAY-FRIDAY 8AM-4PM (PT)</p>
             <p>(855) 711-3385</p>
           </div>
@@ -212,16 +248,26 @@
               <img src="img/good-luck.svg" alt="StumpTown Good Luck" />
             </div>
           </div>
-          
+
           <div class="footer-row1-col3">
             <p>GET SECRET NOTES</p>
             <form class="footer-form">
-              <input class="footer-email" type="email" placeholder="Enter your email" />
-              <span><input class="submit" type="image" value="" src="img/arrow-icon.png"></span>
+              <input
+                class="footer-email"
+                type="email"
+                placeholder="Enter your email"
+              />
+              <span
+                ><input
+                  class="submit"
+                  type="image"
+                  value=""
+                  src="img/arrow-icon.png"
+              /></span>
             </form>
           </div>
         </div>
-        
+
         <div class="footer-row2">
           <p>© 2019 Stumptown Coffee Roasters</p>
           <p><a href="#">Terms & Conditions</a></p>
@@ -229,9 +275,10 @@
         </div>
       </div>
     </footer>
-    
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/nav.js"></script>
-  <script src="js/cart.js"></script>
-  <script src="js/products.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/products.js"></script>
   </body>
+</html>
