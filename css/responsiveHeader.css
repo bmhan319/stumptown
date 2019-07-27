@@ -1,0 +1,45 @@
+@media only screen and (min-width: 768px) {
+  /*----- Header Bar -----*/
+  .header-image-box {
+    width: 52px;
+    height: 52px;
+  }
+
+  .header-left img {
+    width: 250;
+    top: -484;
+  }
+
+  .header-right img {
+    width: 250;
+    top: -533;
+  }
+
+  .header-text {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /*----- Header Bar -----*/
+  .header-container {
+    padding: 0 8 0 22;
+  }
+
+  .header-left,
+  .header-right {
+    height: 100px;
+  }
+
+  .header-image-box {
+    margin-right: 16;
+  }
+
+  .header-text {
+    font-size: 0.85em;
+  }
+
+  .header-text-right {
+    font-size: 1em;
+  }
+}
