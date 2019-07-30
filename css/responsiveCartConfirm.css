@@ -1,0 +1,31 @@
+@media only screen and (min-width: 1024px) {
+  /*----- Cart Confirmation -----*/
+  .section-cart-confirmation {
+    height: 90px;
+    top: -90;
+  }
+
+  @keyframes confirmation {
+    0% {
+      top: -90;
+    }
+    10% {
+      top: 0;
+    }
+    90% {
+      top: 0;
+    }
+    100% {
+      top: -90;
+    }
+  }
+
+  .confirmation-image {
+    width: 300;
+    top: -340;
+  }
+
+  .confirmation-close-box {
+    margin-top: 30;
+  }
+}
