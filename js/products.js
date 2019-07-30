@@ -1128,6 +1128,7 @@ window.onload = function() {
   document.querySelector("#bodyScroll").classList.remove("bodyNoView");
 
   document.querySelector(".left-col-container").style.paddingTop = y;
+
   document.querySelector(".head-title").innerHTML =
     product.name + "- Stumptown Coffee";
   document.querySelector("#counterNum").innerHTML = sessionStorage.getItem(
