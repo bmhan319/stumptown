@@ -1121,13 +1121,11 @@ let products = [
 let product = products;
 
 window.onload = function() {
-  let y = window.innerHeight - 350;
-
   product = product[localStorage.getItem("productIndex")];
   document.querySelector("#bodyScroll").classList.add("bodyView");
   document.querySelector("#bodyScroll").classList.remove("bodyNoView");
 
-  document.querySelector(".left-col-container").style.paddingTop = y;
+  document.querySelector(".left-col-container").style.paddingTop = leftColPos;
 
   document.querySelector(".head-title").innerHTML =
     product.name + "- Stumptown Coffee";
@@ -1295,10 +1293,18 @@ window.onload = function() {
 };
 
 //Keeping Left Col tied to a static bottom position
-window.onresize = function() {
-  let y = window.innerHeight - 350;
+function leftColPos() {
+  let y;
+
+  if (window.innerWidth <= 768) {
+    y = 0;
+  } else {
+    y = window.innerHeight - 350;
+  }
   document.querySelector(".left-col-container").style.paddingTop = y;
-};
+}
+
+window.onresize = leftColPos;
 
 //Random Image Generator
 function genImage() {
