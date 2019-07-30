@@ -1,195 +1,108 @@
 @media only screen and (min-width: 768px) {
   /* ----- Main Section -----*/
-  .content {
-    width: 100%;
-    position: relative;
-    z-index: 1;
-    top: 100;
-  }
-
   .content-wrapper {
-    position: relative;
-    width: 100%;
-    display: flex;
     flex-direction: row;
   }
 
   .left-col {
     width: 30%;
     padding-bottom: 100;
-    margin-bottom: 0px;
   }
 
   .mid-right-container {
     width: 70%;
-    display: flex;
     flex-direction: row;
+    border-bottom: none;
+    padding: 0;
     height: 100%;
     position: sticky;
     position: -webkit-sticky;
     top: 180;
-    border-bottom: none;
   }
 
   .mid-col {
     width: 57.1%;
-    display: flex;
     flex-direction: column;
-    position: relative;
   }
 
   .right-col {
     width: 42.9%;
-    display: flex;
-    align-items: center;
   }
 
   /*-----Main Middle Col-----*/
   .product-title {
     position: absolute;
-    text-align: center;
     font-size: 3.1em;
-    margin: 12 0 0;
-    width: 100%;
   }
 
   .product-image-box {
-    width: 100%;
-    position: relative;
     margin: 300 0;
   }
 
   .product-image {
     width: 110%;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
   }
 
   /*-----Main Right Col-----*/
-  .right-col-container {
-    padding-bottom: 40;
-  }
-
   .product-price {
-    margin: 0;
-    text-align: center;
-    font-family: Merriweather, serif;
     font-size: 3.7em;
   }
 
   .product-price::before {
-    content: "$";
-    font-size: 0.25em;
-    position: relative;
     bottom: 20;
     padding-right: 20;
   }
 
   .product-description {
     padding: 0 13;
-    text-align: center;
-    font-family: Merriweather, serif;
-    font-weight: 400;
     font-size: 0.7em;
     line-height: 2;
   }
 
-  .product-description a {
-    text-decoration: none;
-    font-family: Merriweather, serif;
-    color: #bf955a;
-  }
-
   .product-type {
-    text-align: center;
-    margin: 30 0 0;
-    font-family: Merriweather, serif;
-    font-weight: 700;
     font-size: 0.65em;
   }
 
   .product-size {
-    text-align: center;
-    margin: 8 0 0;
-    font-family: Merriweather, serif;
-    font-weight: 700;
     font-size: 0.65em;
   }
 
   .product-subscription {
-    text-align: center;
-    margin: 8 0 0;
-    font-family: Merriweather, serif;
-    font-weight: 700;
     font-size: 0.65em;
-    color: #bf955a;
   }
 
   .product-button {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
     margin-top: 22;
-    text-align: center;
     width: 160;
-    height: 70;
-    background-color: transparent;
-    border: 0;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    color: #f6f5f3;
     font-weight: 700;
     font-size: 0.9em;
-    cursor: pointer;
-    outline: none;
   }
 
   /*-----Main Left Col-----*/
   .left-col-container {
-    position: relative;
-    width: 100%;
     padding: 100vh 0 0 0;
     border-bottom: none;
   }
 
   .illustration1 {
-    position: relative;
     width: 80%;
     height: 230;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
     margin-left: 24;
   }
 
   .illustration2 {
-    position: relative;
     width: 80%;
-    height: 230;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-left: 24;
   }
 
   .producer {
-    margin-left: 24;
-    margin-right: 24;
     font-size: 1em;
     line-height: 1.4em;
     text-align: left;
   }
 
   .prod-descrip {
-    font-family: Merriweather, serif;
-    font-weight: 400;
     font-size: 0.6em;
-    letter-spacing: 1;
     line-height: 2;
-    margin-left: 24;
-    margin-right: 24;
     text-align: left;
   }
   .prod-list {
@@ -197,23 +110,7 @@
   }
 
   .prod-list li {
-    font-weight: 700;
-    font-family: Merriweather, serif;
     font-size: 0.7em;
-    padding-bottom: 16px;
-    line-height: 2em;
-  }
-
-  .left-col-container a {
-    text-decoration: none;
-    text-align: center;
-    margin: 8 0 0;
-    font-weight: 700;
-    font-size: 0.85em;
-    color: #bf955a;
-    letter-spacing: 1;
-    margin-left: 24;
-    margin-right: 24;
   }
 
   .read-more {
@@ -221,22 +118,16 @@
   }
 
   .region {
-    border-top: none;
     margin-top: 86;
-    margin-left: 24;
-    margin-right: 24;
     padding-top: 0;
     font-size: 1em;
+    text-align: left;
   }
 
   .region-descrip {
-    font-family: Merriweather, serif;
-    font-weight: 400;
     font-size: 0.6em;
-    letter-spacing: 1;
     line-height: 2;
-    margin-left: 24;
-    margin-right: 24;
+    text-align: left;
   }
 
   .map-container {
@@ -246,63 +137,18 @@
     display: block;
   }
 
-  .map {
-    width: 100%;
-  }
-
   .location-image-container {
     width: 80%;
     display: block;
   }
 
-  .location-image {
-    width: 200%;
-  }
-
   /* -----Recommend Section ----- */
-
-  .section-recommend {
-    position: relative;
-    top: 100;
-    width: 100%;
-    z-index: 00;
-  }
-
   .recommend-row1 {
     margin-top: 65;
-    width: 100%;
-    display: block;
-    text-align: center;
   }
 
   .recommend-title {
-    margin: 14 0 5;
-    font-family: Merriweather, serif;
-    font-weight: 700;
     font-size: 1.55em;
-    letter-spacing: 1;
-  }
-
-  .recommend-row2 {
-    width: 100%;
-    display: flex;
-  }
-
-  .recommend-row3 {
-    width: 100%;
-    display: flex;
-    margin-bottom: 100;
-  }
-
-  .recommend-row2-col1,
-  .recommend-row2-col2,
-  .recommend-row2-col3 {
-    display: flex;
-    width: 33.3333334%;
-    height: 250px;
-    padding: 30 48;
-    align-items: center;
-    justify-content: center;
   }
 
   .recommend-image1,
@@ -314,37 +160,16 @@
     height: 90%;
   }
 
-  .recommend-row3-col1,
-  .recommend-row3-col2,
-  .recommend-row3-col3 {
-    width: 33.3333334%;
-    text-align: center;
-  }
-
-  .text-hover-brown {
-    cursor: pointer;
-    color: #1f1815;
-  }
-
   .recommend-name1,
   .recommend-name2,
   .recommend-name3 {
-    text-decoration: none;
     font-size: 0.7em;
-    font-weight: 700;
-    margin-bottom: 16;
   }
 
   .recommend-price1,
   .recommend-price2,
   .recommend-price3 {
-    text-decoration: none;
     font-size: 0.8em;
-    font-weight: 400;
-  }
-
-  .text-hover-brown:hover {
-    color: #bf955a;
   }
 }
 

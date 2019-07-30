@@ -258,9 +258,9 @@ body {
 
 .region {
   margin-top: 16;
-  padding-top: 16;
   margin-left: 24;
   margin-right: 24;
+  padding-top: 16;
   font-size: 1.5em;
   text-align: center;
 }
