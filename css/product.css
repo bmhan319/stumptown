@@ -113,6 +113,7 @@ body {
   text-align: center;
   font-family: Merriweather, serif;
   font-size: 1.7em;
+  display: none;
 }
 
 .product-price::before {
@@ -181,6 +182,19 @@ body {
   font-size: 1.25em;
   cursor: pointer;
   outline: none;
+}
+
+.product-price2 {
+  margin: 0 0 0 12;
+  font-size: 1em;
+  font-weight: 400;
+  color: #f6f5f3;
+}
+
+.product-price2::before {
+  content: "$";
+  font-size: 0.8em;
+  position: relative;
 }
 
 /*-----Main Left Col-----*/

@@ -1141,6 +1141,7 @@ window.onload = function() {
     .querySelector(".product-image")
     .setAttribute("alt", product.size + " " + product.name);
   document.querySelector(".product-price").innerHTML = product.price;
+  document.querySelector(".product-price2").innerHTML = product.price;
   document.querySelector(".product-price").style.color = product.bgColor;
   document.querySelector(".product-description").innerHTML =
     product.description;
@@ -1319,11 +1320,13 @@ function genImage() {
 document.querySelector(".product-button").onmouseover = function() {
   this.style.backgroundImage = "url(img/" + product.bannerOn + ")";
   this.style.color = product.textColor;
+  document.querySelector(".product-price2").style.color = product.textColor;
 };
 
 document.querySelector(".product-button").onmouseout = function() {
   this.style.backgroundImage = "url(img/" + product.bannerOff + ")";
   this.style.color = "#f6f5f3";
+  document.querySelector(".product-price2").style.color = "#f6f5f3";
 };
 
 // Cart Confirmation Container

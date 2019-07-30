@@ -46,6 +46,7 @@
   /*-----Main Right Col-----*/
   .product-price {
     font-size: 3.7em;
+    display: block;
   }
 
   .product-price::before {
@@ -76,6 +77,14 @@
     width: 160;
     font-weight: 700;
     font-size: 0.9em;
+  }
+
+  .product-price2 {
+    display: none;
+  }
+
+  .product-price2::before {
+    display: none;
   }
 
   /*-----Main Left Col-----*/
