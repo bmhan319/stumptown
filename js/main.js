@@ -29,8 +29,10 @@ function fadeIn() {
 }
 
 // Menu Bar to Fixed Position on Scoll
-document.addEventListener("resize", fixedNav);
-function fixedNav() {
+document.addEventListener("scroll", navPosition);
+window.onresize = navPosition;
+
+function navPosition() {
   let height = innerHeight - 100;
   let width = innerWidth;
   let head = document.querySelector("#header");

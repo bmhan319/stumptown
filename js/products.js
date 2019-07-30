@@ -1298,7 +1298,7 @@ function leftColPos() {
   let y;
 
   if (window.innerWidth <= 768) {
-    y = 0;
+    y = 64;
   } else {
     y = window.innerHeight - 350;
   }
