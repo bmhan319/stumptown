@@ -55,6 +55,7 @@ function addRow(item) {
     cell4.innerHTML =
       '<div class="item-quantity-container"><div class="item-quantity-box"><div class="item-down-box"><img class="item-down-image" src="img/icons-2x.png" /></div><p class="quantity"></p><div class="item-up-box"><img class="item-up-image" src="img/icons-2x.png" /></div></div><div class="item-update-container"><button class="item-update-button" type="button">Update</button></div></div>';
     cell5.innerHTML = document.querySelector(".item-subtotal").innerHTML =
+      '<span class="item-subtotal-text">Subtotal: </span>' +
       item.price * item.numItems;
     cell6.innerHTML =
       '<div class="item-remove-box remove-text-box"><p class="remove-text">Remove</p><img class="item-remove-image" src="img/icons-2x.png" /></div>';
