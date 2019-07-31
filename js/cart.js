@@ -57,7 +57,7 @@ function addRow(item) {
     cell5.innerHTML = document.querySelector(".item-subtotal").innerHTML =
       item.price * item.numItems;
     cell6.innerHTML =
-      '<div class="item-remove-box"><img class="item-remove-image" src="img/icons-2x.png" /></div>';
+      '<div class="item-remove-box remove-text-box"><p class="remove-text">Remove</p><img class="item-remove-image" src="img/icons-2x.png" /></div>';
 
     document.querySelector(".image").setAttribute("src", "img/" + item.image);
     document.querySelector(".image").setAttribute("alt", item.image);
