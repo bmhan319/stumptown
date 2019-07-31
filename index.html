@@ -1,4 +1,5 @@
-<html class="hiddenScroll">
+<!DOCTYPE html>
+<html lang="en" class="hiddenScroll">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,6 +11,11 @@
     <link rel="stylesheet" type="text/css" href="css/cartConfirm.css" />
     <link rel="stylesheet" type="text/css" href="css/footer.css" />
     <link rel="stylesheet" type="text/css" href="css/responsiveMain.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/responsiveCartConfirm.css"
+    />
     <link rel="stylesheet" type="text/css" href="css/responsiveNav.css" />
     <link
       rel="stylesheet"
@@ -55,7 +61,7 @@
         <div class="header-left">
           <div class="header-left-box">
             <div class="header-image-box" onclick="openNav()">
-              <img src="img/icons-2x.png" />
+              <img src="img/icons-2x.png" alt="horseshoe icon" />
             </div>
             <p class="header-text" onclick="openNav()">Menu</p>
           </div>
@@ -64,9 +70,13 @@
         <div class="header-middle">
           <div class="header-middle-box">
             <div class="header-image-box-mid">
-              <a href="index.html"
-                ><img class="stump-logo" src="img/icons-2x.png"
-              /></a>
+              <a href="index.html">
+                <img
+                  class="stump-logo"
+                  src="img/icons-2x.png"
+                  alt="stumptown logo"
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -74,7 +84,9 @@
         <div class="header-right">
           <div class="header-right-box">
             <div class="header-image-box">
-              <a href="cart.html"><img src="img/icons-2x.png"/></a>
+              <a href="cart.html">
+                <img src="img/icons-2x.png" alt="shopping cart icon" />
+              </a>
             </div>
             <p id="counterNum" class="header-text header-text-right">0</p>
           </div>
@@ -85,17 +97,25 @@
     <section id="cart-confirm" class="section-cart-confirmation">
       <div class="cart-confirmation">
         <div class="confirmation-image-box">
-          <img class="confirmation-image" src="img/icons-2x.png" alt="" />
+          <img
+            class="confirmation-image"
+            src="img/icons-2x.png"
+            alt="added item"
+          />
         </div>
         <div class="confirmation-close-box" onclick="closeConfirm()">
-          <img class="confirmation-close-image" src="img/icons-2x.png" alt="" />
+          <img
+            class="confirmation-close-image"
+            src="img/icons-2x.png"
+            alt="close icon"
+          />
         </div>
       </div>
     </section>
 
     <section class="section-products">
       <div class="section-products-row01">
-        <span class="products">
+        <div class="products">
           <div class="products-box01">
             <a onclick="openProduct(0)" href="product.html"
               ><img
@@ -106,15 +126,15 @@
           </div>
           <div class="products-box02">
             <div class="text-hover-brown">
-              <div class="products-name">Papa New Guinea Besser</div>
-              <div class="products-price">$18</div>
+              <h3 class="products-name">Papa New Guinea Besser</h3>
+              <p class="products-price">$18</p>
             </div>
-            <div onclick="cartConfirm(0)" class="products-cart">
+            <p onclick="cartConfirm(0)" class="products-cart">
               Add to Cart +
-            </div>
+            </p>
           </div>
-        </span>
-        <span class="products">
+        </div>
+        <div class="products">
           <div class="products-box01">
             <a onclick="openProduct(1)" href="product.html"
               ><img
@@ -125,18 +145,18 @@
           </div>
           <div class="products-box02">
             <div class="text-hover-brown">
-              <div class="products-name">12oz Skate Team</div>
-              <div class="products-price">$15</div>
+              <h3 class="products-name">12oz Skate Team</h3>
+              <p class="products-price">$15</p>
             </div>
-            <div onclick="cartConfirm(1)" class="products-cart">
+            <p onclick="cartConfirm(1)" class="products-cart">
               Add to Cart +
-            </div>
+            </p>
           </div>
-        </span>
+        </div>
       </div>
 
       <div class="section-products-row02 fadein">
-        <span class="products">
+        <div class="products">
           <div class="products-box01">
             <a onclick="openProduct(2)" href="product.html"
               ><img
@@ -147,15 +167,15 @@
           </div>
           <div class="products-box02">
             <div class="text-hover-brown">
-              <div class="products-name">12oz Skate Team Box Set</div>
-              <div class="products-price">$29</div>
+              <h3 class="products-name">12oz Skate Team Box Set</h3>
+              <p class="products-price">$29</p>
             </div>
-            <div onclick="cartConfirm(2)" class="products-cart">
+            <p onclick="cartConfirm(2)" class="products-cart">
               Add to Cart +
-            </div>
+            </p>
           </div>
-        </span>
-        <span class="products">
+        </div>
+        <div class="products">
           <div class="products-box01 fadein">
             <a onclick="openProduct(3)" href="product.html"
               ><img
@@ -166,18 +186,18 @@
           </div>
           <div class="products-box02">
             <div class="text-hover-brown">
-              <div class="products-name">12oz Hair Bender</div>
-              <div class="products-price">$15</div>
+              <h3 class="products-name">12oz Hair Bender</h3>
+              <p class="products-price">$15</p>
             </div>
-            <div onclick="cartConfirm(3)" class="products-cart">
+            <p onclick="cartConfirm(3)" class="products-cart">
               Add to Cart +
-            </div>
+            </p>
           </div>
-        </span>
+        </div>
       </div>
 
       <div class="section-products-row03 fadein">
-        <span class="products">
+        <div class="products">
           <div class="products-box01">
             <a onclick="openProduct(4)" href="product.html"
               ><img
@@ -188,30 +208,30 @@
           </div>
           <div class="products-box02">
             <div class="text-hover-brown">
-              <div class="products-name">12oz Guatemala El Injerto Bourbon</div>
-              <div class="products-price">$19</div>
+              <h3 class="products-name">12oz Guatemala El Injerto Bourbon</h3>
+              <p class="products-price">$19</p>
             </div>
-            <div onclick="cartConfirm(4)" class="products-cart">
+            <p onclick="cartConfirm(4)" class="products-cart">
               Add to Cart +
-            </div>
+            </p>
           </div>
-        </span>
-        <span class="products empty">
+        </div>
+        <div class="products empty">
           <div class="products-box01">
-            <a onclick="openProduct()" href="product.html"><img /></a>
+            <a onclick="openProduct()" href="product.html"> </a>
           </div>
           <div class="products-box02">
             <div class="text-hover-brown">
               <div class="products-name"></div>
               <div class="products-price"></div>
             </div>
-            <div onclick="cartConfirm()" class="products-cart"></div>
+            <p onclick="cartConfirm()" class="products-cart"></p>
           </div>
-        </span>
+        </div>
       </div>
 
       <div class="section-products-row04 fadein">
-        <span class="products">
+        <div class="products">
           <div class="products-box01">
             <a onclick="openProduct(5)" href="product.html"
               ><img
@@ -222,15 +242,15 @@
           </div>
           <div class="products-box02">
             <div class="text-hover-brown">
-              <div class="products-name">12oz Rwanda Huye Mountain</div>
-              <div class="products-price">$17</div>
+              <h3 class="products-name">12oz Rwanda Huye Mountain</h3>
+              <p class="products-price">$17</p>
             </div>
-            <div onclick="cartConfirm(5)" class="products-cart">
+            <p onclick="cartConfirm(5)" class="products-cart">
               Add to Cart +
-            </div>
+            </p>
           </div>
-        </span>
-        <span class="products">
+        </div>
+        <div class="products">
           <div class="products-box01">
             <a onclick="openProduct(6)" href="product.html"
               ><img
@@ -241,18 +261,18 @@
           </div>
           <div class="products-box02">
             <div class="text-hover-brown">
-              <div class="products-name">East Fork Mug</div>
-              <div class="products-price">$40</div>
+              <h3 class="products-name">East Fork Mug</h3>
+              <p class="products-price">$40</p>
             </div>
-            <div onclick="cartConfirm(6)" class="products-cart">
+            <p onclick="cartConfirm(6)" class="products-cart">
               Add to Cart +
-            </div>
+            </p>
           </div>
-        </span>
+        </div>
       </div>
 
       <div class="section-products-row05 fadein">
-        <span class="products-singlea">
+        <div class="products-singlea">
           <div class="products-box01">
             <a onclick="openProduct(7)" href="product.html"
               ><img
@@ -263,18 +283,18 @@
           </div>
           <div class="products-box02">
             <div class="text-hover-brown">
-              <div class="products-name">Stumptown Coffee Jar</div>
-              <div class="products-price">$15</div>
+              <h3 class="products-name">Stumptown Coffee Jar</h3>
+              <p class="products-price">$15</p>
             </div>
-            <div onclick="cartConfirm(7)" class="products-cart">
+            <p onclick="cartConfirm(7)" class="products-cart">
               Add to Cart +
-            </div>
+            </p>
           </div>
-        </span>
+        </div>
       </div>
 
       <div class="section-products-row06 fadein">
-        <span class="products-singleb">
+        <div class="products-singleb">
           <div class="products-box01">
             <a onclick="openProduct(8)" href="product.html"
               ><img
@@ -285,18 +305,18 @@
           </div>
           <div class="products-box02">
             <div class="text-hover-brown">
-              <div class="products-name">African Trio</div>
-              <div class="products-price">$38</div>
+              <h3 class="products-name">African Trio</h3>
+              <p class="products-price">$38</p>
             </div>
-            <div onclick="cartConfirm(8)" class="products-cart">
+            <p onclick="cartConfirm(8)" class="products-cart">
               Add to Cart +
-            </div>
+            </p>
           </div>
-        </span>
+        </div>
       </div>
 
       <div class="section-products-row07 fadein">
-        <span class="products">
+        <div class="products">
           <div class="products-box01">
             <a onclick="openProduct(9)" href="product.html"
               ><img
@@ -307,15 +327,15 @@
           </div>
           <div class="products-box02">
             <div class="text-hover-brown">
-              <div class="products-name">Miir Camp Cup</div>
-              <div class="products-price">$26</div>
+              <h3 class="products-name">Miir Camp Cup</h3>
+              <p class="products-price">$26</p>
             </div>
-            <div onclick="cartConfirm(9)" class="products-cart">
+            <p onclick="cartConfirm(9)" class="products-cart">
               Add to Cart +
-            </div>
+            </p>
           </div>
-        </span>
-        <span class="products">
+        </div>
+        <div class="products">
           <div class="products-box01">
             <a onclick="openProduct(10)" href="product.html"
               ><img
@@ -326,18 +346,18 @@
           </div>
           <div class="products-box02">
             <div class="text-hover-brown">
-              <div class="products-name">Miir Wide Moth Water Bottle</div>
-              <div class="products-price">$30</div>
+              <h3 class="products-name">Miir Wide Moth Water Bottle</h3>
+              <p class="products-price">$30</p>
             </div>
-            <div onclick="cartConfirm(10)" class="products-cart">
+            <p onclick="cartConfirm(10)" class="products-cart">
               Add to Cart +
-            </div>
+            </p>
           </div>
-        </span>
+        </div>
       </div>
 
       <div class="section-products-row08 fadein">
-        <span class="products">
+        <div class="products">
           <div class="products-box01">
             <a onclick="openProduct(11)" href="product.html"
               ><img
@@ -348,15 +368,15 @@
           </div>
           <div class="products-box02">
             <div class="text-hover-brown">
-              <div class="products-name">Miir Travel Tumbler</div>
-              <div class="products-price">$28</div>
+              <h3 class="products-name">Miir Travel Tumbler</h3>
+              <p class="products-price">$28</p>
             </div>
-            <div onclick="cartConfirm(11)" class="products-cart">
+            <p onclick="cartConfirm(11)" class="products-cart">
               Add to Cart +
-            </div>
+            </p>
           </div>
-        </span>
-        <span class="products">
+        </div>
+        <div class="products">
           <div class="products-box01">
             <a onclick="openProduct(12)" href="product.html"
               ><img
@@ -367,14 +387,14 @@
           </div>
           <div class="products-box02">
             <div class="text-hover-brown">
-              <div class="products-name">Miir 8oz Tumbler</div>
-              <div class="products-price">$18</div>
+              <h3 class="products-name">Miir 8oz Tumbler</h3>
+              <p class="products-price">$18</p>
             </div>
-            <div onclick="cartConfirm(12)" class="products-cart">
+            <p onclick="cartConfirm(12)" class="products-cart">
               Add to Cart +
-            </div>
+            </p>
           </div>
-        </span>
+        </div>
       </div>
     </section>
 
@@ -417,8 +437,8 @@
               ><input
                 class="submit"
                 type="image"
-                value=""
                 src="img/arrow-icon.png"
+                alt="arrow icon"
             /></span>
           </form>
         </div>

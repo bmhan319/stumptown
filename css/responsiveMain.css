@@ -6,13 +6,13 @@
   }
 
   .header-left img {
-    width: 250;
-    top: -484;
+    width: 250px;
+    top: -484px;
   }
 
   .header-right img {
-    width: 250;
-    top: -533;
+    width: 250px;
+    top: -533px;
   }
 
   .header-text {
@@ -30,7 +30,7 @@
   .section-products-row08 {
     width: 98vw;
     display: flex;
-    margin-bottom: 66;
+    margin-bottom: 66px;
   }
 
   .products {
@@ -50,7 +50,7 @@
   }
 
   .products-image {
-    padding-bottom: 135;
+    padding-bottom: 90px;
   }
 
   .products-name {
@@ -59,6 +59,7 @@
 
   .products-price {
     font-size: 0.7em;
+    padding-bottom: 0px;
   }
 
   .products-cart {
@@ -68,11 +69,11 @@
   /*----- Links Section -----*/
   .links-row1 h2 {
     font-size: 1.5em;
-    letter-spacing: 1.25;
+    letter-spacing: 1.25px;
   }
 
   .links-row2 {
-    margin: 41 0 0 0;
+    margin: 41px 0 0 0;
   }
 
   .links-row2 a {
@@ -80,15 +81,15 @@
   }
 
   .link-boxes {
-    margin-bottom: 26;
+    margin-bottom: 26px;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   /*----- Splash Page -----*/
   .splash-page {
-    top: -69;
-    height: 97vh;
+    top: 0px;
+    height: 90vh;
   }
 
   .splash-text {
@@ -101,11 +102,11 @@
   /*----- Header Bar -----*/
   header {
     position: relative;
-    top: -69;
+    top: 0px;
   }
 
   .header-container {
-    padding: 0 8 0 22;
+    padding: 0 8px 0 22px;
   }
 
   .header-left,
@@ -114,7 +115,7 @@
   }
 
   .header-image-box {
-    margin-right: 16;
+    margin-right: 16px;
   }
 
   .header-text {
@@ -127,17 +128,22 @@
 
   /*----- Product Page -----*/
   .section-products {
-    top: -9;
+    top: -0px;
+  }
+
+  .products-image {
+    padding-bottom: 130px;
   }
 
   .products-name {
     font-size: 0.9em;
-    padding-bottom: 16;
+    padding-bottom: 16px;
   }
 
   .products-price {
     font-size: 0.9em;
-    padding-bottom: 16;
+    padding-bottom: 0px;
+    margin: 0;
   }
 
   .products-cart {
@@ -150,11 +156,11 @@
   }
 
   .links-row1 h2 {
-    margin: 14;
+    margin: 14px;
     font-family: Merriweather, serif;
     font-weight: 700;
     font-size: 1.75em;
-    letter-spacing: 1;
+    letter-spacing: 1px;
   }
 
   .links-row1 img {
@@ -162,7 +168,7 @@
   }
 
   .links-row2 {
-    margin: 58 0 0 0;
+    margin: 58px 0 0 0;
   }
 
   .links-row2 a {
@@ -170,46 +176,6 @@
   }
 
   .link-boxes {
-    margin-bottom: 40;
-  }
-
-  /*----- Footer -----*/
-  .footer-container {
-    padding: 80 0 75;
-  }
-
-  .footer-item1 p:nth-child(1),
-  .footer-item1 p:nth-child(2),
-  .footer-item3 p:nth-child(1) {
-    font-size: 0.95em;
-  }
-
-  .footer-item1 p:nth-child(3) {
-    font-size: 1.05em;
-  }
-
-  .link-box a {
-    font-size: 1.95em;
-  }
-
-  .footer-item4 {
-    margin-bottom: 12;
-  }
-
-  .footer-form {
-    width: 50%;
-  }
-
-  .footer-email {
-    font-size: 0.9em;
-  }
-
-  .footer-item4 img {
-    width: 75%;
-    margin-bottom: 6;
-  }
-
-  .footer-item4 p {
-    font-size: 0.8em;
+    margin-bottom: 40px;
   }
 }

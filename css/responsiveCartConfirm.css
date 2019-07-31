@@ -1,13 +1,12 @@
 @media only screen and (min-width: 1024px) {
-  /*----- Cart Confirmation -----*/
   .section-cart-confirmation {
     height: 90px;
-    top: -90;
+    top: -90px;
   }
 
   @keyframes confirmation {
     0% {
-      top: -90;
+      top: -90px;
     }
     10% {
       top: 0;
@@ -16,16 +15,16 @@
       top: 0;
     }
     100% {
-      top: -90;
+      top: -90px;
     }
   }
 
   .confirmation-image {
-    width: 300;
-    top: -340;
+    width: 300px;
+    top: -340px;
   }
 
   .confirmation-close-box {
-    margin-top: 30;
+    margin-top: 30px;
   }
 }

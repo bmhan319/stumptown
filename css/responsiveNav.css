@@ -1,31 +1,31 @@
 @media only screen and (min-width: 768px) {
   .nav-row1 {
     height: 50px;
-    margin-top: 14;
-    padding-left: 18;
+    margin-top: 14px;
+    padding-left: 18px;
   }
 
   .nav-row1-a,
   .nav-row1-b,
   .nav-row1-c {
-    height: 50;
+    height: 50px;
   }
   .nav-close,
   .nav-skull {
-    width: 46;
-    height: 44;
-    margin: 0 8;
+    width: 46px;
+    height: 44px;
+    margin: 0 8px;
   }
 
   .nav-X-icon {
-    width: 232;
-    top: -1070;
-    left: 4;
+    width: 232px;
+    top: -1070px;
+    left: 4px;
   }
 
   .nav-skull-icon {
-    width: 232;
-    top: -658;
+    width: 232px;
+    top: -658px;
   }
 
   .nav-login-text,
@@ -48,7 +48,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
-    margin: 0 0;
+    margin: 0;
   }
 
   .nav-row3-col a {
@@ -86,8 +86,8 @@
 
 @media only screen and (min-width: 1024px) {
   .nav-row1 {
-    margin-top: 22;
-    padding-left: 20;
+    margin-top: 22px;
+    padding-left: 20px;
   }
 
   .nav-close-text,
@@ -97,14 +97,14 @@
 
   .nav-link {
     font-size: 4.4em;
-    padding-bottom: 29;
+    padding-bottom: 29px;
   }
 
   .nav-row3 {
     display: grid;
     grid-template-columns: 1fr 200px 200px 200px 200px 1fr;
     grid-template-rows: 1fr;
-    margin: 0 0;
+    margin: 0;
   }
 
   .nav-row3-col a {

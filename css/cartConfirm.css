@@ -1,4 +1,3 @@
-/*----- Cart Confirmation -----*/
 .section-cart-confirmation {
   position: relative;
   width: 100%;
@@ -6,7 +5,7 @@
   background-color: blue;
   z-index: 20;
   position: fixed;
-  top: -70;
+  top: -70px;
   left: 0;
   overflow: hidden;
 }
@@ -23,7 +22,7 @@
 
 @keyframes confirmation {
   0% {
-    top: -70;
+    top: -70px;
   }
   10% {
     top: 0;
@@ -32,7 +31,7 @@
     top: 0;
   }
   100% {
-    top: -70;
+    top: -70px;
   }
 }
 
@@ -50,25 +49,25 @@
 
 .confirmation-image {
   position: relative;
-  width: 230;
-  top: -260;
+  width: 230px;
+  top: -260px;
   left: 50%;
   transform: translateX(-20%);
 }
 
 .confirmation-close-box {
   position: relative;
-  width: 30;
-  height: 30;
-  margin-top: 20;
-  margin-right: 10;
+  width: 30px;
+  height: 30px;
+  margin-top: 20px;
+  margin-right: 10px;
   overflow: hidden;
   cursor: pointer;
 }
 
 .confirmation-close-image {
   position: relative;
-  width: 260;
-  top: -1081;
-  left: 2;
+  width: 260px;
+  top: -1081px;
+  left: 2px;
 }

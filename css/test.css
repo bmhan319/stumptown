@@ -18,7 +18,7 @@
 .footer-item3 {
   width: 100%;
   text-align: center;
-  padding-top: 66px;
+  padding-top: 86px;
   letter-spacing: 0em;
   grid-column-start: 4;
   grid-column-end: 10;
@@ -27,7 +27,6 @@
 .footer-item1 {
   grid-row-start: 2;
   grid-row-end: 3;
-  padding-top: 86px;
 }
 
 .footer-item1 p:nth-child(1),
@@ -36,11 +35,11 @@
   color: #d0c3ae;
   font-weight: 700;
   font-size: 0.9em;
-  padding-bottom: 0px;
+  padding-bottom: 8px;
 }
 
 .footer-item1 p:nth-child(3) {
-  margin: 18px 0 0 0;
+  margin: 32px 0 0 0;
   font-family: Merriweather, serif;
   color: #bf955a;
   font-weight: 700;
