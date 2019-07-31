@@ -56,26 +56,14 @@
     font-size: 0.75em;
   }
 
-  .item-price::before {
-    content: "$";
-  }
-
   .item-subtotal {
     width: 12%;
     padding-left: 54;
     font-size: 0.75em;
   }
 
-  .item-subtotal::before {
-    content: "$";
-  }
-
   .item-subtotal-text {
     display: none;
-  }
-
-  .item-subtotal-text::after {
-    content: "";
   }
 
   .item-remove {

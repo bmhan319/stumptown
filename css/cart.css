@@ -250,7 +250,7 @@ th {
 }
 
 .item-price::before,
-.item-subtotal-text::after {
+.item-subtotal-number::before {
   content: "$";
 }
 
