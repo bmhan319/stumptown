@@ -1132,6 +1132,7 @@ window.onload = function() {
   document.querySelector("#counterNum").innerHTML = sessionStorage.getItem(
     "cartCounter"
   );
+  document.querySelector(".head-title").innerHTML = product.name;
   document.querySelector(".product-title").innerHTML = product.name;
   document.querySelector(".product-title").style.color = product.bgColor;
   document

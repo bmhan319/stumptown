@@ -6,13 +6,13 @@
   }
 
   .header-left img {
-    width: 250;
-    top: -484;
+    width: 250px;
+    top: -484px;
   }
 
   .header-right img {
-    width: 250;
-    top: -533;
+    width: 250px;
+    top: -533px;
   }
 
   .header-text {
@@ -23,7 +23,7 @@
 @media only screen and (min-width: 1024px) {
   /*----- Header Bar -----*/
   .header-container {
-    padding: 0 8 0 22;
+    padding: 0 8px 0 22px;
   }
 
   .header-left,
@@ -32,7 +32,7 @@
   }
 
   .header-image-box {
-    margin-right: 16;
+    margin-right: 16px;
   }
 
   .header-text {

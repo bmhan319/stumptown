@@ -1,4 +1,3 @@
-/*----- Header Bar -----*/
 header {
   position: fixed;
   width: 100%;
@@ -11,7 +10,7 @@ header {
 .header-container {
   display: flex;
   width: 100%;
-  padding: 0 22;
+  padding: 0 22px;
 }
 
 .header-left,
@@ -29,7 +28,7 @@ header {
 
 .header-right {
   justify-content: flex-end;
-  margin-right: 10;
+  margin-right: 10px;
 }
 
 .header-left-box,
@@ -48,8 +47,8 @@ header {
 }
 
 .header-image-box-mid {
-  width: 140;
-  height: 40;
+  width: 140px;
+  height: 40px;
   overflow: hidden;
 }
 
@@ -61,23 +60,23 @@ header {
 
 .header-left img {
   position: relative;
-  width: 180;
-  top: -346;
-  left: 7;
+  width: 180px;
+  top: -346px;
+  left: 7px;
 }
 
 .stump-logo {
   position: relative;
-  width: 270;
-  top: -379;
-  left: 3;
+  width: 270px;
+  top: -379px;
+  left: 3px;
 }
 
 .header-right img {
   position: relative;
-  width: 180;
-  top: -382;
-  left: 3;
+  width: 180px;
+  top: -382px;
+  left: 3px;
 }
 
 .header-text {

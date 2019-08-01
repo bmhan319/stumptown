@@ -6,7 +6,7 @@
 
   .left-col {
     width: 30%;
-    padding-bottom: 100;
+    padding-bottom: 100px;
   }
 
   .mid-right-container {
@@ -17,7 +17,7 @@
     height: 100%;
     position: sticky;
     position: -webkit-sticky;
-    top: 180;
+    top: 180px;
   }
 
   .mid-col {
@@ -36,7 +36,7 @@
   }
 
   .product-image-box {
-    margin: 300 0;
+    margin: 300px 0;
   }
 
   .product-image {
@@ -50,14 +50,14 @@
   }
 
   .product-price::before {
-    bottom: 20;
-    padding-right: 20;
+    bottom: 20px;
+    padding-right: 20px;
   }
 
   .product-description {
-    padding: 0 13;
+    padding: 0 13px;
     font-size: 0.7em;
-    line-height: 2;
+    line-height: 2em;
   }
 
   .product-type {
@@ -73,8 +73,8 @@
   }
 
   .product-button {
-    margin-top: 22;
-    width: 160;
+    margin-top: 22px;
+    width: 160px;
     font-weight: 700;
     font-size: 0.9em;
   }
@@ -95,8 +95,8 @@
 
   .illustration1 {
     width: 80%;
-    height: 230;
-    margin-left: 24;
+    height: 230px;
+    margin-left: 24px;
   }
 
   .illustration2 {
@@ -111,11 +111,11 @@
 
   .prod-descrip {
     font-size: 0.6em;
-    line-height: 2;
+    line-height: 2em;
     text-align: left;
   }
   .prod-list {
-    padding-bottom: 200;
+    padding-bottom: 200px;
   }
 
   .prod-list li {
@@ -127,7 +127,7 @@
   }
 
   .region {
-    margin-top: 86;
+    margin-top: 86px;
     padding-top: 0;
     font-size: 1em;
     text-align: left;
@@ -135,14 +135,14 @@
 
   .region-descrip {
     font-size: 0.6em;
-    line-height: 2;
+    line-height: 2em;
     text-align: left;
   }
 
   .map-container {
     width: 80%;
-    margin-top: 100;
-    margin-right: 24;
+    margin-top: 100px;
+    margin-right: 24px;
     display: block;
   }
 
@@ -153,7 +153,7 @@
 
   /* -----Recommend Section ----- */
   .recommend-row1 {
-    margin-top: 65;
+    margin-top: 65px;
   }
 
   .recommend-title {
@@ -203,7 +203,7 @@
   /*-----Main Middle Col-----*/
   .product-title {
     font-size: 4.1em;
-    margin: 12 30 0;
+    margin: 12px 30px 0;
   }
 
   .product-image {
@@ -212,7 +212,7 @@
 
   /*-----Main Right Col-----*/
   .right-col-container {
-    padding-bottom: 40;
+    padding-bottom: 40px;
   }
 
   .product-price {
@@ -221,7 +221,7 @@
 
   .product-description {
     font-size: 0.9em;
-    line-height: 1.6;
+    line-height: 1.6em;
   }
 
   .product-type {
@@ -237,8 +237,8 @@
   }
 
   .product-button {
-    margin-top: 42;
-    width: 250;
+    margin-top: 42px;
+    width: 250px;
     font-weight: 400;
     font-size: 1.25em;
   }
@@ -260,7 +260,7 @@
 
   .prod-descrip {
     font-size: 0.9em;
-    line-height: 1.7;
+    line-height: 1.7em;
   }
 
   .prod-list li {
@@ -274,7 +274,7 @@
 
   .region-descrip {
     font-size: 0.9em;
-    line-height: 1.7;
+    line-height: 1.7em;
   }
 
   .map-container {
