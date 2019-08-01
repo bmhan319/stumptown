@@ -1,4 +1,5 @@
-<html class="hiddenScroll">
+<!DOCTYPE html>
+<html lang="en" class="hiddenScroll">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -40,7 +41,7 @@
         <div class="header-left">
           <div class="header-left-box">
             <div class="header-image-box" onclick="openNav()">
-              <img src="img/icons-2x.png" />
+              <img src="img/icons-2x.png" alt="horseshoe icon" />
             </div>
             <p class="header-text" onclick="openNav()">Menu</p>
           </div>
@@ -50,7 +51,10 @@
           <div class="header-middle-box">
             <div class="header-image-box-mid">
               <a href="index.html"
-                ><img class="stump-logo" src="img/icons-2x.png"
+                ><img
+                  class="stump-logo"
+                  src="img/icons-2x.png"
+                  alt="stumptown logo"
               /></a>
             </div>
           </div>
@@ -59,7 +63,9 @@
         <div class="header-right">
           <div class="header-right-box">
             <div class="header-image-box">
-              <a href="cart.html"><img src="img/icons-2x.png"/></a>
+              <a href="cart.html"
+                ><img src="img/icons-2x.png" alt="shopping cart icon"
+              /></a>
             </div>
             <p id="counterNum" class="header-text header-text-right">0</p>
           </div>
@@ -67,7 +73,7 @@
       </div>
     </header>
 
-    <main id="emptyCart" class="emptyCart">
+    <section id="emptyCart" class="emptyCart">
       <div class="emptyCart-title"><h1>Cart</h1></div>
       <div class="emptyCart-text1">
         <p>There is nothing to see here. Yet.</p>
@@ -76,7 +82,7 @@
       <div class="emptyCart-image1">
         <img src="img/skeleton.png" alt="skeleton sitting against tree" />
       </div>
-    </main>
+    </section>
 
     <main id="filledCart" class="filledCart">
       <div class="emptyCart-title"><h1>Cart</h1></div>
@@ -230,8 +236,8 @@
               ><input
                 class="submit"
                 type="image"
-                value=""
                 src="img/arrow-icon.png"
+                alt="arrow icon"
             /></span>
           </form>
         </div>

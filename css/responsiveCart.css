@@ -1,7 +1,7 @@
 @media only screen and (min-width: 768px) {
   /*----- Empty Cart Section -----*/
   .emptyCart-text1 {
-    margin: 94 0 0 0;
+    margin: 94px 0 0 0;
   }
 
   .emptyCart-text1 p {
@@ -14,11 +14,15 @@
 
   /*----- Filled Cart Section -----*/
   .filledCart {
-    padding: 0 32;
+    padding: 0 32px;
   }
 
   .emptyCart-title h1 {
     font-size: 2.5em;
+  }
+
+  .table-container {
+    margin: 100px auto 0;
   }
 
   /*-----First Table -----*/
@@ -58,7 +62,7 @@
 
   .item-subtotal {
     width: 12%;
-    padding-left: 54;
+    padding-left: 54px;
     font-size: 0.75em;
   }
 
@@ -69,7 +73,7 @@
   .item-remove {
     width: 4%;
     overflow: hidden;
-    padding: 0 0 0 20;
+    padding: 0 0 0 20px;
   }
 
   .item-remove-box {
@@ -90,16 +94,16 @@
 
   .item-remove-image {
     position: relative;
-    top: -2436;
-    left: -13;
+    top: -2436px;
+    left: -13px;
     display: block;
   }
 
   /*----- 2nd Table -----*/
   .items-total-container {
-    width: 400;
+    width: 400px;
     margin: 0 0 0 auto;
-    padding: 56;
+    padding: 56px;
   }
 
   .item-total-subtotal,
@@ -107,22 +111,22 @@
   .item-total-price1,
   .item-total-price2 {
     font-size: 0.8em;
-    padding-bottom: 28;
+    padding-bottom: 28px;
   }
 
   .items-total-total,
   .item-total-price4 {
-    padding-top: 24;
+    padding-top: 24px;
   }
 
   .checkout {
-    width: 400;
-    margin: 30 0 30 auto;
+    width: 400px;
+    margin: 30px 0 30px auto;
   }
 
   .checkout button {
-    width: 355;
-    height: 60;
+    width: 355px;
+    height: 60px;
     font-size: 1em;
   }
 }
@@ -138,7 +142,7 @@
   }
 
   .emptyCart-image1 {
-    margin: 83 auto 21 auto;
+    margin: 83px auto 21px auto;
   }
 
   /*----- Filled Cart Section -----*/
@@ -173,43 +177,43 @@
 
   /*----- 2nd Table -----*/
   .items-total-container {
-    width: 570;
+    width: 570px;
   }
 
   .items-total {
-    width: 450;
+    width: 450px;
   }
 
   .item-total-subtotal,
   .item-total-shipping {
     font-size: 0.9em;
-    padding-left: 60;
+    padding-left: 60px;
   }
 
   .item-total-price1,
   .item-total-price2 {
     font-size: 0.9em;
-    padding-right: 60;
+    padding-right: 60px;
   }
 
   .items-total-total {
     font-size: 1.3em;
-    padding-left: 60;
+    padding-left: 60px;
   }
 
   .item-total-price4 {
     font-size: 1.3em;
-    padding-right: 60;
-    padding-left: 233;
+    padding-right: 60px;
+    padding-left: 233px;
   }
 
   .checkout {
-    width: 570;
+    width: 570px;
   }
 
   .checkout button {
     font-size: 1.5em;
-    height: 80;
+    height: 80px;
     font-size: 1.5em;
   }
 
