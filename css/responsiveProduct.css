@@ -160,13 +160,9 @@
     font-size: 1.55em;
   }
 
-  .recommend-image1,
-  .recommend-image3 {
-    height: 90%;
-  }
-
-  .recommend-image2 {
-    height: 90%;
+  .products-box {
+    width: 250px;
+    height: 250px;
   }
 
   .recommend-name1,
@@ -288,15 +284,6 @@
   /* -----Recommend Section ----- */
   .recommend-title {
     font-size: 1.75em;
-  }
-
-  .recommend-image1,
-  .recommend-image3 {
-    width: 70%;
-  }
-
-  .recommend-image2 {
-    height: 70%;
   }
 
   .recommend-name1,

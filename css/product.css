@@ -328,17 +328,20 @@ body {
 }
 
 .products-box {
-  width: 100%;
-  text-align: center;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .recommend-image1,
 .recommend-image3 {
-  width: 80%;
+  width: 100%;
 }
 
 .recommend-image2 {
-  width: 80%;
+  width: 100%;
 }
 
 .recommend-row3-col1,
