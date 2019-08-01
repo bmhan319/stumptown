@@ -1,8 +1,11 @@
-let counter = sessionStorage.getItem("cartCounter");
+const counter = sessionStorage.getItem("cartCounter");
 
 window.onload = function() {
   let subtotal = 0;
-  document.querySelector("#counterNum").innerHTML = counter;
+  const itemPrice1 = document.querySelector(".item-total-price1");
+  const itemPrice4 = document.querySelector(".item-total-price4");
+  const counterNum = document.querySelector("#counterNum");
+  counterNum.innerHTML = counter;
   cartVisible();
 
   for (var i = 0; i < sessionStorage.length + 20; i++) {
@@ -17,9 +20,8 @@ window.onload = function() {
       );
     }
   }
-
-  document.querySelector(".item-total-price1").innerHTML = subtotal;
-  document.querySelector(".item-total-price4").innerHTML = subtotal;
+  itemPrice1.innerHTML = subtotal;
+  itemPrice4.innerHTML = subtotal;
 };
 
 // Add Rows to Table
@@ -44,56 +46,54 @@ function addRow(item) {
   cell5.setAttribute("class", "item-subtotal");
   cell6.setAttribute("class", "item-remove");
   populateTable();
+  addTableData();
 
-  // Fill in Product Data to Cart Rows
+  // Fill in Product Attributes to Cart Rows
   function populateTable() {
     cell1.innerHTML = '<img class="image" src="" />';
-    cell2.innerHTML = document.querySelector(".item-name").innerHTML =
-      item.name;
-    cell3.innerHTML = document.querySelector(".item-price").innerHTML =
-      item.price;
+    cell2.innerHTML = item.name;
+    cell3.innerHTML = item.price;
     cell4.innerHTML =
       '<div class="item-quantity-container"><div class="item-quantity-box"><div class="item-down-box"><img class="item-down-image" src="img/icons-2x.png" /></div><p class="quantity"></p><div class="item-up-box"><img class="item-up-image" src="img/icons-2x.png" /></div></div><div class="item-update-container"><button class="item-update-button" type="button">Update</button></div></div>';
-    cell5.innerHTML = document.querySelector(".item-subtotal").innerHTML =
+    cell5.innerHTML =
       '<span class="item-subtotal-text">Subtotal: </span><span class="item-subtotal-number">' +
       item.price * item.numItems +
       "</span>";
     cell6.innerHTML =
       '<div class="item-remove-box remove-text-box"><p class="remove-text">Remove</p><img class="item-remove-image" src="img/icons-2x.png" /></div>';
+  }
 
-    document.querySelector(".image").setAttribute("src", "img/" + item.image);
-    document.querySelector(".image").setAttribute("alt", item.image);
-    document.querySelector(".item-price").setAttribute("id", "price" + item.id);
-    document
-      .querySelector(".quantity")
-      .setAttribute("id", "quantity" + item.id);
-    document.querySelector(".quantity").innerHTML = item.numItems;
-    document
-      .querySelector(".item-subtotal-number")
-      .setAttribute("id", "subTotal" + item.id);
-    document
-      .querySelector(".item-down-box")
-      .setAttribute("onclick", "numItem(-1," + item.id + ")");
-    document
-      .querySelector(".item-down-box")
-      .classList.add("item-down-box" + item.id);
-    document
-      .querySelector(".item-up-box")
-      .setAttribute("onclick", "numItem(1," + item.id + ")");
-    document
-      .querySelector(".item-remove-box")
-      .setAttribute(
-        "onclick",
-        "clearItem(" + item.id + "," + item.numItems + ")"
-      );
+  // Fill in Product Data to Cart Rows
+  function addTableData() {
+    const image = document.querySelector(".image");
+    const itemPrice = document.querySelector(".item-price");
+    const itemQuantity = document.querySelector(".quantity");
+    const itemSubTotal = document.querySelector(".item-subtotal-number");
+    const itemDown = document.querySelector(".item-down-box");
+    const itemUp = document.querySelector(".item-up-box");
+    const itemRemove = document.querySelector(".item-remove-box");
+
+    image.setAttribute("src", "img/" + item.image);
+    image.setAttribute("alt", item.image);
+    itemPrice.setAttribute("id", "price" + item.id);
+    itemQuantity.setAttribute("id", "quantity" + item.id);
+    itemQuantity.innerHTML = item.numItems;
+    itemSubTotal.setAttribute("id", "subTotal" + item.id);
+    itemDown.setAttribute("onclick", "numItem(-1," + item.id + ")");
+    itemDown.classList.add("item-down-box" + item.id);
+    itemUp.setAttribute("onclick", "numItem(1," + item.id + ")");
+    itemRemove.setAttribute(
+      "onclick",
+      "clearItem(" + item.id + "," + item.numItems + ")"
+    );
   }
 }
 
 // Cart Visble/Invisible
 function cartVisible() {
-  let counterNum = document.querySelector("#counterNum");
-  let filledCart = document.querySelector("#filledCart");
-  let emptyCart = document.querySelector("#emptyCart");
+  const counterNum = document.querySelector("#counterNum");
+  const filledCart = document.querySelector("#filledCart");
+  const emptyCart = document.querySelector("#emptyCart");
 
   if (counterNum.innerHTML == 0) {
     emptyCart.style.display = "block";
@@ -111,15 +111,13 @@ function numItem(num, index) {
   let quantity = document.querySelector("#quantity" + index);
   let subTotal = document.querySelector("#subTotal" + index);
   let price = document.querySelector("#price" + index);
-  let counterNum = document.querySelector("#counterNum");
   let itemBox = document.querySelector(".item-down-box" + index);
+  const counterNum = document.querySelector("#counterNum");
 
   quantity.innerHTML = Number(quantity.innerHTML) + num;
   subTotal.innerHTML = Number(quantity.innerHTML * price.innerHTML);
   products[index].numItems = Number(products[index].numItems + num);
-
   sessionStorage.setItem(index, JSON.stringify(products[index]));
-
   counterNum.innerHTML = Number(counterNum.innerHTML) + num;
   sessionStorage.setItem("cartCounter", counterNum.innerHTML);
 
@@ -135,14 +133,17 @@ function numItem(num, index) {
 //Figure Subtotal and Total
 function totalAmount() {
   let subTotal = 0;
+  const itemTotal1 = document.querySelector(".item-total-price1");
+  const itemTotal4 = document.querySelector(".item-total-price4");
+
   for (var i = 0; i < sessionStorage.length + 20; i++) {
     if (sessionStorage[i] == undefined) {
       continue;
     } else {
       subTotal =
         subTotal + Number(document.querySelector("#subTotal" + i).innerHTML);
-      document.querySelector(".item-total-price1").innerHTML = subTotal;
-      document.querySelector(".item-total-price4").innerHTML = subTotal;
+      itemTotal1.innerHTML = subTotal;
+      itemTotal4.innerHTML = subTotal;
     }
   }
 }
@@ -151,8 +152,7 @@ function totalAmount() {
 function clearItem(index, numItem) {
   let row = document.querySelector("#itemRow" + index);
   let sub = document.querySelector("#subTotal" + index);
-  let counterNum = document.querySelector("#counterNum");
-  console.log(sub);
+  const counterNum = document.querySelector("#counterNum");
 
   sessionStorage.removeItem(index);
   row.style.display = "none";

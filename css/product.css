@@ -307,6 +307,7 @@ body {
 .recommend-row2 {
   width: 100%;
   display: flex;
+  position: relative;
 }
 
 .recommend-row3 {
@@ -319,20 +320,25 @@ body {
 .recommend-row2-col2,
 .recommend-row2-col3 {
   display: flex;
-  width: 33.333333%;
+  width: 33.3333334%;
   height: 250px;
-  padding: 30px 48px;
+  padding: 0px 0px;
   align-items: center;
   justify-content: center;
 }
 
+.products-box {
+  width: 100%;
+  text-align: center;
+}
+
 .recommend-image1,
 .recommend-image3 {
-  height: 58%;
+  width: 80%;
 }
 
 .recommend-image2 {
-  height: 60%;
+  width: 80%;
 }
 
 .recommend-row3-col1,
