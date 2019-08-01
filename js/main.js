@@ -12,7 +12,6 @@ document.addEventListener("scroll", fadeIn);
 
 function fadeIn() {
   const fade = document.querySelectorAll(".fadein");
-  //const loader = document.querySelectorAll(".loader");
 
   for (var i = 0; i < fade.length; i++) {
     let productRow = fade[i].getBoundingClientRect();
@@ -21,7 +20,6 @@ function fadeIn() {
 
     if (topOfObject < bottomOfWindow && topOfObject > 0) {
       fade[i].style.opacity = 1;
-      //loader[i].style.opacity = 0;
     }
   }
 }
@@ -33,8 +31,8 @@ window.onresize = navPosition;
 function navPosition() {
   let height = innerHeight - 100;
   let width = innerWidth;
-  let head = document.querySelector("#header");
-  let products = document.querySelector(".section-products");
+  const head = document.querySelector("#header");
+  const products = document.querySelector(".section-products");
 
   if (width >= 1024) {
     if (scrollY >= height) {
