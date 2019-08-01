@@ -1,183 +1,181 @@
 let product = products;
 
 window.onload = function() {
+  const bodyScroll = document.querySelector("#bodyScroll");
+  const leftColContainer = document.querySelector(".left-col-container");
+  const headerTitle = document.querySelector(".head-title");
+  const counterNum = document.querySelector("#counterNum");
+  const productTitle = document.querySelector(".product-title");
+  const productImage = document.querySelector(".product-image");
+  const productPrice = document.querySelector(".product-price");
+  const productPrice2 = document.querySelector(".product-price2");
+  const productDescription = document.querySelector(".product-description");
+  const productType = document.querySelector(".product-type");
+  const productSize = document.querySelector(".product-size");
+  const productSub = document.querySelector(".product-subscription");
+  const producer = document.querySelector(".producer");
+  const producerDescription = document.querySelector(".prod-descrip");
+  const region = document.querySelector(".region");
+  const regionDescription = document.querySelector(".region-descrip");
+  const productButton = document.querySelector(".product-button");
+  const illustration1 = document.querySelector(".illustration1");
+  const illustration2 = document.querySelector(".illustration2");
+  const map = document.querySelector(".map");
+  const locationImage = document.querySelector(".location-image");
+  const reccoName1 = document.querySelector(".recommend-name1");
+  const reccoName2 = document.querySelector(".recommend-name2");
+  const reccoName3 = document.querySelector(".recommend-name3");
+  const reccoPrice1 = document.querySelector(".recommend-price1");
+  const reccoPrice2 = document.querySelector(".recommend-price2");
+  const reccoPrice3 = document.querySelector(".recommend-price3");
+  const reccoImage1 = document.querySelector(".recommend-image1");
+  const reccoImage2 = document.querySelector(".recommend-image2");
+  const reccoImage3 = document.querySelector(".recommend-image3");
+  const row2Col1 = document.querySelector(".recommend-row2-col1");
+  const row2Col2 = document.querySelector(".recommend-row2-col2");
+  const row2Col3 = document.querySelector(".recommend-row2-col3");
+  const row3Col1 = document.querySelector(".recommend-row3-col1");
+  const row3Col2 = document.querySelector(".recommend-row3-col2");
+  const row3Col3 = document.querySelector(".recommend-row3-col3");
+  const readMore = document.querySelector(".read-more");
+  const mapContainer = document.querySelector(".map-container");
+  const productList = document.querySelector(".prod-list");
+  const htmlListTag = "</li><li>";
+
   product = product[localStorage.getItem("productIndex")];
-  document.querySelector("#bodyScroll").classList.add("bodyView");
-  document.querySelector("#bodyScroll").classList.remove("bodyNoView");
-
-  document.querySelector(".left-col-container").style.paddingTop = leftColPos;
-
-  document.querySelector(".head-title").innerHTML =
-    product.name + "- Stumptown Coffee";
-  document.querySelector("#counterNum").innerHTML = sessionStorage.getItem(
-    "cartCounter"
-  );
-  document.querySelector(".head-title").innerHTML = product.name;
-  document.querySelector(".product-title").innerHTML = product.name;
-  document.querySelector(".product-title").style.color = product.bgColor;
-  document
-    .querySelector(".product-image")
-    .setAttribute("src", "img/" + product.image);
-  document
-    .querySelector(".product-image")
-    .setAttribute("alt", product.size + " " + product.name);
-  document.querySelector(".product-price").innerHTML = product.price;
-  document.querySelector(".product-price2").innerHTML = product.price;
-  document.querySelector(".product-price").style.color = product.bgColor;
-  document.querySelector(".product-description").innerHTML =
-    product.description;
-  document.querySelector(".product-type").innerHTML = product.category;
-  document.querySelector(".product-size").innerHTML = product.size;
-  document.querySelector(".producer").innerHTML = product.producer;
-  document.querySelector(".prod-descrip").innerHTML =
-    product.producerDescription;
-  document.querySelector(".region").innerHTML = product.region;
-  document.querySelector(".region-descrip").innerHTML =
-    product.regionDescription;
-  document.querySelector(".product-button").style.backgroundImage =
-    "url(img/" + product.bannerOff + ")";
-  document
-    .querySelector(".product-button")
-    .setAttribute("onclick", "cartConfirm(" + product.id + ")");
-  document.querySelector(".illustration1").style.backgroundImage =
-    "url(img/" + product.sideImage1 + ")";
-  document.querySelector(".illustration2").style.backgroundImage =
-    "url(img/" + product.sideImage2 + ")";
-  document.querySelector(".map").setAttribute("src", "img/" + product.map);
-  document.querySelector(".map").setAttribute("alt", product.map);
-  document
-    .querySelector(".location-image")
-    .setAttribute("src", "img/" + product.sideImage3);
-  document
-    .querySelector(".location-image")
-    .setAttribute("alt", product.sideImage3);
-  document.querySelector(".recommend-name1").innerHTML =
-    product.recommendedItem1;
-  document.querySelector(".recommend-name2").innerHTML =
-    product.recommendedItem2;
-  document.querySelector(".recommend-name3").innerHTML =
-    product.recommendedItem3;
-  document.querySelector(".recommend-price1").innerHTML =
-    product.recommendedItem1Price;
-  document.querySelector(".recommend-price2").innerHTML =
-    product.recommendedItem2Price;
-  document.querySelector(".recommend-price3").innerHTML =
-    product.recommendedItem3Price;
-  document
-    .querySelector(".recommend-image1")
-    .setAttribute("src", "img/" + product.recommendedImage1);
-  document
-    .querySelector(".recommend-image1")
-    .setAttribute("alt", product.recommendedItem1);
-  document
-    .querySelector(".recommend-image2")
-    .setAttribute("src", "img/" + product.recommendedImage2);
-  document
-    .querySelector(".recommend-image2")
-    .setAttribute("alt", product.recommendedItem2);
-  document
-    .querySelector(".recommend-image3")
-    .setAttribute("src", "img/" + product.recommendedImage3);
-  document
-    .querySelector(".recommend-image3")
-    .setAttribute("alt", product.recommendedItem3);
+  bodyScroll.classList.add("bodyView");
+  bodyScroll.classList.remove("bodyNoView");
+  leftColContainer.style.paddingTop = leftColPos;
+  headerTitle.innerHTML = product.name + "- Stumptown Coffee";
+  counterNum.innerHTML = sessionStorage.getItem("cartCounter");
+  productTitle.innerHTML = product.name;
+  productTitle.style.color = product.bgColor;
+  productImage.setAttribute("src", "img/" + product.image);
+  productImage.setAttribute("alt", product.size + " " + product.name);
+  productPrice.innerHTML = product.price;
+  productPrice2.innerHTML = product.price;
+  productPrice.style.color = product.bgColor;
+  productDescription.innerHTML = product.description;
+  productType.innerHTML = product.category;
+  productSize.innerHTML = product.size;
+  producer.innerHTML = product.producer;
+  producerDescription.innerHTML = product.producerDescription;
+  region.innerHTML = product.region;
+  regionDescription.innerHTML = product.regionDescription;
+  productButton.style.backgroundImage = "url(img/" + product.bannerOff + ")";
+  productButton.setAttribute("onclick", "cartConfirm(" + product.id + ")");
+  illustration1.style.backgroundImage = "url(img/" + product.sideImage1 + ")";
+  illustration2.style.backgroundImage = "url(img/" + product.sideImage2 + ")";
+  map.setAttribute("src", "img/" + product.map);
+  map.setAttribute("alt", product.map);
+  locationImage.setAttribute("src", "img/" + product.sideImage3);
+  locationImage.setAttribute("alt", product.sideImage3);
+  reccoName1.innerHTML = product.recommendedItem1;
+  reccoName2.innerHTML = product.recommendedItem2;
+  reccoName3.innerHTML = product.recommendedItem3;
+  reccoPrice1.innerHTML = product.recommendedItem1Price;
+  reccoPrice2.innerHTML = product.recommendedItem2Price;
+  reccoPrice3.innerHTML = product.recommendedItem3Price;
+  reccoImage1.setAttribute("src", "img/" + product.recommendedImage1);
+  reccoImage1.setAttribute("alt", product.recommendedItem1);
+  reccoImage2.setAttribute("src", "img/" + product.recommendedImage2);
+  reccoImage2.setAttribute("alt", product.recommendedItem2);
+  reccoImage3.setAttribute("src", "img/" + product.recommendedImage3);
+  reccoImage3.setAttribute("alt", product.recommendedItem3);
 
   if (product.sideImage2 == "none") {
-    document.querySelector(".illustration2").style.display = "none";
+    illustration2.style.display = "none";
   }
 
   if (product.subscription == false) {
-    document.querySelector(".product-subscription").style.display = "none";
+    productSub.style.display = "none";
   } else {
-    document.querySelector(".product-subscription").innerHTML =
-      "Available as a subscription";
+    productSub.innerHTML = "Available as a subscription";
   }
 
   if (product.recommendedItem3 == "none") {
-    document.querySelector(".recommend-row2-col1").style.width = "50%";
-    document.querySelector(".recommend-row2-col2").style.width = "50%";
-    document.querySelector(".recommend-row2-col3").style.display = "none";
-    document.querySelector(".recommend-row3-col1").style.width = "50%";
-    document.querySelector(".recommend-row3-col2").style.width = "50%";
-    document.querySelector(".recommend-row3-col3").style.display = "none";
+    row2Col1.style.width = "50%";
+    row2Col2.style.width = "50%";
+    row2Col3.style.display = "none";
+    row3Col1.style.width = "50%";
+    row3Col2.style.width = "50%";
+    row3Col3.style.display = "none";
   }
 
   if (
     product.recommendedItem2 == "none" &&
     product.recommendedItem3 == "none"
   ) {
-    document.querySelector(".recommend-row2-col1").style.width = "100%";
-    document.querySelector(".recommend-row2-col2").style.display = "none";
-    document.querySelector(".recommend-row2-col3").style.display = "none";
-    document.querySelector(".recommend-row3-col1").style.width = "100%";
-    document.querySelector(".recommend-row3-col2").style.display = "none";
-    document.querySelector(".recommend-row3-col3").style.display = "none";
+    row2Col1.style.width = "100%";
+    row2Col2.style.display = "none";
+    row2Col3.style.display = "none";
+    row3Col1.style.width = "100%";
+    row3Col2.style.display = "none";
+    row3Col3.style.display = "none";
   }
 
   if (product.readMore == false) {
-    document.querySelector(".read-more").style.display = "none";
+    readMore.style.display = "none";
   }
 
   if (product.map == "none") {
-    document.querySelector(".map-container").style.display = "none";
+    mapContainer.style.display = "none";
   }
 
   if (product.sideImage3 == "none") {
-    document.querySelector(".location-image").style.display = "none";
+    locationImage.style.display = "none";
   }
 
   if (product.listItem1 !== "none") {
-    document.querySelector(".prod-list").style.display = "block";
+    productList.style.display = "block";
 
     if (product.listItem2 == "none") {
-      document.querySelector(".prod-list").innerHTML =
-        "<li>" + product.listItem1 + "</li>";
+      productList.innerHTML = "<li>" + product.listItem1 + "</li>";
     } else if (product.listItem3 == "none") {
-      document.querySelector(".prod-list").innerHTML =
-        "<li>" + product.listItem1 + "</li><li>" + product.listItem2 + "</li>";
+      productList.innerHTML =
+        "<li>" + product.listItem1 + htmlListTag + product.listItem2 + "</li>";
     } else if (product.listItem4 == "none") {
-      document.querySelector(".prod-list").innerHTML =
+      productList.innerHTML =
         "<li>" +
         product.listItem1 +
-        "</li><li>" +
+        htmlListTag +
         product.listItem2 +
-        "</li><li>" +
+        htmlListTag +
         product.listItem3 +
         "</li>";
     } else if (product.listItem5 == "none") {
-      document.querySelector(".prod-list").innerHTML =
+      productList.innerHTML =
         "<li>" +
         product.listItem1 +
-        "</li><li>" +
+        htmlListTag +
         product.listItem2 +
-        "</li><li>" +
+        htmlListTag +
         product.listItem3 +
-        "</li><li>" +
+        htmlListTag +
         product.listItem4 +
         "</li>";
     } else {
-      document.querySelector(".prod-list").innerHTML =
+      productList.innerHTML =
         "<li>" +
         product.listItem1 +
-        "</li><li>" +
+        htmlListTag +
         product.listItem2 +
-        "</li><li>" +
+        htmlListTag +
         product.listItem3 +
-        "</li><li>" +
+        htmlListTag +
         product.listItem4 +
-        "</li><li>" +
+        htmlListTag +
         product.listItem5 +
         "</li>";
     }
   } else {
-    document.querySelector(".prod-list").style.display = "none";
+    productList.style.display = "none";
   }
 };
 
 //Keeping Left Col tied to a static bottom position
 function leftColPos() {
   let y;
-
   if (window.innerWidth <= 768) {
     y = 64;
   } else {
@@ -185,7 +183,6 @@ function leftColPos() {
   }
   document.querySelector(".left-col-container").style.paddingTop = y;
 }
-
 window.onresize = leftColPos;
 
 //Random Image Generator
@@ -209,23 +206,3 @@ document.querySelector(".product-button").onmouseout = function() {
   this.style.color = "#f6f5f3";
   document.querySelector(".product-price2").style.color = "#f6f5f3";
 };
-
-// Cart Confirmation Container
-let cartCounter2 = sessionStorage.getItem("cartCounter");
-function cartConfirm(index) {
-  let numItems = document.querySelector("#counterNum");
-  let confirm = document.querySelector("#cart-confirm");
-  let cloneConfirm = confirm.cloneNode(true);
-
-  confirm.classList.add("confirm-animate");
-  confirm.style.backgroundColor = products[index].bgColor;
-  cartCounter2++;
-  numItems.innerHTML = cartCounter2;
-
-  setTimeout(function() {
-    confirm.parentNode.replaceChild(cloneConfirm, confirm);
-  }, 3000);
-  products[index].numItems++;
-  sessionStorage.setItem("cartCounter", cartCounter2);
-  sessionStorage.setItem(index, JSON.stringify(products[index]));
-}

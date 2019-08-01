@@ -1,5 +1,3 @@
-let cartCounter = sessionStorage.getItem("cartCounter");
-
 //Page Fades In
 window.onload = function() {
   let numItems = document.querySelector("#counterNum");
@@ -57,30 +55,4 @@ function navPosition() {
 // Opening Product Page with Correct Product Info
 function openProduct(id) {
   localStorage.setItem("productIndex", id);
-}
-
-// Cart Confirmation Container
-function cartConfirm(index) {
-  let numItems = document.querySelector("#counterNum");
-  let confirm = document.querySelector("#cart-confirm");
-  let cloneConfirm = confirm.cloneNode(true);
-
-  confirm.classList.add("confirm-animate");
-  confirm.style.backgroundColor = products[index].bgColor;
-  cartCounter++;
-  numItems.innerHTML = cartCounter;
-
-  setTimeout(function() {
-    confirm.parentNode.replaceChild(cloneConfirm, confirm);
-  }, 3000);
-  products[index].numItems++;
-  sessionStorage.setItem("cartCounter", cartCounter);
-  sessionStorage.setItem(index, JSON.stringify(products[index]));
-}
-
-//Close Cart Confirmation
-function closeConfirm() {
-  let confirm = document.querySelector("#cart-confirm");
-  confirm.style.top = -90;
-  confirm.style.opacity = 0;
 }
