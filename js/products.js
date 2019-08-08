@@ -193,16 +193,3 @@ function genImage() {
   image = "random" + number + ".jpg";
   return image;
 }
-
-//Hover State of "Add to Cart" Button
-document.querySelector(".product-button").onmouseover = function() {
-  this.style.backgroundImage = "url(img/" + product.bannerOn + ")";
-  this.style.color = product.textColor;
-  document.querySelector(".product-price2").style.color = product.textColor;
-};
-
-document.querySelector(".product-button").onmouseout = function() {
-  this.style.backgroundImage = "url(img/" + product.bannerOff + ")";
-  this.style.color = "#f6f5f3";
-  document.querySelector(".product-price2").style.color = "#f6f5f3";
-};
